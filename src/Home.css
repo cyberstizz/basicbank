@@ -5,3 +5,10 @@
 body{
     background-color: cornflowerblue;
 }
+
+.hero{
+    margin-top: 5vh;
+    font-size: xx-large;
+    color: rgb(113, 82, 3);
+    text-align: center;
+}
