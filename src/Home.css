@@ -12,3 +12,9 @@ body{
     color: rgb(113, 82, 3);
     text-align: center;
 }
+
+#midsection{
+    border: solid 2px green;
+    height: 40vh;
+    width: 35vw;
+}
