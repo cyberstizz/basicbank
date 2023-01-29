@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+#Basic Bank
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+##this is a react application created to test a Django backend
 
 In the project directory, you can run:
 
