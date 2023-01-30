@@ -23,6 +23,7 @@ body{
 
 .accountsection{
     flex-direction: row;
+    margin-top: 2.5vh;
     width: 40vw;
     height: 65vh;
     border: solid 2px orange;
