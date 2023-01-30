@@ -15,6 +15,7 @@ body{
 
 #midsection{
     border: solid 2px green;
-    height: 40vh;
-    width: 35vw;
+    height: 70vh;
+    width: 85vw;
+    margin-left: 5vw;
 }
