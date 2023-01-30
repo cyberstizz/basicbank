@@ -13,7 +13,7 @@ const Home = () => {
         <div id="midsection"></div>
         
         <div class="accountsection"></div>
-        <div class="menusection"></div>
+        <div class="infosection"></div>
 
 
         <div class="footer"></div>
