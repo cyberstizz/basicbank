@@ -29,6 +29,7 @@ body{
 }
 
 .infosection{
+    flex-direction: row;
     width: 40vw;
     height: 65vh;
     border: solid 2px orange;
