@@ -12,7 +12,18 @@ const Home = () => {
 
         <div id="midsection">
         
-        <div class="accountsection"></div>
+        <div class="accountsection">
+        <ul>
+        <li>chicken</li>
+        <li>cupcakes</li>
+        <li>pears</li>
+        <li>mangos</li>
+        <li>carraot cake</li>
+
+
+        </ul>
+
+        </div>
         <div class="infosection"></div>
 
         </div>
