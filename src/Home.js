@@ -13,7 +13,7 @@ const Home = () => {
         <div id="midsection">
         
         <div class="accountsection">
-        <ul>
+        <ul class ="uselessList">
         <li>chicken</li>
         <li>cupcakes</li>
         <li>pears</li>
