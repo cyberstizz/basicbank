@@ -19,3 +19,15 @@ body{
     width: 85vw;
     margin-left: 5vw;
 }
+
+.accountsection{
+    width: 40vw;
+    height: 65vh;
+    border: solid 2px orange;
+}
+
+.infosection{
+    width: 40vw;
+    height: 65vh;
+    border: solid 2px orange;
+}
