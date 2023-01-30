@@ -12,6 +12,8 @@ const Home = () => {
 
         <div id="midsection">
         Accounts
+
+        <div id="midsectionmenus">
         <div class="accountsection">
         <ul class ="uselessList">
         <li><button>chicken</button></li>
@@ -30,7 +32,7 @@ const Home = () => {
 
 
         </div>
-
+        </div>
         <div class="buttonssection">
 
         <button>Sign in</button>

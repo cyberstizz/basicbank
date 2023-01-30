@@ -15,11 +15,16 @@ body{
 
 #midsection{
     display: flex;
+    flex-direction: column;
     border: solid 2px orange;
     height: 80vh;
     width: 85vw;
     margin-left: 5vw;
     text-align: center;
+}
+
+#midsectionmenus{
+    display: flex;
 }
 
 .accountsection{
