@@ -10,12 +10,12 @@ const Home = () => {
          Basic bank
         </div>
 
-        <div id="midsection"></div>
+        <div id="midsection">
         
         <div class="accountsection"></div>
         <div class="infosection"></div>
 
-
+        </div>
         <div class="footer"></div>
 
 
