@@ -11,7 +11,7 @@ const Home = () => {
         </div>
 
         <div id="midsection">
-        
+        Accounts
         <div class="accountsection">
         <ul class ="uselessList">
         <li>chicken</li>
@@ -25,7 +25,8 @@ const Home = () => {
 
         </div>
         <div class="infosection"></div>
-
+        Welcome to basic bank, the only place where 
+        everyone can see your account and there is no privacy!!!
         </div>
         <div class="footer"></div>
 

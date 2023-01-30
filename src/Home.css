@@ -15,17 +15,18 @@ body{
 
 #midsection{
     display: flex;
-    border: solid 2px green;
-    height: 70vh;
+    border: solid 2px orange;
+    height: 80vh;
     width: 85vw;
     margin-left: 5vw;
+    text-align: center;
 }
 
 .accountsection{
-    list-style: none;
+    background-color: wheat;
     flex-direction: row;
-    margin-top: 2.5vh;
-    margin-left: 2vw;
+    margin-top: 4vh;
+    margin-left: 1vw;
     width: 40vw;
     height: 65vh;
     border: solid 2px orange;
@@ -37,9 +38,9 @@ body{
 
 .infosection{
     flex-direction: row;
-    margin-top: 2.5vh;
-    margin-left: 2vw;
-    width: 40vw;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    width: 35vw;
     height: 65vh;
     border: solid 2px orange;
 }
