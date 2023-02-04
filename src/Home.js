@@ -35,6 +35,21 @@ const Home = () => {
 
         <div class="secondOptionstab"></div>
 
+        <ul>
+        <li>Checking</li>
+        <li>Savings & CD's</li>
+        <li>Credit Cards</li>
+        <li>Home Loans</li>
+        <li>Personal Loans</li>
+        <li>Auto Loans</li>
+        <li>Premier</li>
+        <li>Education & Tools</li>
+
+
+
+
+        </ul>
+
         <div class="bodysection">
 
         </div>
