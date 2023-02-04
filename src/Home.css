@@ -28,7 +28,7 @@ margin-left: 1vw;
     font-weight: bold;
     width: 30vw;
     color: rgb(30, 245, 30);
-    margin-left: 1vw;
+    margin-left: 3.5vw;
 }
 
 .navlist{
@@ -68,12 +68,14 @@ margin-left: 1vw;
 .navListTwo{
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 95vw;
     font-size: 20px;
 }
 
 .navListTwo li{
     margin-right: 2vw;
+    height: 7vh;
+    border: solid 2px green;
 }
 
 .secondOptionstab{
