@@ -55,6 +55,16 @@ const Home = () => {
         <div class="bodysection">
 
             <div class="siginInSection">
+            <form type="submit">
+            <input type="text" class="username" placeholder="username"></input>
+            <input type="text" class="password" placeholder="password"></input>
+            <div></div>
+            <div></div>
+            </form>
+
+
+
+
 
             </div>
 
