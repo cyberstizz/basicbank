@@ -11,8 +11,8 @@ const Home = () => {
        <span class="logo"> Basic Bank</span>
 
         <ul class="navlist">
-            <li>about us</li>
-            <li>help</li>
+            <li>About</li>
+            <li>Help</li>
 
         </ul>
         <button id="signin">Sign in</button>
