@@ -56,6 +56,12 @@ border: solid 2px green;
     height: 8vh;
 }
 
+.secondOptionstab{
+    width: 100vw;
+    background-color: white;
+    height: 8vh;
+}
+
 .hero{
     margin-top: 5vh;
     font-size: xx-large;

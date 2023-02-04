@@ -21,6 +21,8 @@ const Home = () => {
         <div class="moreOptions">
 
         </div>
+
+        <div class="secondOptionstab"></div>
        
 
 
