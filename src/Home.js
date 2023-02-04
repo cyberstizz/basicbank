@@ -10,7 +10,7 @@ const Home = () => {
         Basic bank
 
         <ul>
-            <li></li>
+            <li>about us</li>
             <li></li>
 
         </ul>
