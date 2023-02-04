@@ -67,11 +67,15 @@ const Home = () => {
 
             {/*a block for the blend section */}
 
-            <div class="blend section">
+            <div class="blendSection">
 
             </div>
 
             {/*words for the filler section */}
+
+            <div class="fillerSection">
+
+            </div>
 
         </div>
        
