@@ -123,46 +123,8 @@ margin-left: 1vw;
     opacity: 90%;
 }
 
-.hero{
-    margin-top: 5vh;
-    font-size: xx-large;
-    color: rgb(113, 82, 3);
-    text-align: center;
-}
-
-#midsection{
-    display: flex;
-    flex-direction: column;
-    border: solid 2px orange;
-    height: 80vh;
-    width: 85vw;
-    margin-left: 5vw;
-    text-align: center;
-}
-
-#midsectionmenus{
-    display: flex;
-}
-
-.accountsection{
-    background-color: wheat;
-    flex-direction: row;
-    margin-top: 4vh;
-    margin-left: 1vw;
+.siginInSection{
+    height: 60vh;
     width: 40vw;
-    height: 65vh;
-    border: solid 2px orange;
-}
-
-.uselessList{
-    list-style: none;
-}
-
-.infosection{
-    flex-direction: row;
-    margin-top: 4vh;
-    margin-left: 1vw;
-    width: 35vw;
-    height: 65vh;
-    border: solid 2px orange;
+    background-color: blue;
 }
