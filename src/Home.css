@@ -149,6 +149,14 @@ margin-left: 1vw;
     background-color: rgb(240, 240, 240);
 }
 
+.password{
+    display: flex;
+    width: 200px;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    background-color: rgb(240, 240, 240);
+}
+
 .blendSection{
     height: 68vh;
     width: 3vw;
