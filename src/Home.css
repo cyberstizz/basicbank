@@ -29,7 +29,7 @@ color: cornsilk;
     font-size: 50px;
     font-weight: bold;
     width: 30vw;
-    color: rgb(0, 255, 0);
+    color: rgb(30, 245, 30);
     margin-left: 1vw;
 }
 
@@ -48,10 +48,10 @@ color: cornsilk;
     width: 100px;
     margin-left: 3vw;
     color: rgb(3, 17, 42);
-    font-weight: bolder;
-    letter-spacing: 2px;
-    font-size: large;
-    background-color: rgb(38, 246, 38);
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+    background-color: silver;
 }
 
 .moreOptions{
@@ -73,7 +73,7 @@ color: cornsilk;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    background-color: #f2ce94;
+    background-color: rgb(30, 245, 30);
     background-blend-mode: var(#ba8c43);
     background-image: radial-gradient();
     background-blend-mode: screen;
