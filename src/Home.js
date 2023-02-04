@@ -2,9 +2,14 @@ import './Home.css';
 
 
 const Home = () => {
-    return (
-        <div id="fullpage">
+//const testCall = await fetch('http://localhost:8001');
 
+    return(
+        <div id="fullpage">
+        <div class="top_section">
+        Basic bank
+
+        </div>
 
         <div class="hero">
          Basic bank
@@ -41,6 +46,8 @@ const Home = () => {
         </div>
         
         </div>
+
+
         <div class="footer"></div>
 
 
