@@ -133,6 +133,7 @@ margin-left: 1vw;
     margin-top: 2vh;
     margin-left: 2vh;
     display: flex;
+    flex-direction: column;
 }
 
 .sloganSection{
