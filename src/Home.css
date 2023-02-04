@@ -121,10 +121,14 @@ margin-left: 1vw;
     background-image: radial-gradient();
     background-blend-mode: screen;
     opacity: 90%;
+    border-top: solid 1px orange;
+
 }
 
 .siginInSection{
     height: 60vh;
-    width: 40vw;
-    background-color: blue;
+    width: 30vw;
+    background-color: rgb(3, 17, 42);
+    margin-top: 2vh;
+    margin-left: 2vh;
 }
