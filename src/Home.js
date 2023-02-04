@@ -9,9 +9,9 @@ const Home = () => {
         <div class="top_section">
         Basic bank
 
-        <ul>
+        <ul class="navlist">
             <li>about us</li>
-            <li></li>
+            <li>help</li>
 
         </ul>
         <button id="signin">Sign in</button>

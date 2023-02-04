@@ -17,6 +17,11 @@ body{
     border-bottom-width: 4px;
 }
 
+.navlist{
+    display: flex;
+    flex-direction: row;
+}
+
 .hero{
     margin-top: 5vh;
     font-size: xx-large;
