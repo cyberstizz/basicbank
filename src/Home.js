@@ -7,6 +7,7 @@ const Home = () => {
     return(
         <div id="fullpage">
         <div class="top_section">
+        <br/>
         Basic bank
 
         <ul class="navlist">
