@@ -9,6 +9,13 @@ const Home = () => {
         <div class="top_section">
         Basic bank
 
+        <ul>
+            <li></li>
+            <li></li>
+
+        </ul>
+        <button id="signin"></button>
+
         </div>
 
         <div class="hero">
