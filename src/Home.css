@@ -9,10 +9,12 @@ body{
 .top_section{
     height: 22vh;
     width: 100vw;
-    background-color: red;
-    border: solid 2px green;
+    background-color: cornflowerblue;
+    border: solid 2px;
     display: flex;
     flex-direction: row;
+    border-bottom-color: yellow;
+    border-bottom-width: 4px;
 }
 
 .hero{
