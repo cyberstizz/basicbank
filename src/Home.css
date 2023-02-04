@@ -19,7 +19,7 @@ border: solid 2px green;
     border: solid 2px;
     display: flex;
     flex-direction: row;
-    border-bottom-color: rgb(224, 224, 38);
+    border-bottom-color: #f2ce94;
     border-bottom-width: 4px;
 }
 
@@ -59,15 +59,19 @@ border: solid 2px green;
 .secondOptionstab{
     width: 100vw;
     background-color: white;
-    height: 8vh;
+    height: 10vh;
 }
 
 .bodysection{
-    height: 71vh;
+    height: 69vh;
     background-image: url("../public/basicbankfamily3.jpg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-color: blanchedalmond;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-color: #f2ce94;
+    background-blend-mode: var(#ba8c43);
+    background-image: radial-gradient();
+    background-blend-mode: calc();
 }
 
 .hero{
