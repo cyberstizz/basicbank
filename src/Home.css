@@ -75,7 +75,12 @@ margin-left: 1vw;
 .navListTwo li{
     margin-right: 2vw;
     height: 7vh;
-    border: solid 2px green;
+}
+
+.navListTwo li:hover{
+    margin-right: 2vw;
+    height: 7vh;
+    border-bottom: solid 4px rgb(3, 17, 42);
 }
 
 .secondOptionstab{
