@@ -91,6 +91,13 @@ margin-left: 1vw;
     flex-direction: row;
 }
 
+.navListThree{
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    font-size: 20px;
+}
+
 
 .bodysection{
     height: 69vh;

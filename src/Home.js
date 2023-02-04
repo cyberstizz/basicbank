@@ -35,7 +35,7 @@ const Home = () => {
 
         <div class="secondOptionstab"></div>
 
-        <ul>
+        <ul class="navListThree">
         <li>Checking</li>
         <li>Savings & CD's</li>
         <li>Credit Cards</li>
