@@ -8,7 +8,7 @@ const Home = () => {
         <div id="fullpage">
         <div class="top_section">
         <br/>
-       <span class="logo"> Basic bank</span>
+       <span class="logo"> Basic Bank</span>
 
         <ul class="navlist">
             <li>about us</li>
@@ -18,45 +18,10 @@ const Home = () => {
         <button id="signin">Sign in</button>
 
         </div>
-        {/* below this section will be replaced tomorrow */}
-        <div class="hero">
-         Basic bank
-        </div>
-
-        <div id="midsection">
-        Accounts
-
-        <div id="midsectionmenus">
-        <div class="accountsection">
-        <ul class ="uselessList">
-        <li><button>chicken</button></li>
-        <li><button>cupcakes</button></li>
-        <li><button>pears</button></li>
-        <li><button>mangos</button></li>
-        <li><button>carraot cake</button></li>
-
-
-        </ul>
+        <div class="moreOptions">
 
         </div>
-        <div class="infosection">
-        Welcome to basic bank, the only place where 
-        everyone can see your account and there is no privacy!!!
-
-
-        </div>
-        </div>
-        <div class="buttonssection">
-
-        <button>Sign in</button>
-        <button>Create account</button>
-
-        </div>
-        
-        </div>
-
-
-        <div class="footer"></div>
+       
 
 
 

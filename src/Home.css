@@ -4,12 +4,16 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
-body{
-    background-color: cornflowerblue;
+
+
+li{
+margin-left: 1vw;
+width: 3vw;
+border: solid 2px green;
 }
 
 .top_section{
-    height: 14vh;
+    height: 13vh;
     width: 100vw;
     background-color: rgb(7, 61, 160);
     border: solid 2px;
@@ -20,10 +24,11 @@ body{
 }
 
 .logo{
-    font-size: xx-large;
+    font-size: 60px;
     font-weight: bold;
-    width: 20vw;
+    width: 30vw;
     color: rgb(169, 155, 155);
+    margin-left: 1vw;
 }
 
 .navlist{
@@ -31,7 +36,7 @@ body{
     flex-direction: row;
     list-style: none;
     margin-top: 5vh;
-    margin-left: 55vw;
+    margin-left: 35vw;
 }
 
 #signin{
@@ -39,8 +44,16 @@ body{
     margin-top: 2.4vh;
     border-radius: 20px;
     width: 100px;
-    margin-left: 5vw;
+    margin-left: 16vw;
     color: blue;
+    font-weight: bold;
+    letter-spacing: 1.5;
+}
+
+.moreOptions{
+    width: 100vw;
+    background-color: silver;
+    height: 8vh;
 }
 
 .hero{
