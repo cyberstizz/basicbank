@@ -158,6 +158,7 @@ margin-left: 1vw;
 
 .password{
     display: flex;
+    height: 6vh;
     width: 20vw;
     margin-top: 2vh;
     margin-left: 3.5vw;
@@ -166,13 +167,14 @@ margin-left: 1vw;
 
 .submitButton{
     background-color: rgb(3, 17, 42);
-    margin-left: 7vw;
+    margin-left: 3.5vw;
     margin-top: 4vh;
     border-color: white;
+    border: 1px solid;
     color: whitesmoke;
     font-size: larger;
     height: 40px;
-    width: 160px;
+    width: 20vw;
 }
 
 .blendSection{
