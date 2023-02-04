@@ -80,7 +80,7 @@ margin-left: 1vw;
 .navListTwo li:hover{
     margin-right: 3vw;
     height: 7vh;
-    border-bottom: solid 4px rgb(3, 17, 42);
+    border-bottom: solid 4px rgb(30, 245, 30);
 }
 
 .secondOptionstab{
@@ -122,7 +122,8 @@ margin-left: 1vw;
     background-blend-mode: screen;
     opacity: 90%;
     border-top: solid 1px orange;
-
+    display: flex;
+    flex-direction: row;
 }
 
 .siginInSection{
