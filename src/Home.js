@@ -33,7 +33,7 @@ const Home = () => {
         
         </div>
 
-        <div class="secondOptionstab"></div>
+        <div class="secondOptionstab">
 
         <ul class="navListThree">
         <li>Checking</li>
@@ -49,6 +49,8 @@ const Home = () => {
 
 
         </ul>
+
+        </div>
 
         <div class="bodysection">
 
