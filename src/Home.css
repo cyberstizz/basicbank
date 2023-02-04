@@ -141,7 +141,13 @@ margin-left: 1vw;
     width: 25vw;
 }
 
-/* border: solid 2px greenyellow; */
+.username{
+    display: flex;
+    width: 200px;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    background-color: rgb(240, 240, 240);
+}
 
 .blendSection{
     height: 68vh;
