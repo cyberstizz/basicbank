@@ -18,8 +18,7 @@ const Home = () => {
         <button id="signin">Sign in</button>
 
         </div>
-        {/* //*eveything after this section will be replaced*// */}
-
+        {/* below this section will be replaced tomorrow */}
         <div class="hero">
          Basic bank
         </div>
