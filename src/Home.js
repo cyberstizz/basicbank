@@ -13,6 +13,8 @@ const Home = () => {
         <ul class="navlist">
             <li>About</li>
             <li>Help</li>
+            <li>Locations</li>
+
 
         </ul>
         <button id="signin">Sign in</button>

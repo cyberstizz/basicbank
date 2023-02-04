@@ -7,29 +7,29 @@
 
 
 li{
-margin-left: 1vw;
-width: 80px;
+margin-left: .5vw;
+width: 75px;
 height: 30px;
 font-size: large;
 color: cornsilk;
 }
 
 .top_section{
-    height: 13vh;
+    height: 12vh;
     width: 100vw;
-    background-color: rgb(7, 61, 160);
+    background-color: rgb(3, 17, 42);
     border: solid 2px;
     display: flex;
     flex-direction: row;
-    border-bottom-color: #f2ce94;
+    border-bottom-color: white;
     border-bottom-width: 4px;
 }
 
 .logo{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     width: 30vw;
-    color: rgb(169, 155, 155);
+    color: rgb(0, 255, 0);
     margin-left: 1vw;
 }
 
@@ -37,32 +37,35 @@ color: cornsilk;
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-left: 35vw;
 }
 
 #signin{
     height: 44px;
-    margin-top: 2.4vh;
+    margin-top: 2vh;
     border-radius: 20px;
     width: 100px;
-    margin-left: 6vw;
-    color: blue;
-    font-weight: bold;
-    letter-spacing: 1.5;
+    margin-left: 3vw;
+    color: rgb(3, 17, 42);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: large;
+    background-color: rgb(38, 246, 38);
 }
 
 .moreOptions{
     width: 100vw;
-    background-color: silver;
-    height: 8vh;
+    background-color: rgb(240, 240, 240);
+    height: 10vh;
 }
 
 .secondOptionstab{
     width: 100vw;
-    background-color: white;
-    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    height: 9vh;
 }
+
 
 .bodysection{
     height: 69vh;
@@ -73,7 +76,8 @@ color: cornsilk;
     background-color: #f2ce94;
     background-blend-mode: var(#ba8c43);
     background-image: radial-gradient();
-    background-blend-mode: calc();
+    background-blend-mode: screen;
+    opacity: 90%;
 }
 
 .hero{
