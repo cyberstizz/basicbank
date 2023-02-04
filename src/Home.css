@@ -20,6 +20,7 @@ body{
 .navlist{
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 
 .hero{
