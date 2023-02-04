@@ -59,6 +59,10 @@ const Home = () => {
             </div>
 
             {/* some words for the slogan section*/}
+            <div class="sloganSection">
+
+
+            </div>
 
 
             {/*a block for the blend section */}
