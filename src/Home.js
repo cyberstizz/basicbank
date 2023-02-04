@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div class="moreOptions">
         <ul class="navListTwo">
-        <li>Personal</li>
+       <span class="hoverStart"> <li>Personal</li></span> 
         <li>Investment & Wealth Management</li>
         <li>Commercial</li>
         <li>Loans</li>

@@ -72,6 +72,12 @@ margin-left: 1vw;
     font-size: 20px;
 }
 
+.hoverStart{
+    margin-right: 3vw;
+    height: 7vh;
+    border-bottom: solid 4px rgb(30, 245, 30);
+}
+
 .navListTwo li{
     margin-right: 3vw;
     height: 7vh;
