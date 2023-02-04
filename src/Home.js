@@ -71,6 +71,10 @@ const Home = () => {
 
             </div>
 
+            <div class="blendSectionTwo">
+
+            </div>
+
             {/*words for the filler section */}
 
             <div class="fillerSection">

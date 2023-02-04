@@ -137,5 +137,22 @@ margin-left: 1vw;
 .sloganSection{
     height: 60vh;
     width: 25vw;
-    border: solid 2px gold;
+}
+
+/* border: solid 2px greenyellow; */
+
+.blendSection{
+    height: 68vh;
+    width: 3vw;
+    background-color: greenyellow;
+    opacity: 20%;
+    border-right-color: aliceblue;
+}
+
+.blendSectionTwo{
+    height: 68vh;
+    width: 3vw;
+    background-color: greenyellow;
+    opacity: 20%;
+    border-right-color: aliceblue;
 }
