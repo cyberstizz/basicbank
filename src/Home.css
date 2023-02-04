@@ -60,6 +60,12 @@ border: solid 2px green;
     width: 100vw;
     background-color: white;
     height: 8vh;
+    border: solid 2px green;
+}
+
+.bodysection{
+    border: solid 2px green;
+    height: 70vh
 }
 
 .hero{

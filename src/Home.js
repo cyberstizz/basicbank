@@ -23,6 +23,10 @@ const Home = () => {
         </div>
 
         <div class="secondOptionstab"></div>
+
+        <div class="bodysection">
+
+        </div>
        
 
 
