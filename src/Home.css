@@ -9,7 +9,7 @@ body{
 .top_section{
     height: 22vh;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: rgb(7, 61, 160);
     border: solid 2px;
     display: flex;
     flex-direction: row;
