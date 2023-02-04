@@ -164,6 +164,10 @@ margin-left: 1vw;
     background-color: rgb(240, 240, 240);
 }
 
+.submitButton{
+    background-color: rgb(30, 245, 30);
+}
+
 .blendSection{
     height: 68vh;
     width: 3vw;
