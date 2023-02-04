@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 body{
     background-color: cornflowerblue;
@@ -17,12 +19,19 @@ body{
     border-bottom-width: 4px;
 }
 
+.logo{
+    font-size: xx-large;
+    font-weight: bold;
+    width: 20vw;
+    color: rgb(169, 155, 155);
+}
+
 .navlist{
     display: flex;
     flex-direction: row;
     list-style: none;
     margin-top: 5vh;
-    margin-left: 65vw;
+    margin-left: 55vw;
 }
 
 #signin{
@@ -30,7 +39,7 @@ body{
     margin-top: 2.4vh;
     border-radius: 20px;
     width: 100px;
-    margin-left: 10vw;
+    margin-left: 5vw;
     color: blue;
 }
 

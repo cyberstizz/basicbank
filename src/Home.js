@@ -8,7 +8,7 @@ const Home = () => {
         <div id="fullpage">
         <div class="top_section">
         <br/>
-        Basic bank
+       <span class="logo"> Basic bank</span>
 
         <ul class="navlist">
             <li>about us</li>
