@@ -144,15 +144,14 @@ margin-left: 1vw;
 .blendSection{
     height: 68vh;
     width: 3vw;
-    background-color: greenyellow;
-    opacity: 20%;
-    border-right-color: aliceblue;
+    background-color: rgb(190, 255, 91);
+    opacity: 35%;    
+    border-right: 2 px solid rgb(239, 250, 239);
 }
 
 .blendSectionTwo{
     height: 68vh;
     width: 3vw;
-    background-color: greenyellow;
-    opacity: 20%;
-    border-right-color: aliceblue;
+    background-color: rgb(160, 255, 17);
+    opacity: 15%;
 }
