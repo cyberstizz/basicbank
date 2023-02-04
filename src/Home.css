@@ -65,7 +65,9 @@ border: solid 2px green;
 
 .bodysection{
     border: solid 2px green;
-    height: 70vh
+    height: 70vh;
+    background-image: url("../public/basicbankfamily.jpg");
+    background-repeat: no-repeat;
 }
 
 .hero{
