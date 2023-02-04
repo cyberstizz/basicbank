@@ -7,11 +7,9 @@
 
 
 li{
-margin-left: .5vw;
-width: 75px;
-height: 30px;
-font-size: large;
-color: cornsilk;
+list-style: none;
+flex-direction: row;
+margin-left: 1vw;
 }
 
 .top_section{
@@ -21,7 +19,7 @@ color: cornsilk;
     border: solid 2px;
     display: flex;
     flex-direction: row;
-    border-bottom-color: white;
+    border-bottom-color: brown;
     border-bottom-width: 4px;
 }
 
@@ -37,8 +35,12 @@ color: cornsilk;
     display: flex;
     flex-direction: row;
     list-style: none;
+    width: 75px;
+    height: 30px;
     margin-top: 4vh;
-    margin-left: 35vw;
+    margin-left: 30vw;
+    color: cornsilk;
+    font-size: large;
 }
 
 #signin{
@@ -46,7 +48,7 @@ color: cornsilk;
     margin-top: 2vh;
     border-radius: 20px;
     width: 100px;
-    margin-left: 3vw;
+    margin-left: 15vw;
     color: rgb(3, 17, 42);
     font-weight: 900;
     letter-spacing: 1px;
@@ -58,6 +60,20 @@ color: cornsilk;
     width: 100vw;
     background-color: rgb(240, 240, 240);
     height: 10vh;
+    display: flex;
+    flex-direction: row;
+    color: brown;
+}
+
+.navListTwo{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    font-size: 19px;
+}
+
+.navListTwo li{
+    margin-left: 4vw;
 }
 
 .secondOptionstab{

@@ -21,7 +21,16 @@ const Home = () => {
 
         </div>
         <div class="moreOptions">
+        <ul class="navListTwo">
+        <li>Personal</li>
+        <li>Investment & Wealth Management</li>
+        <li>Commercial</li>
+        <li>Loans</li>
+        <li>Small Business</li>
 
+
+        </ul>
+        
         </div>
 
         <div class="secondOptionstab"></div>
