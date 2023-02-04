@@ -58,6 +58,13 @@ const Home = () => {
 
             </div>
 
+            {/* some words for the slogan section
+
+
+            a block for the blend section
+
+            words for the filler section */}
+
         </div>
        
 
