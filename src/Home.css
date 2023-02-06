@@ -27,7 +27,7 @@ margin-left: 1vw;
     font-size: 50px;
     font-weight: bold;
     width: 30vw;
-    color: goldenrod;
+    color:rgb(139, 110, 35);
     margin-left: 3.5vw;
 }
 
@@ -75,7 +75,7 @@ margin-left: 1vw;
 .hoverStart{
     margin-right: 3vw;
     height: 7vh;
-    border-bottom: solid 4px rgb(30, 245, 30);
+    border-bottom: solid 4px goldenrod;
 }
 
 .navListTwo li{
@@ -86,7 +86,7 @@ margin-left: 1vw;
 .navListTwo li:hover{
     margin-right: 3vw;
     height: 7vh;
-    border-bottom: solid 4px rgb(30, 245, 30);
+    border-bottom: solid 4px goldenrod;
 }
 
 .secondOptionstab{
@@ -112,7 +112,7 @@ margin-left: 1vw;
 .navListThree li:hover{
     font-size: 18px;
     margin-right: 2vw;
-    color: rgb(30, 245, 30);
+    color: goldenrod;
 }
 
 
@@ -122,7 +122,7 @@ margin-left: 1vw;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    background-color: rgb(30, 245, 30);
+    background-color:rgb(139, 110, 35);
     background-blend-mode: var(#ba8c43);
     background-image: radial-gradient();
     background-blend-mode: screen;
