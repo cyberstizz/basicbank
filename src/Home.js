@@ -1,15 +1,32 @@
 import './Home.css';
+import { useState, useEffect } from 'react'
+
+    let mytest = ''
 
 
 const Home = () => {
-//const testCall = await fetch('http://localhost:8001');
+        const [accounts, setAccounts] = useState('')
+
+    useEffect(() => {
+        const mountCall = async () => {
+const testCall = await fetch('http://localhost:8000');
+
+
+        mytest = await testCall.text()
+
+console.log(mytest)
+setAccounts(mytest)
+        }
+
+    mountCall()
+
+    },[])
 
     return(
         <div id="fullpage">
         <div class="top_section">
         <br/>
-       <span class="logo"> Basic Bank</span>
-
+       <span class="logo"> Basic Bank {accounts}</span>
         <ul class="navlist">
             <li>About</li>
             <li>Help</li>
@@ -64,6 +81,7 @@ const Home = () => {
             </form>
 
 
+                {mytest}
 
 
 
