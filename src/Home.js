@@ -26,7 +26,7 @@ setAccounts(mytest)
         <div id="fullpage">
         <div class="top_section">
         <br/>
-       <span class="logo"> Basic Bank {accounts}</span>
+       <span class="logo"> Basic Bank</span>
         <ul class="navlist">
             <li>About</li>
             <li>Help</li>
