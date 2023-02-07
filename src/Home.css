@@ -176,18 +176,3 @@ margin-left: 1vw;
     height: 40px;
     width: 20vw;
 }
-
-.blendSection{
-    height: 68vh;
-    width: 3vw;
-    background-color: rgb(190, 255, 91);
-    opacity: 35%;    
-    border-right: 2 px solid rgb(239, 250, 239);
-}
-
-.blendSectionTwo{
-    height: 68vh;
-    width: 3vw;
-    background-color: rgb(160, 255, 17);
-    opacity: 15%;
-}
