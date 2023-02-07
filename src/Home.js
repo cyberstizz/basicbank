@@ -93,7 +93,7 @@ setAccounts(mytest)
             <div class="sloganSection">
             Building Smart 
             <br/>
-                  Wealth!
+                <span>Wealth!</span>
             <br/>
             For Generations!
             </div>
