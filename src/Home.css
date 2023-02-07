@@ -145,6 +145,7 @@ margin-left: 1vw;
 .sloganSection{
     height: 60vh;
     width: 25vw;
+    border: solid 2px orange;
 }
 
 .username{
