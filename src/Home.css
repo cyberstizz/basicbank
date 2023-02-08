@@ -192,10 +192,11 @@ margin-left: 1vw;
 .bottomslogantext{
     font-size: 25px;
     margin-left: 3vw;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .fillerSection{
-    background-color: green;
     height: 20vh;
     width: 20vw;
 }
