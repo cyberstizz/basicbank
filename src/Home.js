@@ -95,7 +95,9 @@ setAccounts(mytest)
             <br/>
                 <span class="wealth">On Us!</span>
             <br/>
-                    <span class="bottomslogantext">Open an eligible checking account with qualifying deposits</span>
+                    <span class="bottomslogantext">Open an eligible checking 
+                    <br/>
+                    account with qualifying deposits</span>
             </div>
 
 
