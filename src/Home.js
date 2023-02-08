@@ -91,7 +91,7 @@ setAccounts(mytest)
 
             {/* some words for the slogan section*/}
             <div class="sloganSection">
-            <span>Building Smart </span>
+            <span className='buildingsmart'>Building Smart </span>
             <br/>
                 <span class="wealth">Wealth!</span>
             <br/>
