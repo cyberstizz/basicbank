@@ -199,6 +199,10 @@ margin-left: 1vw;
 .learnmore{
     background-color: #ba8c43;
     width: 20vw;
+    height: 8vh;
+    border: solid 2px black;
+    border-radius: 25px;
+    margin-left: 2vw;
 }
 
 .fillerSection{
