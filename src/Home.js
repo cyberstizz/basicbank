@@ -95,7 +95,7 @@ setAccounts(mytest)
             <br/>
                 <span class="wealth">On Us!</span>
             <br/>
-                    <span>For Generations!</span>
+                    <span class="bottomslogantext">For Generations!</span>
             </div>
 
 
