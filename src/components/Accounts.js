@@ -4,23 +4,16 @@ import './Accounts.css'
 const Accounts = () => {
   return (
     <div className='fullAccountsPage'>
+    
+    
     <div className='topHeader'>
 
         <div className='logo'>
         Basic Bank
         </div>
-
-
         <div className='logout'>
         Logout
         </div>
-
-
-        
-
-
-
-
 
     </div>
 
@@ -33,12 +26,18 @@ const Accounts = () => {
 
         <div className='state'>State</div>
 
+    </div>
 
 
 
-</div>
 
+    <div className='bottomsection'>
 
+        <div></div>
+
+        <div></div>
+
+    </div>
 
     </div>
   )
