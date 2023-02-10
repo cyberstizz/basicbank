@@ -34,6 +34,7 @@
     font-size: 20px;
     height: 15vh;
     background-color: rgb(254, 248, 248);
+    border-bottom: solid rgb(3, 17, 42) 2px;
 }
 
 .name{
