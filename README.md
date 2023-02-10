@@ -32,7 +32,7 @@ Part 2 is coming tomorrow
 section coming soon stay tuned
 
 ### final thought
-#### this project is to be a no rough stuff type of deal, or put better a quick 2 hour max project.
+#### this project is simple but has a bit of unexpected nuance. Connecting to a Django backend is always fun.
 
 
 ### for more projects by CyberStizz visit: [Charleslambjr.com](https://www.charleslambjr.com/)
