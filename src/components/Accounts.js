@@ -3,6 +3,7 @@ import './Accounts.css'
 
 const Accounts = () => {
   return (
+    <div className='fullAccountsPage'>
     <div className='topHeader'>
 
         <div className='logo'>
@@ -28,9 +29,13 @@ const Accounts = () => {
 
         </div>
 
+
+
+
+
     </div>
 
-
+    </div>
   )
 }
 

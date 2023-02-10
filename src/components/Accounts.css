@@ -26,3 +26,11 @@
     color:rgb(139, 110, 35);
     margin-left: 60vw;
 }
+
+.infoSection{
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    font-size: 20px;
+    border: solid 2px green;
+}
