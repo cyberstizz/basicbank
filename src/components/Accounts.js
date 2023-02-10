@@ -3,19 +3,10 @@
 
 const Accounts = () => {
   return (
-    <Router>
-
-      <Routes>
-         <Route path="/" element={<Home/>} />
-         <Route  path="/accounts" element={<Home/>} />
-         <Route  path="/create" element={<Home/>} />
-
-      </Routes>
+    <div>just a test</div>
 
 
-
-    </Router>
   )
 }
 
-export default App;
+export default Accounts;
