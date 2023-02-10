@@ -75,7 +75,7 @@ setAccounts(mytest)
             <form type="submit">
             <input type="text" class="username" placeholder="username"></input>
             <input type="text" class="password" placeholder="password"></input>
-            <input type="submit" class="submitButton"></input>
+            <input type="submit" class="submitButton" value="Login"></input>
             <div class="fillersection">
 
 

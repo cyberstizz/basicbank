@@ -171,7 +171,9 @@ margin-left: 1vw;
     width: 20vw;
     margin-top: 2vh;
     margin-left: 3.5vw;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(3, 17, 42);
+    border: none;
+    border-bottom: solid 2px #ba8c43;
 }
 
 .submitButton{
@@ -202,11 +204,12 @@ margin-left: 1vw;
     background-color:rgb(139, 110, 35);
     width: 20vw;
     height: 8vh;
-    border: solid 2px black;
+    border: solid 1.5px black;
     border-radius: 25px;
     margin-left: 2vw;
     color: black;
-    font-size: large;
+    font-size: 23px;
+    font-weight: 800;
 }
 
 .fillerSection{
