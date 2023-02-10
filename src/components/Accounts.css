@@ -65,5 +65,10 @@
 }
 
 .bottomsection{
-    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 20px;
+    height: 50vh;
+    background-color: rgb(3, 17, 42);
 }
