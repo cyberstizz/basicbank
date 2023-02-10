@@ -10,7 +10,7 @@ const Accounts = () => {
         </div>
 
 
-        <div>
+        <div className='logout'>
 
 
         </div>
