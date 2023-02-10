@@ -5,7 +5,7 @@ const Accounts = () => {
   return (
     <div className='topHeader'>
 
-        <div>
+        <div className='logo'>
 
         </div>
 
