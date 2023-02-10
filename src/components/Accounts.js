@@ -33,9 +33,13 @@ const Accounts = () => {
 
     <div className='bottomsection'>
 
-        <div></div>
+        <div className='coverimage'>
 
-        <div></div>
+            <div></div>
+
+            <div></div>
+
+        </div>
 
     </div>
 
