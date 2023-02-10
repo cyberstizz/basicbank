@@ -31,7 +31,7 @@ const Accounts = () => {
 
         <div className='accountnumber'>Account Number</div>
 
-        <div>State</div>
+        <div className='state'>State</div>
 
 
 
