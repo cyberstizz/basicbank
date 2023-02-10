@@ -3,7 +3,19 @@ import './Accounts.css'
 
 const Accounts = () => {
   return (
-    <div>just a test</div>
+    <div className='topHeader'>
+
+        <div>
+
+        </div>
+
+
+        <div>
+
+
+        </div>
+
+    </div>
 
 
   )
