@@ -10,3 +10,11 @@
     border-bottom-color: brown;
     border-bottom-width: 4px;
 }
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    width: 30vw;
+    color:rgb(139, 110, 35);
+    margin-left: 3.5vw;
+}

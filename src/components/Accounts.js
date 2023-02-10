@@ -6,7 +6,7 @@ const Accounts = () => {
     <div className='topHeader'>
 
         <div className='logo'>
-
+        Basic Bank
         </div>
 
 
