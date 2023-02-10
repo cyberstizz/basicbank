@@ -10,9 +10,8 @@ const Accounts = () => {
         </div>
 
 
-        <div className='logout'>
-
-
+        <div className='logo'>
+        Logout
         </div>
 
     </div>
