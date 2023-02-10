@@ -1,4 +1,4 @@
-
+import './Accounts.css'
 
 
 const Accounts = () => {
