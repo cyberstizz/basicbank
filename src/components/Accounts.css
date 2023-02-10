@@ -1,0 +1,12 @@
+
+
+.topHeader{
+    height: 12vh;
+    width: 100vw;
+    background-color: rgb(3, 17, 42);
+    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-color: brown;
+    border-bottom-width: 4px;
+}
