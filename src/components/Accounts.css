@@ -37,5 +37,8 @@
 }
 
 .name{
-    
+    font-size: 50px;
+    font-weight: bold;
+    width: 30vw;
+    color:rgb(139, 110, 35);
 }
