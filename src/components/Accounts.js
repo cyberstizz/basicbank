@@ -16,24 +16,29 @@ const Accounts = () => {
         </div>
 
 
-        <div className='infoSection'>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-
-
-
-        </div>
+        
 
 
 
 
 
     </div>
+
+
+    <div className='infoSection'>
+
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+
+
+
+
+</div>
+
+
 
     </div>
   )
