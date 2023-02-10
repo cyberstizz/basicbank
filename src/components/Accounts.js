@@ -14,6 +14,20 @@ const Accounts = () => {
         Logout
         </div>
 
+
+        <div className='infoSection'>
+
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+
+
+
+
+        </div>
+
     </div>
 
 
