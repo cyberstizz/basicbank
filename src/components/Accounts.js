@@ -27,11 +27,11 @@ const Accounts = () => {
 
     <div className='infoSection'>
 
-        <div></div>
+        <div className='name'>Name</div>
 
-        <div></div>
+        <div className='accountnumber'>Account Number</div>
 
-        <div></div>
+        <div>State</div>
 
 
 
