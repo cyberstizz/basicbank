@@ -12,6 +12,9 @@
 * Thats it!
 
 
+
+![Screenshot](./public/Basic%20Bank%20ER%20diagram.png)
+
 ### Synopsis
 bored I felt it completely appropriate to orchestrate an impulse marriage between our dearly beloved React and Django.
 
