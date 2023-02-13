@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 
 
 
-const AccountCard = () => {
+const AccountCard = (AccountType) => {
   return (
     <div className='cardbackground'>
       
