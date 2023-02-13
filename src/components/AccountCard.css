@@ -20,7 +20,10 @@
 }
 
 .accountNumber{
-    margin-left: 12vw;
+    margin-left: 10vw;
     margin-top: 1vh;
+}
 
+.goldLine{
+border-bottom: solid 4px goldenrod;
 }

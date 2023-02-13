@@ -10,7 +10,7 @@ const AccountCard = (accountType, accountNumber, accountBalance) => {
       
       <div className='accountType'>Checking</div>
 
-      <div className='accountNumber'>47839</div>
+      <div className='accountNumber'>Account #47839</div>
       <div className='goldLine'>goldline</div>
       <div className='accountBalance'>$12738</div>
       <div className='accountButtons'>buttons</div>
