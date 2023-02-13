@@ -64,7 +64,7 @@ useEffect(() => {
 
         <div className='name'>Name</div>
 
-        <div className='accountnumber'>Account Number</div>
+        <div className='accountnumber'>Accounts</div>
 
         <div className='state'>State</div>
 
@@ -77,7 +77,7 @@ useEffect(() => {
 
         <div className='coverimage'>
 
-        <AccountCard />
+        <AccountCard accountType={data.accounttype} accountNumber={data.accountnumber} accountBalance={data.accountbalance} />
 
             <div></div>
 
