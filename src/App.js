@@ -2,7 +2,7 @@ import './App.css';
 import Home from './Home';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import Accounts from './components/Accounts';
-
+import Create from './components/Create';
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
 
       <Routes>
          <Route path="/" element={<Home/>} />
-         <Route  path="/accounts/:username/:password" element={<Accounts />} />
-         <Route  path="/signup" element={<Create />} />
-         <Route  path="/create/:username/:password/:account_number/:account_balance/:account_type" element={<Home/>} />
+         <Route path="/accounts" element={<Accounts />} />
+         <Route path="/create" element={<Create />} />
+         <Route path="/signup/:username/:password/:account_number/:account_balance/:account_type" element={<Home/>} />
 
       </Routes>
 

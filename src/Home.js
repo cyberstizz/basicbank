@@ -1,11 +1,16 @@
 import './Home.css';
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
     let mytest = ''
 
 
 const Home = () => {
         const [accounts, setAccounts] = useState('')
+        const [searchField, setSearchField] = useState('')
+        const [name, setName] = useState('')
+
+
 
     useEffect(() => {
         const mountCall = async () => {
@@ -21,6 +26,17 @@ setAccounts(mytest)
     mountCall()
 
     },[])
+
+
+    const handleSearchText = async (event) =>{
+        event.preventDefault();
+        const searchQuery = event.target.value;
+        console.log(searchQuery)
+        setSearchField(searchQuery);
+        setName(event.target.username)
+      };
+
+
 
     return(
         <div id="fullpage">
@@ -72,10 +88,10 @@ setAccounts(mytest)
         <div class="bodysection">
 
             <div class="siginInSection">
-            <form type="submit">
-            <input type="text" class="username" placeholder="username"></input>
-            <input type="text" class="password" placeholder="password"></input>
-            <input type="submit" class="submitButton" value="Login"></input>
+            <form type="submit" onChange={handleSearchText}>
+            <input type="text" class="username" placeholder="username" name='username'></input>
+            <input type="text" class="password" placeholder="password" name='password'></input>
+           <Link to={`accounts/${name}`}><input type="submit" class="submitButton" value="Login"></input></Link>
             <div class="fillersection">
 
 
