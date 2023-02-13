@@ -31,7 +31,11 @@ margin-top: 1.5vh;
 }
 
 .accountBalance{
- margin-left: 8vw;
+ margin-left: 6vw;
  font-family: 'Dosis', sans-serif;
  font-size: 85px;
+}
+
+.accountButtons{
+    
 }
