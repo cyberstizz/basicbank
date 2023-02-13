@@ -2,9 +2,11 @@
 
 
 .cardbackground{
-    background-color: rgb(3, 17, 42);
+    background-color: white;
+    border: 2px solid orange;
     height: 50vh;
     width: 40vw;
     display: flex;
     flex-direction: column;
+    z-index: -5;
 }
