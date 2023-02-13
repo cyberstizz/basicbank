@@ -55,5 +55,8 @@ border: solid 3px rgb(3, 17, 42);
 }
 
 .withdrawButton{
-
+    width: 20vw;
+    height: 8vh;
+    background-color: white;
+    border: solid 3px rgb(3, 17, 42);
 }
