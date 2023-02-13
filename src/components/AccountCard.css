@@ -36,6 +36,10 @@ margin-top: 1.5vh;
  font-size: 85px;
 }
 
+.dollarsign{
+color: rgb(139, 110, 35)
+}
+
 .accountButtons{
     margin-top: 4vh;
     margin-left: 10vw;

@@ -12,7 +12,7 @@ const AccountCard = (accountType, accountNumber, accountBalance) => {
 
       <div className='accountNumber'>Account #47839</div>
       <div className='goldLine'></div>
-      <div className='accountBalance'>$12738</div>
+      <div className='accountBalance'><span className='dollarsign'>$</span>12738</div>
       <div className='accountButtons'>
       
       <button>Deposit</button>
