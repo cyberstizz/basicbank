@@ -8,11 +8,11 @@ const AccountCard = (accountType, accountNumber, accountBalance) => {
   return (
     <div className='cardbackground'>
       
-      <div className='accountType'>Checking</div>
+      <div className='accountType'>{accountType}</div>
 
-      <div className='accountNumber'>Account #47839</div>
+      <div className='accountNumber'>{accountNumber}</div>
       <div className='goldLine'></div>
-      <div className='accountBalance'><span className='dollarsign'>$</span>12,738</div>
+      <div className='accountBalance'><span className='dollarsign'>$</span>{accountBalance}</div>
       <div className='accountButtons'>
       
       <button className='depositButton'>Deposit</button>
