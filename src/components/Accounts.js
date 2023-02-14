@@ -31,6 +31,10 @@ useEffect(() => {
                          const theResponse = await getAccountObject.text()
 
                           setData(theResponse)
+                            console.log(Object.entries(JSON.parse(theResponse)).map(acc => {
+                              return acc[1].accounttype
+                            }))
+                          
 
   }
 
@@ -70,14 +74,16 @@ useEffect(() => {
 
     </div>
 
-    {data}
+    {Object.entries(JSON.parse(theResponse)).map(acc => {
+                              return acc[1].accounttype
+                            })}
 
 
     <div className='bottomsection'>
 
         <div className='coverimage'>
-
-        <AccountCard accountType={data.accounttype} accountNumber={data.accountnumber} accountBalance={data.accountbalance} />
+        
+        {/* <AccountCard accountType={data.accounttype} accountNumber={data.accountnumber} accountBalance={data.accountbalance} /> */}
 
             <div></div>
 
