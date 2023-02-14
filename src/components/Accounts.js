@@ -12,7 +12,7 @@ const Accounts = () => {
 
 // console.log(name)
 
-const [data, setData] = useState('')
+const [data, setData] = useState([])
 
 //function for setting data 
 
@@ -29,7 +29,9 @@ useEffect(() => {
     
                          const theResponse = await getAccountObject.text()
 
-                          setData(Object.entries(JSON.parse(theResponse)))
+                          setData(Object.entries(JSON.parse(theResponse)).map(acc => acc))
+
+                          console.log(Object.entries(JSON.parse(theResponse)).map(acc => acc))
 
                             
                           
@@ -71,11 +73,7 @@ useEffect(() => {
         <div className='state'>State</div>
 
     </div>
-    {/* /* {data.map(item => item[1].accountbalance)} */}
-     {/* {data.map(acc => {
-      return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
-                            
-                            })} */}
+  
 {/*                             
 {Object.entries(JSON.parse(data)).map(acc => {
                               return acc[1].accounttype

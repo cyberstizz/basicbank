@@ -83,3 +83,13 @@
     background-size: cover;
     opacity: 90%;
 }
+
+.accountscontainer{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    margin-left: .5vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
