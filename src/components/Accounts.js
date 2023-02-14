@@ -8,14 +8,13 @@ const Accounts = () => {
 
 
 //step one is to grab the parameters
-const { name } = useParams();
+// const { name } = useParams();
 
-console.log(name)
+// console.log(name)
 
 const [data, setData] = useState('')
 
 //function for setting data 
-
 
 
 
@@ -30,10 +29,9 @@ useEffect(() => {
     
                          const theResponse = await getAccountObject.text()
 
-                          setData(theResponse)
-                            console.log(Object.entries(JSON.parse(theResponse)).map(acc => {
-                              return acc[1].accounttype
-                            }))
+                          setData(Object.entries(JSON.parse(theResponse)))
+
+                            
                           
 
   }
@@ -41,7 +39,7 @@ useEffect(() => {
 
   databaseCall()
 
-}, [])
+}, [data])
 
 
 
@@ -73,19 +71,36 @@ useEffect(() => {
         <div className='state'>State</div>
 
     </div>
+    {/* /* {data.map(item => item[1].accountbalance)} */}
+     {/* {data.map(acc => {
+      return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
+                            
+                            })} */}
+{/*                             
+{Object.entries(JSON.parse(data)).map(acc => {
+                              return acc[1].accounttype
+                            })} */}
+{/* 
+{data.map(acc => {
+      return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
+                            
+                            })} */}
 
-    {Object.entries(JSON.parse(theResponse)).map(acc => {
-                              return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
-                            })}
+
 
 
     <div className='bottomsection'>
+    
 
+  
         <div className='coverimage'>
         
-        {/* <AccountCard accountType={data.accounttype} accountNumber={data.accountnumber} accountBalance={data.accountbalance} /> */}
-
-            <div></div>
+        {data.map(acc => {
+      return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
+                            
+                            })}
+          
+ 
 
         </div>
 

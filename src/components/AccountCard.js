@@ -4,15 +4,15 @@ import { useParams } from 'react-router';
 
 
 
-const AccountCard = (accountType, accountNumber, accountBalance) => {
+const AccountCard = (props) => {
   return (
     <div className='cardbackground'>
       
-      <div className='accountType'>{accountType}</div>
+      <div className='accountType'>{props.accountType}</div>
 
-      <div className='accountNumber'>{accountNumber}</div>
+      <div className='accountNumber'>Account #{props.accountNumber}</div>
       <div className='goldLine'></div>
-      <div className='accountBalance'><span className='dollarsign'>$</span>{accountBalance}</div>
+      <div className='accountBalance'><span className='dollarsign'>$</span>{props.accountBalance}</div>
       <div className='accountButtons'>
       
       <button className='depositButton'>Deposit</button>
