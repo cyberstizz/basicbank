@@ -75,7 +75,7 @@ useEffect(() => {
     </div>
 
     {Object.entries(JSON.parse(theResponse)).map(acc => {
-                              return acc[1].accounttype
+                              return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
                             })}
 
 
