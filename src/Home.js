@@ -9,23 +9,29 @@ const Home = () => {
         const [accounts, setAccounts] = useState('')
         const [searchField, setSearchField] = useState('')
         const [name, setName] = useState('')
+        const [data, setData] = useState('')
+
 
 
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch('http://localhost:8000');
-
+const testCall = await fetch('http://localhost:8000/login/tima/tima@tima', {
+    method: "GET"
+});
+                                                // login/<str:username>/<str:password>
 
         mytest = await testCall.text()
 
-console.log(mytest)
+        setName(mytest)
+
+console.log(testCall)
 setAccounts(mytest)
         }
 
     mountCall()
 
-    },[])
+    })
 
 
     const handleSearchText = async (event) =>{
@@ -40,10 +46,10 @@ setAccounts(mytest)
 
     return(
         <div id="fullpage">
-        <div class="top_section">
+        <div className="top_section">
         <br/>
-       <span class="logo"> Basic Bank</span>
-        <ul class="navlist">
+       <span className="logo"> Basic Bank</span>
+        <ul className="navlist">
             <li>About</li>
             <li>Help</li>
             <li>Locations</li>
@@ -53,9 +59,9 @@ setAccounts(mytest)
         <button id="signin">Sign in</button>
 
         </div>
-        <div class="moreOptions">
-        <ul class="navListTwo">
-       <span class="hoverStart"> <li>Personal</li></span> 
+        <div className="moreOptions">
+        <ul className="navListTwo">
+       <span className="hoverStart"> <li>Personal</li></span> 
         <li>Investment & Wealth Management</li>
         <li>Commercial</li>
         <li>Loans</li>
@@ -66,9 +72,9 @@ setAccounts(mytest)
         
         </div>
 
-        <div class="secondOptionstab">
+        <div className="secondOptionstab">
 
-        <ul class="navListThree">
+        <ul className="navListThree">
         <li>Checking</li>
         <li>Savings & CD's</li>
         <li>Credit Cards</li>
@@ -85,14 +91,14 @@ setAccounts(mytest)
 
         </div>
 
-        <div class="bodysection">
+        <div className="bodysection">
 
-            <div class="siginInSection">
+            <div className="siginInSection">
             <form type="submit" onChange={handleSearchText}>
-            <input type="text" class="username" placeholder="username" name='username'></input>
-            <input type="text" class="password" placeholder="password" name='password'></input>
-           <Link to={`accounts/${name}`}><input type="submit" class="submitButton" value="Login"></input></Link>
-            <div class="fillersection">
+            <input type="text" className="username" placeholder="username" name='username'></input>
+            <input type="text" className="password" placeholder="password" name='password'></input>
+           <Link to={`accounts/${name}`}><input type="submit" className="submitButton" value="Login"></input></Link>
+            <div className="fillersection">
 
 
             </div>
@@ -106,16 +112,16 @@ setAccounts(mytest)
             </div>
 
             {/* some words for the slogan section*/}
-            <div class="sloganSection">
+            <div className="sloganSection">
             <span className='buildingsmart'>$200 Checking </span>
             <br/>
-                <span class="wealth">On Us!</span>
+                <span className="wealth">On Us!</span>
             <br/>
-                    <span class="bottomslogantext">Open an eligible checking 
+                    <span className="bottomslogantext">Open an eligible checking 
                     <br/>
                     account with qualifying deposits</span>
 
-                    <button class="learnmore">Learn More</button>
+                    <button className="learnmore">Learn More</button>
             </div>
 
 
@@ -123,7 +129,7 @@ setAccounts(mytest)
 
             {/*words for the filler section */}
 
-            <div class="fillerSection">
+            <div className="fillerSection">
 
             </div>
 
