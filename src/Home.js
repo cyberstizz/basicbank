@@ -16,9 +16,7 @@ const Home = () => {
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch('http://localhost:8000/login/tima/tima@tima', {
-    method: "GET"
-});
+const testCall = await fetch('http://localhost:8000/login');
                                                 // login/<str:username>/<str:password>
 
         mytest = await testCall.text()
@@ -31,7 +29,7 @@ setAccounts(mytest)
 
     mountCall()
 
-    })
+    }, [])
 
 
     const handleSearchText = async (event) =>{

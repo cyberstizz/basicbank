@@ -15,23 +15,14 @@ const Accounts = () => {
 const [data, setData] = useState([])
 
 //function for setting data 
-
-
-
-
-
-//now write the useEffect hook which will call the database with the parameter
 useEffect(() => {
-
-
-  const databaseCall = async () => {
+const databaseCall = async () => {
   const getAccountObject = await fetch(`http://localhost:8000/accounts`)
     
-                         const theResponse = await getAccountObject.text()
 
-                          setData(Object.entries(JSON.parse(theResponse)).map(acc => acc))
+                          setData(Object.entries(JSON.parse(await getAccountObject.text())).map(acc => acc))
 
-                          console.log(Object.entries(JSON.parse(theResponse)).map(acc => acc))
+                        
 
                             
                           
@@ -39,9 +30,14 @@ useEffect(() => {
   }
 
 
+
+//now write the useEffect hook which will call the database with the parameter
+
   databaseCall()
 
-}, [data])
+}
+, [])
+
 
 
 
@@ -92,9 +88,9 @@ useEffect(() => {
 
   
         <div className='coverimage'>
-        
-        {data.map(acc => {
-      return <AccountCard accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
+        {console.log(data)}
+        {data.map((acc, index) => {
+      return <AccountCard key={index} accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
                             
                             })}
           
