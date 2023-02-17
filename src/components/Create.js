@@ -29,6 +29,11 @@ const Create = () => {
         <div className="createbottomsection">
 
         <div className='createNewAccountHeader'>Create new account</div>
+        
+        
+        <div></div>
+
+        <div></div>
 
 
 
