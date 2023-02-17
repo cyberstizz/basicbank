@@ -33,7 +33,7 @@ const Create = () => {
         
         <form className="createNewAccountForm">
             <div className="createUserSection">
-        <input></input>
+        <input placeholder="firstname"></input>
         <input></input>
         <input></input>
         </div>
