@@ -147,4 +147,6 @@ margin-top: 2vh; */
     border: solid 2px green;
     display: flex;
     flex-direction: row; 
+    align-items: center;
+    margin: auto;
 }
