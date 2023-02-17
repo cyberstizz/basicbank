@@ -22,7 +22,7 @@ const Create = () => {
 
 
 
-        <div className='state'>Create new account</div>
+        <div className='createNewAccountHeader'>Create new account</div>
 
     </div>
 

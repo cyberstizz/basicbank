@@ -119,8 +119,10 @@
 .createNewAccountHeader{
 font-size: 30px;
 font-weight: 500;
-width: 20vw;
+width: 80vw;
 color:rgb(3, 17, 42);
-margin-left: 10vw;
-margin-top: 2vh;
+text-align: center;
+margin: auto;
+/* margin-left: 10vw;
+margin-top: 2vh; */
 }
