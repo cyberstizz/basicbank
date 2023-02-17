@@ -37,7 +37,7 @@ const Create = () => {
         <input></input>
         <input></input>
         <input></input>
-        <input></input>
+        <input type="submit"></input>
 
 
 
