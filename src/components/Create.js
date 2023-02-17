@@ -32,11 +32,16 @@ const Create = () => {
         
         
         <form className="createNewAccountForm">
+            <div className="createUserSection">
         <input></input>
         <input></input>
         <input></input>
+        </div>
+        <div className="createAccountSection">
+
         <input></input>
         <input></input>
+        </div>
         <input type="submit"></input>
 
 

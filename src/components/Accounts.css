@@ -126,3 +126,9 @@ border: solid 3px silver;
 /* margin-left: 10vw;
 margin-top: 2vh; */
 }
+
+
+.createNewAccountForm{
+    display: flex;
+    flex-direction: column;
+}
