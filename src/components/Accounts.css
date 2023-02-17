@@ -154,6 +154,7 @@ margin-top: 2vh; */
 }
 
 .openAccountButton{
+    height: 12vh;
     width: 20vw;
     align-self: center;
 }
