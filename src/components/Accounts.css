@@ -106,3 +106,10 @@
     filter: grayscale(100%);
 
 }
+
+.createPageFormArea{
+    width: 85vw;
+    height: 60vh;
+    border: solid 3px orange;
+    margin-left: 5vw;
+}

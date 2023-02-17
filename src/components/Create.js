@@ -22,12 +22,18 @@ const Create = () => {
 
 
 
-        <div className='state' style={{textAlign:'center', marginLeft: '20vw'}}>Create new account</div>
+        <div className='state' style={{alignSelf:'center'}}>Create new account</div>
 
     </div>
 
 
         <div className="createbottomsection">
+
+        <div className="createPageFormArea">
+
+
+        </div>
+
 
 
         </div>
