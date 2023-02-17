@@ -103,4 +103,6 @@
     background-image: url('../../public/handshake.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
+
 }
