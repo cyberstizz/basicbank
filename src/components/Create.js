@@ -27,7 +27,7 @@ const Create = () => {
     </div>
 
 
-        <div className="bottomsection" style={{backgroundImage: 'url(../../public/handshake.jpeg'}}>
+        <div className="createbottomsection">
 
 
         </div>

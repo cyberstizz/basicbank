@@ -93,3 +93,12 @@
     margin-right: 1vw;
     margin-top: 2vh;
 }
+
+.createbottomsection{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 20px;
+    height: 78vh;
+    background-image: url('../../public/handshake.jpeg');
+}
