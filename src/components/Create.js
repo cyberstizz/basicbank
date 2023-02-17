@@ -22,7 +22,7 @@ const Create = () => {
 
 
 
-        <div className='state' style={{alignSelf:'center'}}>Create new account</div>
+        <div className='state'>Create new account</div>
 
     </div>
 
