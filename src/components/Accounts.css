@@ -102,4 +102,5 @@
     height: 78vh;
     background-image: url('../../public/handshake.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
