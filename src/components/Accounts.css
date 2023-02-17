@@ -110,6 +110,7 @@
 .createPageFormArea{
     width: 85vw;
     height: 60vh;
-    border: solid 3px orange;
-    margin-left: 10vw;
+    border: solid 3px silver;
+    margin-left: 8vw;
+    margin-top: 9.5vh;
 }
