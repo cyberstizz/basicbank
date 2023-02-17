@@ -135,12 +135,16 @@ margin-top: 2vh; */
 
 .createUserSection{
     width: 90vw;
-    height: 35vh;
+    height: 25vh;
     border: solid 2px green;
     display: flex;
     flex-direction: row;
 }
 
 .createAccountSection{
-    
+    width: 90vw;
+    height: 25vh;
+    border: solid 2px green;
+    display: flex;
+    flex-direction: row; 
 }
