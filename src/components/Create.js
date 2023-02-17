@@ -43,7 +43,7 @@ const Create = () => {
         <input placeholder="account type"></input>
         <input placeholder="account balance"></input>
         </div>
-        <input type="submit" value={"Open Account"}></input>
+        <input type="submit" value={"Open Account"} className="openAccountButton"></input>
 
 
 

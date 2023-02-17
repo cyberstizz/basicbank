@@ -152,3 +152,7 @@ margin-top: 2vh; */
     align-items: center;
     margin: auto;
 }
+
+.openAccountButton{
+    width: 20vw;
+}
