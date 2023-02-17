@@ -36,14 +36,14 @@ const Create = () => {
         <input placeholder="firstname"></input>
         <input placeholder="lastname"></input>
         <input placeholder="email"></input>
-        
+
         </div>
         <div className="createAccountSection">
 
         <input placeholder="account type"></input>
         <input placeholder="account balance"></input>
         </div>
-        <input type="submit"></input>
+        <input type="submit" value={"Open Account"}></input>
 
 
 
