@@ -31,7 +31,7 @@ const Create = () => {
         <div className='createNewAccountHeader'>Create new account</div>
         
         
-        <form>
+        <form className="createNewAccountForm">
         <input></input>
         <input></input>
         <input></input>
