@@ -16,14 +16,17 @@ const Home = () => {
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch('http://localhost:8000/login');
+const testCall = await fetch('http://localhost:8000', {
+        username: "tima",
+        password: "tima@tima"
+});
                                                 // login/<str:username>/<str:password>
 
         mytest = await testCall.text()
 
         setName(mytest)
 
-console.log(testCall)
+ console.log(mytest)
 setAccounts(mytest)
         }
 
