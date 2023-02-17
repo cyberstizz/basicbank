@@ -22,17 +22,14 @@ const Create = () => {
 
 
 
-        <div className='createNewAccountHeader'>Create new account</div>
 
     </div>
 
 
         <div className="createbottomsection">
 
-        <div className="createPageFormArea">
+        <div className='createNewAccountHeader'>Create new account</div>
 
-
-        </div>
 
 
 
