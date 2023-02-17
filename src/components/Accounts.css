@@ -132,3 +132,9 @@ margin-top: 2vh; */
     display: flex;
     flex-direction: column;
 }
+
+.createUserSection{
+    width: 90vw;
+    height: 35vh;
+    border: solid 2px green;
+}
