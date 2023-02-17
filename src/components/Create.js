@@ -20,7 +20,7 @@ const Create = () => {
 
     <div className='infoSection'>
 
-
+    <div className='createNewAccountHeader'>Create new account</div>
 
 
     </div>
@@ -28,19 +28,18 @@ const Create = () => {
 
         <div className="createbottomsection">
 
-        <div className='createNewAccountHeader'>Create new account</div>
         
         
         <form className="createNewAccountForm">
             <div className="createUserSection">
         <input placeholder="firstname"></input>
-        <input></input>
-        <input></input>
+        <input placeholder="lastname"></input>
+        <input placeholder="email"></input>
         </div>
         <div className="createAccountSection">
 
-        <input></input>
-        <input></input>
+        <input placeholder="account type"></input>
+        <input placeholder="account balance"></input>
         </div>
         <input type="submit"></input>
 
