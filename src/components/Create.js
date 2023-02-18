@@ -32,8 +32,9 @@ const Create = () => {
         
         <form className="createNewAccountForm">
             <div className="createUserSection">
+                
+                
                 <div className="firstNameBlock">
-        
         <input placeholder="First Name" type="text" className="firstname"></input>
         <div className="decorativeLine"></div>
         <p className="nameText">Name</p>
@@ -54,13 +55,28 @@ const Create = () => {
         <div className="decorativeLine"></div>
         <p className="emailText">Email</p>
                 </div>
+       
+       
         </div>
+
+
+
+
         <div className="createAccountSection">
 
+
+        <div className="lastNameBlock">
         <input placeholder="account type"></input>
+        <div className="decorativeLine"></div>
+        <p className="emailText">Account type</p>
+
+        </div>
+
+
+
         <input placeholder="account balance"></input>
         </div>
-        <input type="submit" value={"Open Account"} className="openAccountButton"></input>
+        <input type="submit" value="Open Account" className="openAccountButton"></input>
 
 
 
