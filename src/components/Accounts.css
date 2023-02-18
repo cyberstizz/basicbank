@@ -165,11 +165,19 @@ margin-top: 2vh; */
     width:30vw;
 }
 
+.firstname{
+    height: 10vh;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 1vh;
+}
+
 .decorativeLine{
     width: 20vw;
     background-color: rgb(139, 110, 35);
     height: 1.5vh;
     margin: auto;
+    margin-top: 1vh;
 }
 
 .nameText{
