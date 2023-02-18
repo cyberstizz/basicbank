@@ -66,15 +66,21 @@ const Create = () => {
 
 
         <div className="lastNameBlock">
-        <input placeholder="account type" type="text" className="email"></input>
+        <input placeholder="Account Type" type="text" className="email"></input>
         <div className="decorativeLine"></div>
         <p className="emailText">Account type</p>
 
         </div>
 
 
+        <div className="lastNameBlock">
 
-        <input placeholder="account balance"></input>
+        <input placeholder="Deposit" type="text" className="email"></input>
+        <div className="decorativeLine"></div>
+        <p className="emailText">Deposit</p>
+        </div>
+
+
         </div>
         <input type="submit" value="Open Account" className="openAccountButton"></input>
 
