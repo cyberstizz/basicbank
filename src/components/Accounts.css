@@ -145,8 +145,7 @@ margin-top: 2vh; */
     height: 30vh;
     display: flex;
     flex-direction: row; 
-    align-items: center;
-    margin: auto;
+align-content: center;    margin: auto;
     border: solid 2px gold;
 }
 
@@ -191,21 +190,7 @@ margin-top: 2vh; */
     margin-left: 5vw;
 }
 
-.accountType{
-    height: 10vh;
-    width: 20vw;
-    background-color: rgba(255, 255, 255, 0.814);
-    font-size: larger; 
-    margin-left: 5vw;
-}
 
-.deposit{
-    height: 10vh;
-    width: 20vw;
-    background-color: rgba(255, 255, 255, 0.814);
-    font-size: larger; 
-    margin-left: 5vw;
-}
 
 .decorativeLine{
     width: 20vw;
@@ -273,16 +258,33 @@ margin-top: 2vh; */
 .accountTypeBlock{
     height: 25vh;
     width: 30vw;
-    margin-left: 2vw;
     font-size: larger;
     border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+}
 
+
+
+.accounttype{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 4.5vw;
 }
 
 .depositBlock{
     height: 25vh;
     width: 30vw;
-    margin-left: 2vw;
     font-size: larger;
     border: solid 2px green;
+}
+
+.deposit{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 5vw;
 }
