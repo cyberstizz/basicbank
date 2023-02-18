@@ -162,7 +162,8 @@ margin-top: 2vh; */
 }
 
 .decorativeLine{
-    width: 25vw;
+    width: 20vw;
     background-color: rgb(139, 110, 35);
     height: 1.5vh;
+    align-self: center;
 }
