@@ -98,7 +98,7 @@ setAccounts(mytest)
             <form type="submit" onChange={handleSearchText}>
             <input type="text" className="username" placeholder="username" name='username'></input>
             <input type="text" className="password" placeholder="password" name='password'></input>
-           <Link to={`accounts/${name}`}><input type="submit" className="submitButton" value="Login"></input></Link>
+           <Link to={"/accounts"}><input type="submit" className="submitButton" value="Test Me"></input></Link>
             <div className="fillersection">
 
 

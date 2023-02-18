@@ -2,6 +2,7 @@ import './Accounts.css'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import AccountCard from './AccountCard';
+import { Link } from 'react-router-dom';
 
 
 const Accounts = () => {
@@ -50,9 +51,9 @@ const databaseCall = async () => {
     
     <div className='topHeader'>
 
-        <div className='logo'>
+      <Link to={"/"} style={{textDecoration:"none"}}><div className='logo'>
         Basic Bank
-        </div>
+        </div></Link>
         <div className='logout'>
         Logout
         </div>
