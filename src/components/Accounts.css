@@ -159,6 +159,19 @@ margin-left: 40vw;
     background-color: rgba(255, 255, 255, 0.702);
     margin-top: -4vh;
     margin-left: 38.5vw;
+    border: solid 1.5px rgb(139, 110, 35);
+}
+
+.openAccountButton:hover{
+    height: 12vh;
+    width: 20vw;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(139, 110, 35);
+    margin-top: -4vh;
+    margin-left: 38.5vw;
+    border: solid 1.5px white;
 }
 
 .firstNameBlock{
