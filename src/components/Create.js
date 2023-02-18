@@ -34,7 +34,7 @@ const Create = () => {
             <div className="createUserSection">
                 <div className="firstNameBlock">
         
-        <input placeholder="firstname" type={"text"} className="firstname"></input>
+        <input placeholder="First Name" type={"text"} className="firstname"></input>
         <div className="decorativeLine"></div>
         <p className="nameText">Name</p>
 
