@@ -42,16 +42,18 @@ const Create = () => {
 
 
                 <div className="lastNameBlock">
-        <input placeholder="lastname" type="text" className="firstname"></input>
+        <input placeholder="Last Name" type="text" className="lastname"></input>
         <div className="decorativeLine"></div>
         <p className="nameText">Last Name</p>
                 </div>
 
 
 
-
-        <input placeholder="email"></input>
-
+                <div className="emailBlock">
+        <input placeholder="email" type="text" className="email"></input>
+        <div className="decorativeLine"></div>
+        <p className="nameText">Email</p>
+                </div>
         </div>
         <div className="createAccountSection">
 
