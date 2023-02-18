@@ -67,7 +67,10 @@ const Create = () => {
 
         <div className="accountTypeBlock">
 
-        <input placeholder="Account Type" type="text" className="accounttype"></input>
+        <select placeholder="Account Type" type="text" className="accounttype">
+            <option>Checking</option>
+            <option>Savings</option>
+        </select>
         <div className="decorativeLine"></div>
         <p className="accountTypeText">Account type</p>
 
