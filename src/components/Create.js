@@ -1,4 +1,4 @@
-
+ import {Link} from 'react-router-dom'
 
 const Create = () => {
     return(
@@ -8,9 +8,9 @@ const Create = () => {
     
     <div className='topHeader'>
 
-        <div className='logo'>
+    <Link to={"/"} style={{textDecoration:"none"}}>  <div className='logo'>
         Basic Bank
-        </div>
+        </div></Link>
         <div className='logout'>
         Back
         </div>
