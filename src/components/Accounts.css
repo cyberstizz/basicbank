@@ -142,11 +142,12 @@ margin-top: 2vh; */
 
 .createAccountSection{
     width: 90vw;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: row; 
     align-items: center;
     margin: auto;
+    border: solid 2px gold;
 }
 
 .openAccountButton{
