@@ -191,6 +191,22 @@ margin-top: 2vh; */
     margin-left: 5vw;
 }
 
+.accountType{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 5vw;
+}
+
+.deposit{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 5vw;
+}
+
 .decorativeLine{
     width: 20vw;
     background-color: rgb(139, 110, 35);
