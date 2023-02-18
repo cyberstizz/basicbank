@@ -145,8 +145,8 @@ margin-top: 2vh; */
     height: 30vh;
     display: flex;
     flex-direction: row; 
-align-content: center;    margin: auto;
-    border: solid 2px gold;
+    align-content: center;
+    margin-top: 3vh;
 }
 
 .openAccountButton{
@@ -259,9 +259,9 @@ align-content: center;    margin: auto;
     height: 25vh;
     width: 30vw;
     font-size: larger;
-    border: solid 2px green;
     display: flex;
     flex-direction: column;
+    margin-left: 10vw;
 }
 
 
