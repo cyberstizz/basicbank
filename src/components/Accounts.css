@@ -171,3 +171,9 @@ margin-top: 2vh; */
     height: 1.5vh;
     margin: auto;
 }
+
+.nameText{
+    margin: auto; 
+    width: 15vw;
+    border: solid 2px orange;
+}
