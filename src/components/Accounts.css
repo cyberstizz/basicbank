@@ -210,11 +210,22 @@ margin-top: 2vh; */
 }
 
 .lastNameText{
-
+    margin: auto; 
+    width: 15vw;
+    height: 10vh;
+    color: rgb(139, 110, 35);
+    font-size: 45px;
+    font-weight: 900;
 }
 
 .emailText{
-    
+    margin: auto; 
+    width: 15vw;
+    height: 10vh;
+    color: rgb(100, 100, 100);
+    font-size: 45px;
+    font-weight: 900;
+    margin-left: 5vw;
 }
 
 .lastNameBlock{

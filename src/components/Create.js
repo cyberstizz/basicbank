@@ -44,7 +44,7 @@ const Create = () => {
                 <div className="lastNameBlock">
         <input placeholder="Last Name" type="text" className="lastname"></input>
         <div className="decorativeLine"></div>
-        <p className="nameText">Last Name</p>
+        <p className="lastNameText">Last Name</p>
                 </div>
 
 
@@ -52,7 +52,7 @@ const Create = () => {
                 <div className="emailBlock">
         <input placeholder="email" type="text" className="email"></input>
         <div className="decorativeLine"></div>
-        <p className="nameText">Email</p>
+        <p className="emailText">Email</p>
                 </div>
         </div>
         <div className="createAccountSection">
