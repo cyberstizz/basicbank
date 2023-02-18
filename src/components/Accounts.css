@@ -203,7 +203,7 @@ margin-top: 2vh; */
     margin: auto; 
     width: 15vw;
     height: 10vh;
-    color: rgb(139, 110, 35);
+    color: rgb(209, 152, 7);
     font-size: 45px;
     font-weight: 900;
     margin-left: 5vw;
@@ -211,9 +211,10 @@ margin-top: 2vh; */
 
 .lastNameText{
     margin: auto; 
+    margin-right: 5vw;
     width: 15vw;
     height: 10vh;
-    color: rgb(139, 110, 35);
+    color:rgb(3, 17, 42);
     font-size: 45px;
     font-weight: 900;
 }
