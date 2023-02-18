@@ -148,6 +148,7 @@ margin-top: 2vh; */
     flex-direction: row; 
     align-content: center;
     margin-top: 3vh;
+    margin-left: 3vw;
 }
 
 .openAccountButton{
