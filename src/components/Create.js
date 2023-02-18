@@ -36,7 +36,7 @@ const Create = () => {
         
         <input placeholder="firstname"></input>
         <div className="decorativeLine"></div>
-
+        <p className="nameText">First Name</p>
 
                 </div>
 
