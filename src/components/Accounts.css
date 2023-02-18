@@ -161,9 +161,13 @@ margin-top: 2vh; */
     background-color: rgba(255, 255, 255, 0.609);
 }
 
+.firstNameBlock{
+    width:30vw;
+}
+
 .decorativeLine{
     width: 20vw;
     background-color: rgb(139, 110, 35);
     height: 1.5vh;
-    align-self: center;
+    margin: auto;
 }
