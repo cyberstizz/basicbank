@@ -274,14 +274,15 @@ margin-top: 2vh; */
     height: 10vh;
     width: 20vw;
     margin-left: 2vw;
-    margin-top: 1vh;
     font-size: larger;
+    border: solid 2px green;
+
 }
 
 .depositBlock{
-    height: 10vh;
+    height: 25vh;
     width: 20vw;
     margin-left: 2vw;
-    margin-top: 1vh;
     font-size: larger;
+    border: solid 2px green;
 }
