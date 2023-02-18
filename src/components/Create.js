@@ -68,7 +68,7 @@ const Create = () => {
         <div className="lastNameBlock">
         <input placeholder="Account Type" type="text" className="email"></input>
         <div className="decorativeLine"></div>
-        <p className="emailText">Account type</p>
+        <p className="accountTypeText">Account type</p>
 
         </div>
 
