@@ -42,7 +42,7 @@ const Create = () => {
 
 
                 <div className="lastNameBlock">
-        <input placeholder="lastname"></input>
+        <input placeholder="lastname" type="text" className="firstname"></input>
         <div className="decorativeLine"></div>
         <p className="nameText">Last Name</p>
                 </div>
