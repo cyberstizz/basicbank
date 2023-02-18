@@ -272,7 +272,7 @@ margin-top: 2vh; */
 
 .accountTypeBlock{
     height: 25vh;
-    width: 20vw;
+    width: 30vw;
     margin-left: 2vw;
     font-size: larger;
     border: solid 2px green;
@@ -281,7 +281,7 @@ margin-top: 2vh; */
 
 .depositBlock{
     height: 25vh;
-    width: 20vw;
+    width: 30vw;
     margin-left: 2vw;
     font-size: larger;
     border: solid 2px green;

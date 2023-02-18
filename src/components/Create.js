@@ -66,8 +66,8 @@ const Create = () => {
 
 
         <div className="accountTypeBlock">
-            
-        <input placeholder="Account Type" type="text" className="accounType"></input>
+
+        <input placeholder="Account Type" type="text" className="accountType"></input>
         <div className="decorativeLine"></div>
         <p className="accountTypeText">Account type</p>
 
