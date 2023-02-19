@@ -38,8 +38,9 @@ useEffect(() => {
 
 const databaseCall = async () => {
   const getAccountObject = await fetch(`http://localhost:8000/accounts`, {
-    "method": "POST",
-    "body": {
+    headers: {'X-CSRFToken': await getCsrfToken()},
+    method: "POST",
+    body: {
       "name": "chicken"
     }
   })
