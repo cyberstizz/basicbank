@@ -9,6 +9,7 @@ const Accounts = () => {
 
   const API_HOST = 'http://localhost:8000';
 
+  let _csrfToken = null;
 
 
 
