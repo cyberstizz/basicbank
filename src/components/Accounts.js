@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 
 const Accounts = () => {
 
+  const API_HOST = 'http://localhost:8000';
+
+
+
+
+
 
 //step one is to grab the parameters
 // const { name } = useParams();
@@ -17,8 +23,14 @@ const [data, setData] = useState([])
 
 //function for setting data 
 useEffect(() => {
+
 const databaseCall = async () => {
-  const getAccountObject = await fetch(`http://localhost:8000/accounts`)
+  const getAccountObject = await fetch(`http://localhost:8000/accounts`, {
+    "method": "POST",
+    "body": {
+      "name": "chicken"
+    }
+  })
     
 
                           setData(Object.entries(JSON.parse(await getAccountObject.text())).map(acc => acc))
