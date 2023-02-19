@@ -21,6 +21,20 @@ const Accounts = () => {
     }
     return _csrfToken;
   }
+
+  async function testRequest(method) {
+    const response = await fetch(`${API_HOST}/ping/`, {
+      method: method,
+      headers: (
+        method === 'POST'
+          ? {'X-CSRFToken': await getCsrfToken()}
+          : {}
+      ),
+      credentials: 'include',
+    });
+    const data = await response.json();
+    return data.result;
+  }
   
 
 
@@ -33,13 +47,38 @@ const Accounts = () => {
 
 const [data, setData] = useState([])
 
+const [testGet, getTestGet] = useState('KO')
+
+const [testPost, getTestPost] = useState('KO')
+
+
+
+
 //function for setting data 
 useEffect(() => {
 
+
+  
 const databaseCall = async () => {
+
+  getTestGet(await testRequest('GET'))
+
+  getTestPost(await testRequest('POST'))
+
+  console.log(`this is testGet it worked if it is ok ${testGet}`)
+
+  console.log(`this is testPost it worked if it is ok ${testPost}`)
+
+
+
   const getAccountObject = await fetch(`http://localhost:8000/accounts`, {
-    headers: {'X-CSRFToken': await getCsrfToken()},
-    method: "POST",
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'X-CSRFToken': await getCsrfToken()
+    },
+    credentials: 'include',
+    method: 'POST',
     body: {
       "name": "chicken"
     }
@@ -77,7 +116,7 @@ const databaseCall = async () => {
     <div className='topHeader'>
 
       <Link to={"/"} style={{textDecoration:"none"}}><div className='logo'>
-        Basic Bank
+      {testPost} Basic Bank 
         </div></Link>
         <div className='logout'>
         Logout
