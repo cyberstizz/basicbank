@@ -22,38 +22,10 @@ const Accounts = () => {
     return _csrfToken;
   }
 
-  async function testRequest(method) {
-    const response = await fetch(`${API_HOST}/ping/`, {
-      method: method,
-      headers: (
-        method === 'POST'
-          ? {'X-CSRFToken': await getCsrfToken()}
-          : {}
-      ),
-      credentials: 'include',
-    });
-    const data = await response.json();
-    return data.result;
-  }
-  
-
-
-
-
-//step one is to grab the parameters
-// const { name } = useParams();
-
-// console.log(name)
 
 const [data, setData] = useState([])
 
-const [testGet, getTestGet] = useState('KO')
-
-const [testPost, getTestPost] = useState('KO')
-
-const [usernames, setUserNames] = useState([])
-
-const [usersname, setUsersName] = useState('')
+const [usersname, setUsersName] = useState()
 
 
 
@@ -65,16 +37,6 @@ useEffect(() => {
   
 const databaseCall = async () => {
 
-  getTestGet(await testRequest('GET'))
-
-  getTestPost(await testRequest('POST'))
-
-  console.log(`this is testGet it worked if it is ok ${testGet}`)
-
-  console.log(`this is testPost it worked if it is ok ${testPost}`)
-
-
-
   const getAccountObject = await fetch(`http://localhost:8000/accounts`, {
     headers: {
       'Accept': 'application/json',
@@ -82,28 +44,17 @@ const databaseCall = async () => {
       'X-CSRFToken': await getCsrfToken()
     },
     credentials: 'include',
-    method: 'POST',
-    body: {
-      "name": "chicken"
-    }
   })
     
+  const results = await getAccountObject.json()
+  console.log(results.data.accounts)
 
-   setData(Object.entries(JSON.parse(await getAccountObject.text())).map(acc => acc)) 
-   
-   setUserNames(data[2])
-
-   setUsersName(await usernames[1])
-
-  //  await setUsersName(data[0])  
+   setData(results.data.accounts.map(acc => acc))
+   setUsersName(results.data.username)
                      
                           
 
   }
-
-
-
-//now write the useEffect hook which will call the database with the parameter
 
   databaseCall()
 
@@ -162,12 +113,12 @@ const databaseCall = async () => {
   
         <div className='coverimage'>
           {console.log(data)}
-        {data.map((acc, index) => {
+         {data.map((acc, index) => {
 
-          if(acc[1].accounttype){
-      return <AccountCard key={index} accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
+          if(acc.accounttype){
+      return <AccountCard key={index} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
         }     
-                            })}
+                            })} 
           
  
 
