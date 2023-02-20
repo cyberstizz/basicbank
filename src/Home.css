@@ -4,8 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mynerve&display=swap');
 li{
 list-style: none;
 flex-direction: row;
@@ -218,6 +217,21 @@ margin-left: 1vw;
     color: black;
     font-size: 23px;
     font-weight: 800;
+}
+
+
+.firstFillerSection{
+    height: 18vh;
+    width: 20vw;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    margin-left: 18vw;
+    margin-top: 42vh;
+    color: white;
+    font-size: 30px;
+    font-family: 'Mynerve', cursive;
+    padding-top: 1.5vh;
+    padding-left: 2vw;
 }
 
 .fillerSection{

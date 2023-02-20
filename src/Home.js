@@ -129,6 +129,13 @@ setAccounts(mytest)
           
 
             {/*words for the filler section */}
+            <div className='firstFillerSection'>
+            Keep it simple
+            <br />
+            keep it Basic!
+            </div>
+
+
 
             <div className="fillerSection">
             Secure your future
