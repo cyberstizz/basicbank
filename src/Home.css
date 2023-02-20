@@ -162,7 +162,11 @@ margin-left: 1vw;
     margin-left: 3.5vw;
     background-color: rgb(3, 17, 42);
     border: none;
-    border-bottom: solid 2px #ba8c43;
+    border-bottom: solid 2px white;
+    color: rgb(255, 222, 222);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
 }
 
 .password{
@@ -173,7 +177,11 @@ margin-left: 1vw;
     margin-left: 3.5vw;
     background-color: rgb(3, 17, 42);
     border: none;
-    border-bottom: solid 2px #ba8c43;
+    border-bottom: solid 2px white;
+    color: rgb(255, 222, 222);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
 }
 
 .submitButton{
@@ -213,6 +221,14 @@ margin-left: 1vw;
 }
 
 .fillerSection{
-    height: 20vh;
+    height: 18vh;
     width: 20vw;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    margin-left: 18vw;
+    margin-top: 42vh;
+    color: white;
+    font-size: 30px;
+    padding-top: 1.5vh;
+    padding-left: 2vw;
 }

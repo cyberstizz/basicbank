@@ -57,7 +57,7 @@ setAccounts(mytest)
 
 
         </ul>
-        <button id="signin">Sign up</button>
+       <Link to={"/create"}><button id="signin">Sign up</button></Link>
 
         </div>
         <div className="moreOptions">
@@ -97,14 +97,14 @@ setAccounts(mytest)
             <div className="siginInSection">
             <form type="submit" onChange={handleSearchText}>
             <input type="text" className="username" placeholder="username" name='username'></input>
-            <input type="text" className="password" placeholder="password" name='password'></input>
-           <Link to={"/accounts"}><input type="submit" className="submitButton" value="Test Me"></input></Link>
+            <input type="password" className="password" placeholder="password" name='password'></input>
+            <input type="submit" className="submitButton" value="Sign In"></input>
             <div className="fillersection">
-
 
             </div>
             <div></div>
             </form>
+            <Link to={"/accounts"}><input type="submit" className="submitButton" value="Test Me"></input></Link>
 
 
 
@@ -131,7 +131,9 @@ setAccounts(mytest)
             {/*words for the filler section */}
 
             <div className="fillerSection">
-
+            Secure your future
+            <br />
+            With One Click!
             </div>
 
         </div>
