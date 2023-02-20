@@ -51,6 +51,8 @@ const [testGet, getTestGet] = useState('KO')
 
 const [testPost, getTestPost] = useState('KO')
 
+const [usersname, setUsersName] = useState('')
+
 
 
 
@@ -85,11 +87,10 @@ const databaseCall = async () => {
   })
     
 
-                          setData(Object.entries(JSON.parse(await getAccountObject.text())).map(acc => acc))
+   setData(Object.entries(JSON.parse(await getAccountObject.text())).map(acc => acc))         
 
-                        
-
-                            
+   await setUsersName(data)  
+                     
                           
 
   }
@@ -99,6 +100,10 @@ const databaseCall = async () => {
 //now write the useEffect hook which will call the database with the parameter
 
   databaseCall()
+
+  setUsersName(data)  
+  console.log(usersname)    
+
 
 }
 , [])
@@ -116,7 +121,7 @@ const databaseCall = async () => {
     <div className='topHeader'>
 
       <Link to={"/"} style={{textDecoration:"none"}}><div className='logo'>
-      {testPost} Basic Bank 
+      Basic Bank 
         </div></Link>
         <div className='logout'>
         Logout
@@ -127,7 +132,7 @@ const databaseCall = async () => {
 
     <div className='infoSection'>
 
-        <div className='name'>Name</div>
+        <div className='name'>{usersname}</div>
 
         <div className='accountnumber'>Accounts</div>
 
@@ -153,7 +158,7 @@ const databaseCall = async () => {
 
   
         <div className='coverimage'>
-        {console.log(data)}
+          {console.log(data[1])}
         {data.map((acc, index) => {
       return <AccountCard key={index} accountType={acc[1].accounttype} accountNumber={acc[1].accountnumber} accountBalance={acc[1].accountbalance} />
                             
