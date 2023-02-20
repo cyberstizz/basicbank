@@ -57,7 +57,7 @@ setAccounts(mytest)
 
 
         </ul>
-        <button id="signin">Sign in</button>
+        <button id="signin">Sign up</button>
 
         </div>
         <div className="moreOptions">
