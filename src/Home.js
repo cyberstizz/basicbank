@@ -129,18 +129,31 @@ setAccounts(mytest)
           
 
             {/*words for the filler section */}
-            <div className='firstFillerSection'>
+            {/* <div className='firstFillerSection'>
             Keep it simple
             <br />
             keep it Basic!
-            </div>
+            </div> */}
 
 
 
             <div className="fillerSection">
+
+
+                <div className='firstFillerSection'>
+            Keep it simple
+            <br />
+            keep it <span className='basic'>Basic</span>
+            </div>
+
+            <div className='secondFillerSection'>
+               
             Secure your future
             <br />
             With One Click!
+
+                </div>
+
             </div>
 
         </div>

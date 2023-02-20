@@ -11,9 +11,12 @@ const Create = () => {
     <Link to={"/"} style={{textDecoration:"none"}}>  <div className='logo'>
         Basic Bank
         </div></Link>
-        <div className='logout'>
+
+        <Link to={"/"} style={{textDecoration:"none"}}><div className='logout'>
         Back
         </div>
+        </Link>
+
 
     </div>
 

@@ -220,29 +220,46 @@ margin-left: 1vw;
 }
 
 
+.fillerSection{
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    width: 46vw;
+    color: white;
+    font-size: 30px;
+    padding-top: 1.5vh;
+    padding-left: 2vw;
+}
+
+
 .firstFillerSection{
     height: 18vh;
-    width: 20vw;
-    border-top: solid 3px white;
-    border-bottom: solid 3px white;
-    margin-left: 18vw;
-    margin-top: 42vh;
-    color: white;
+    width: 18vw;
+    margin-top: 1vh;
+    color: rgb(3, 17, 42);
     font-size: 30px;
     font-family: 'Mynerve', cursive;
     padding-top: 1.5vh;
     padding-left: 2vw;
 }
 
-.fillerSection{
+.secondFillerSection{
+    display: flex;
+    flex-direction: column;
     height: 18vh;
     width: 20vw;
     border-top: solid 3px white;
     border-bottom: solid 3px white;
     margin-left: 18vw;
-    margin-top: 42vh;
+    margin-top: 20vh;
     color: white;
     font-size: 30px;
     padding-top: 1.5vh;
     padding-left: 2vw;
+}
+
+.basic{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(153, 115, 19);
 }
