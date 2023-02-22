@@ -64,6 +64,22 @@ const databaseCall = async () => {
 
 
 
+const handleLogout = async () => {
+  const logout = await fetch('http://localhost:8000/logout', {
+    method: "POST",
+  headers: {
+    'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'X-CSRFToken': await getCsrfToken()
+  },
+  credentials: 'include',
+
+  })
+
+  console.log(logout)
+}
+
+
 
 
 
@@ -77,7 +93,7 @@ const databaseCall = async () => {
       <Link to={"/"} style={{textDecoration:"none"}}><div className='logo'>
       Basic Bank 
         </div></Link>
-        <div className='logout'>
+        <div className='logout' onClick={handleLogout}>
         Logout
         </div>
 
