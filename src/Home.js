@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
         const [accounts, setAccounts] = useState('')
         const [searchField, setSearchField] = useState('')
-        const [name, setName] = useState('')
+        const [userName, setName] = useState('')
+        const [password, setPassword] = useState('')
         const [data, setData] = useState('')
 
 
@@ -16,10 +17,7 @@ const Home = () => {
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch('http://localhost:8000', {
-        username: "tima",
-        password: "tima@tima"
-});
+const testCall = await fetch('http://localhost:8000');
                                                 // login/<str:username>/<str:password>
 
         mytest = await testCall.text()
@@ -35,12 +33,71 @@ setAccounts(mytest)
     }, [])
 
 
+    const API_HOST = 'http://localhost:8000';
+
+    let _csrfToken = null;
+  
+    const getCsrfToken = async () => {
+      if (_csrfToken === null) {
+        const response = await fetch(`${API_HOST}/csrf/`, {
+          credentials: 'include',
+        });
+        const data = await response.json();
+        _csrfToken = data.csrfToken;
+      }
+      return _csrfToken;
+    }
+
+
+
+
+    const handleLogin = async (event) => {
+        event.preventDefault()
+        const loginCall = await fetch('http://localhost:8000/login', {
+            method: "POST",
+             headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRFToken': await getCsrfToken()
+              },
+              credentials: 'include',
+              body: JSON.stringify({
+              username: 'stizz',
+              password: 'theBeast'
+              })
+        })
+    }
+
+
+
+
+
+  
+
+
+
+
+    const handleLogout = async (event) => {
+        event.preventDefault()
+        const logoutCall = await fetch('http://localhost:8000/logout', {
+            method: "POST",
+             headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRFToken': await getCsrfToken()
+              },
+              credentials: 'include',
+        })
+    }
+
+
     const handleSearchText = async (event) =>{
         event.preventDefault();
         const searchQuery = event.target.value;
         console.log(searchQuery)
         setSearchField(searchQuery);
         setName(event.target.username)
+        setPassword(event.target.password)
       };
 
 
@@ -95,10 +152,10 @@ setAccounts(mytest)
         <div className="bodysection">
 
             <div className="siginInSection">
-            <form type="submit" onChange={handleSearchText}>
+            <form type="submit" onChange={handleSearchText} onSubmit={handleLogin}>
             <input type="text" className="username" placeholder="username" name='username'></input>
             <input type="password" className="password" placeholder="password" name='password'></input>
-            <input type="submit" className="submitButton" value="Sign In"></input>
+            <input type="submit" className="submitButton" value="Sign In" onClick={handleLogin}></input>
             <div className="fillersection">
 
             </div>
