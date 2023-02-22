@@ -20,12 +20,11 @@ const Home = () => {
 const testCall = await fetch('http://localhost:8000');
                                                 // login/<str:username>/<str:password>
 
-        mytest = await testCall.text()
+        let fullCall = await testCall.text()
 
-        setName(mytest)
 
- console.log(mytest)
-setAccounts(mytest)
+ console.log(fullCall)
+setAccounts(fullCall)
         }
 
     mountCall()
@@ -62,8 +61,8 @@ setAccounts(mytest)
               },
               credentials: 'include',
               body: JSON.stringify({
-              username: 'stizz',
-              password: 'theBeast'
+              username: userName,
+              password: password
               })
         })
     }
@@ -91,14 +90,22 @@ setAccounts(mytest)
     }
 
 
-    const handleSearchText = async (event) =>{
+    const handleUsernameText = async (event) =>{
         event.preventDefault();
         const searchQuery = event.target.value;
         console.log(searchQuery)
-        setSearchField(searchQuery);
-        setName(event.target.username)
-        setPassword(event.target.password)
+        // setSearchField(searchQuery);
+        setName(searchQuery)
       };
+
+      const handlePasswordText = async (event) =>{
+        event.preventDefault();
+        const searchQuery = event.target.value;
+        console.log(searchQuery)
+        // setting the password
+        setPassword(searchQuery)
+      };
+
 
 
 
@@ -152,9 +159,9 @@ setAccounts(mytest)
         <div className="bodysection">
 
             <div className="siginInSection">
-            <form type="submit" onChange={handleSearchText} onSubmit={handleLogin}>
-            <input type="text" className="username" placeholder="username" name='username'></input>
-            <input type="password" className="password" placeholder="password" name='password'></input>
+            <form type="submit" onSubmit={handleLogin}>
+            <input type="text"  onChange={handleUsernameText} className="username" placeholder="username" name='username'></input>
+            <input type="password" onChange={handlePasswordText} className="password" placeholder="password" name='password'></input>
             <input type="submit" className="submitButton" value="Sign In" onClick={handleLogin}></input>
             <div className="fillersection">
 
