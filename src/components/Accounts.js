@@ -70,8 +70,19 @@ const Accounts = () => {
 
   const startDeposit = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+    //open modal by setting the display to the deposit value of
+    //the display array which is 0
+    let transactionSpace = document.getElementById('displayField');
+
+    let selectedComponent = displayArray[0];
+
+    transactionSpace.innerHTML = selectedComponent;
+
+
+
+    //set depositAccount useState variable
+    //setDepositAccount(e.target.value)
   }
   
 
@@ -254,7 +265,7 @@ const handleLogout = async () => {
     
         <div className='coverimage'>
 
-        <div className='displayField'></div>
+        <div id='displayField'></div>
          {data.map((acc, index) => {
 
           if(acc.accounttype){
