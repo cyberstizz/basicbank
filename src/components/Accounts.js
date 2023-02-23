@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 
 const Accounts = () => {
 
+  //first are the functions that will actually make the transactions
+
+  const makeDeposti = async (accountNumber, amount) => {
+
+  }
+  
   const API_HOST = 'http://localhost:8000';
 
   let _csrfToken = null;
