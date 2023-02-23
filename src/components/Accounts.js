@@ -17,7 +17,7 @@ const Accounts = () => {
 
   }
   
-  const makeTranser = async (from, to, type, to) => {
+  const makeTranser = async (from, to, type, amount) => {
 
   }
 
@@ -144,10 +144,9 @@ const handleLogout = async () => {
 
     <div className='bottomsection'>
     
-
-  
         <div className='coverimage'>
-          {console.log(data)}
+
+        <div className='displayField'></div>
          {data.map((acc, index) => {
 
           if(acc.accounttype){

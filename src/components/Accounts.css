@@ -73,6 +73,16 @@
     background-color: rgb(3, 17, 42);
 }
 
+.displayField{
+    position: absolute;
+    height: 50vh;
+    width: 40vw;
+    background-color: green;
+    align-self: center;
+    margin-left: 30vw;
+    display: none;
+}
+
 .coverimage{
     display: flex;
     flex-direction: row;
