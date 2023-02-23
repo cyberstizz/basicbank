@@ -6,7 +6,9 @@ const WithdrawComponent = () => {
         <div className='fullWithdrawComponent'>
           
           
-          <div></div>
+          <div className='toprow'>
+
+          </div>
           <div></div>
           <div></div>
           <div></div>
