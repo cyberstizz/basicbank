@@ -87,7 +87,7 @@ const Accounts = () => {
 
 
 
-  const handleWitdrawText = (e) => {
+  const handleWithdrawText = (e) => {
     e.preventDefault()
 
     setWithdrawAmount(e.target.value)
@@ -116,23 +116,24 @@ const Accounts = () => {
   
   const handleTransferTo = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+
+    setTransferTo(e.target.value)
   }
 
 
   const handleTransferFrom = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+    setTransferFrom(e.target.value)
   }
 
 
 
   const handleTransferAmount = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+    setTransferAmount(e.target.value)
   }
 
 
@@ -155,7 +156,18 @@ const Accounts = () => {
   }
 
 
+const completeDeposit = () => {
 
+}
+
+const completeWithdraw = () => {
+  
+}
+
+
+const completeTransfer = () => {
+  
+}
 
 
 
@@ -181,7 +193,7 @@ const Accounts = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent />, <DepositConfirmation />, <WithdrawComponent />, <WithdrawConfirmation />, <TransferComponent />, <TransferConfirmation />, 'none']
+const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent />, <TransferConfirmation />, 'none']
 
 
 //function for setting data 
