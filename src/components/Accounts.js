@@ -3,6 +3,13 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import AccountCard from './AccountCard';
 import { Link } from 'react-router-dom';
+import DepositComponent from './DepositComponent'
+import DepositConfirmation from './DepositConfirmation'
+import TransferComponent from './TransferComponent'
+import TransferConfirmation from './TransferConfirmation'
+import WithdrawComponent from './WithdrawComponent'
+import WithdrawConfirmation from './WithdrawConfirmation'
+
 
 
 const Accounts = () => {
