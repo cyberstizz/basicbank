@@ -57,13 +57,14 @@ const [transferType, setTransferType] = useState('')
 
 const [transferAmount, setTransferAmount] = useState(0)
 
-
-
 const [data, setData] = useState([])
 
 const [usersname, setUsersName] = useState()
 
+//this is an array that will toggle between values in the display field
+//it will consist of six components and the string 'none'
 
+const displayArray = ['none']
 
 
 //function for setting data 
