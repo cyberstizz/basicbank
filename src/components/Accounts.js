@@ -13,6 +13,15 @@ const Accounts = () => {
 
   }
   
+  const makeWithdrawal = async (accountNumber, amount) => {
+
+  }
+  
+   
+
+
+
+
   const API_HOST = 'http://localhost:8000';
 
   let _csrfToken = null;
