@@ -80,9 +80,7 @@ const Accounts = () => {
     transactionSpace.innerHTML = selectedComponent;
 
 
-
-    //set depositAccount useState variable
-    //setDepositAccount(e.target.value)
+    setDepositAccount(accountNumber)
   }
   
 
@@ -91,18 +89,26 @@ const Accounts = () => {
 
   const handleWitdrawText = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+    setWithdrawAmount(e.target.value)
   } 
   
   
 
 
   
-  const startWithdrawal = (e) => {
+  const startWithdrawal = (e, accountNumber) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+
+    let transactionSpace = document.getElementById('displayField');
+
+    let selectedComponent = displayArray[2];
+
+    transactionSpace.innerHTML = selectedComponent;
+
+
+    setWithdrawAccount(e.target.value)
   }
   
   
@@ -131,7 +137,7 @@ const Accounts = () => {
 
 
 
-  const handleStartTransfer = (e) => {
+  const StartTransfer = (e) => {
     e.preventDefault()
     //set depositAmount useState variable
     //setDepositAmount(e.target.value)
