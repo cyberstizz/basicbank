@@ -29,6 +29,18 @@ const Accounts = () => {
   }
 
 
+  //now the functions which will be handlers for text input and opening modals
+
+  const handleDepositText = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+  }
+
+
+
+
+
+
 
 
   const API_HOST = 'http://localhost:8000';
