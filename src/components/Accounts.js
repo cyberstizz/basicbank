@@ -14,9 +14,32 @@ import WithdrawConfirmation from './WithdrawConfirmation'
 
 const Accounts = () => {
 
-  //first are the functions that will actually make the transactions
+ //first are the usestate variables for the page
 
-  const makeDeposti = async (accountNumber, amount) => {
+ const [depositAccount, setDepositAccount] = useState(null)
+
+ const [depositAmount, setDepositAmount] = useState(0)
+ 
+ const [withdrawAccount, setWithdrawAccount] = useState(null)
+ 
+ const [withdrawAmount, setWithdrawAmount] = useState(0)
+ 
+ const [transferFrom, setTransferFrom] = useState(null)
+ 
+ const [transferTo, setTransferTo] = useState(null)
+ 
+ const [transferType, setTransferType] = useState('')
+ 
+ const [transferAmount, setTransferAmount] = useState(0)
+ 
+ const [data, setData] = useState([])
+ 
+ const [usersname, setUsersName] = useState()
+
+
+  //next are the functions that will actually make the transactions
+
+  const makeDeposit = async (accountNumber, amount) => {
 
   }
   
@@ -24,7 +47,7 @@ const Accounts = () => {
 
   }
   
-  const makeTranser = async (from, to, type, amount) => {
+  const makeTranser = async (fromAccount, toAccount, type, amount) => {
 
   }
 
@@ -37,8 +60,8 @@ const Accounts = () => {
 
   const handleDepositText = (e) => {
     e.preventDefault()
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+
+    setDepositAmount(e.target.value)
   }
 
 
@@ -125,27 +148,7 @@ const Accounts = () => {
     return _csrfToken;
   }
 
-  //now declaring the usestate variables for the page
 
-const [depositAccount, setDepositAccount] = useState(null)
-
-const [depositAmount, setDepositAmount] = useState(0)
-
-const [withdrawAccount, setWithdrawAccount] = useState(null)
-
-const [withdrawAmount, setWithdrawAmount] = useState(0)
-
-const [transferFrom, setTransferFrom] = useState(null)
-
-const [transferTo, setTransferTo] = useState(null)
-
-const [transferType, setTransferType] = useState('')
-
-const [transferAmount, setTransferAmount] = useState(0)
-
-const [data, setData] = useState([])
-
-const [usersname, setUsersName] = useState()
 
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
@@ -200,7 +203,6 @@ const handleLogout = async () => {
 
   })
 
-  console.log(logout)
   navigate('/');
 }
 
