@@ -3,7 +3,18 @@ import './WithdrawComponent.css'
 
 const WithdrawComponent = () => {
     return (
-        <div>WithdrawComponent</div>
+        <div className='fullWithdrawComponent'>
+          
+          
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+
+          
+          
+          
+          </div>
       )
 }
 

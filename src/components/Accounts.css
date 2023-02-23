@@ -73,14 +73,15 @@
     background-color: rgb(3, 17, 42);
 }
 
-.displayField{
+#displayField{
     position: absolute;
-    height: 50vh;
-    width: 40vw;
-    background-color: green;
+    height: 61vh;
+    width: 26vw;
+    background-color: gold;
     align-self: center;
-    margin-left: 30vw;
-    display: none;
+    margin-left: 35vw;
+    border: solid 3px green;
+    z-index: 100;
 }
 
 .coverimage{

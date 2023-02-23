@@ -41,13 +41,85 @@ const Accounts = () => {
 
   const makeDeposit = async (accountNumber, amount) => {
 
+    //make post request to server
+    const depositCall = await fetch('http://localhost:8000/deposit', {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'X-CSRFToken': await getCsrfToken()
+      },
+      credentials: 'include',
+      body: {
+        account: accountNumber,
+        amount: amount
+      }
+    })
+    console.log(depositCall.status())
+
+    //if request is succesful alert success
+    // if(depositCall.status() == 201){
+    //   alert(`you have sucessfully deposited $${amouunt} into account# ${accountNumber}`)
+    // }
+
   }
   
   const makeWithdrawal = async (accountNumber, amount) => {
 
+//make post request to server
+const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+  method: "POST",
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'X-CSRFToken': await getCsrfToken()
+  },
+  credentials: 'include',
+  body: {
+    account: accountNumber,
+    amount: amount
+  }
+})
+console.log(withdrawCall.status())
+
+//if request is succesful alert success
+// if(withdrawCall.status() == 201){
+//   alert(`you have sucessfully withdrawn $${amouunt} from account# ${accountNumber}`)
+// }
+
+
   }
   
-  const makeTranser = async (fromAccount, toAccount, type, amount) => {
+const makeTranser = async (fromAccount, toAccount, type, amount) => {
+
+  //make post request to server
+  const transferCall = await fetch('http://localhost:8000/transfer', {
+    method: "POST",
+    headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'X-CSRFToken': await getCsrfToken()
+    },
+    credentials: 'include',
+    body: {
+    fromAccount: fromAccount,
+    toAccount: toAccount,
+    type: type,
+    amount: amount
+  }
+})
+
+
+
+console.log(transferCall.status())
+
+//if request is succesful alert success
+// if(transferCall.status() == 201){
+//   alert(`you have sucessfully deposited $${amouunt} into account# ${accountNumber}`)
+// }
+
+
+
 
   }
 
@@ -68,8 +140,7 @@ const Accounts = () => {
 
 
 
-  const startDeposit = (e, accountNumber) => {
-    e.preventDefault()
+  const startDeposit = (accountNumber) => {
 
     //open modal by setting the display to the deposit value of
     //the display array which is 0
@@ -97,8 +168,7 @@ const Accounts = () => {
 
 
   
-  const startWithdrawal = (e, accountNumber) => {
-    e.preventDefault()
+  const startWithdrawal = (accountNumber) => {
 
 
     let transactionSpace = document.getElementById('displayField');
@@ -108,38 +178,42 @@ const Accounts = () => {
     transactionSpace.innerHTML = selectedComponent;
 
 
-    setWithdrawAccount(e.target.value)
+    setWithdrawAccount(accountNumber)
   }
   
   
   
   
-  const handleTransferTo = (e) => {
-    e.preventDefault()
+  const handleTransferTo = () => {
 
 
-    setTransferTo(e.target.value)
+    // setTransferTo(e.target.value)
+
+    console.log('time to complete the handletransferto function')
   }
 
 
-  const handleTransferFrom = (e) => {
-    e.preventDefault()
+  const handleTransferFrom = () => {
 
-    setTransferFrom(e.target.value)
-  }
+    // setTransferFrom(e.target.value)
 
+    console.log('time to complete the handletransferfrom function')
 
-
-  const handleTransferAmount = (e) => {
-    e.preventDefault()
-
-    setTransferAmount(e.target.value)
   }
 
 
 
-  const StartTransfer = (e) => {
-    e.preventDefault()
+  const handleTransferAmount = () => {
+
+    // setTransferAmount(e.target.value)
+    console.log('time to complete the handletransferamount function')
+
+
+  }
+
+
+
+  const StartTransfer = () => {
 
 
   //open modal by setting the display to the transaction conponent from
@@ -158,15 +232,36 @@ const Accounts = () => {
 
 const completeDeposit = () => {
 
+  let transactionSpace = document.getElementById('displayField');
+
+  let selectedComponent = displayArray[1];
+
+  transactionSpace.innerHTML = selectedComponent;
+
+
 }
 
 const completeWithdraw = () => {
   
+  let transactionSpace = document.getElementById('displayField');
+
+  let selectedComponent = displayArray[3];
+
+  transactionSpace.innerHTML = selectedComponent;
+
+
 }
 
 
 const completeTransfer = () => {
   
+  let transactionSpace = document.getElementById('displayField');
+
+  let selectedComponent = displayArray[5];
+
+  transactionSpace.innerHTML = selectedComponent;
+
+
 }
 
 
@@ -193,7 +288,7 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={} toChangeHandler={} fromChangeHandler={} handler={} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
 
 
 //function for setting data 
@@ -294,11 +389,13 @@ const handleLogout = async () => {
     
         <div className='coverimage'>
 
-        <div id='displayField'></div>
+        <div id='displayField'>
+          <WithdrawComponent />
+        </div>
          {data.map((acc, index) => {
 
           if(acc.accounttype){
-      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
+      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} tranferHandler={StartTransfer} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
         }     
                             })} 
           
