@@ -1,6 +1,6 @@
 import './Home.css';
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
     let mytest = ''
 
@@ -31,6 +31,8 @@ setAccounts(fullCall)
 
     }, [])
 
+
+    const navigate = useNavigate()
 
     const API_HOST = 'http://localhost:8000';
 
@@ -65,7 +67,13 @@ setAccounts(fullCall)
               password: password
               })
         })
+
+
+    if(loginCall.status == 200){
+         navigate('/accounts')
     }
+    
+}
 
 
 

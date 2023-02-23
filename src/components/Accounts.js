@@ -65,7 +65,7 @@ const databaseCall = async () => {
 let navigate = useNavigate()
 
 
-const HandleLogout = async () => {
+const handleLogout = async () => {
   const logout = await fetch('http://localhost:8000/logout', {
     method: "POST",
   headers: {
@@ -95,7 +95,7 @@ const HandleLogout = async () => {
       <Link to={"/"} style={{textDecoration:"none"}}><div className='logo'>
       Basic Bank 
         </div></Link>
-        <div className='logout' onClick={HandleLogout}>
+        <div className='logout' onClick={handleLogout}>
         Logout
         </div>
 
