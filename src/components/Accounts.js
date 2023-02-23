@@ -139,6 +139,17 @@ const Accounts = () => {
 
   const StartTransfer = (e) => {
     e.preventDefault()
+
+
+  //open modal by setting the display to the transaction conponent from
+  //the display array which is 4
+    let transactionSpace = document.getElementById('displayField');
+
+    let selectedComponent = displayArray[4];
+
+    transactionSpace.innerHTML = selectedComponent;
+
+
     //set depositAmount useState variable
     //setDepositAmount(e.target.value)
   }
