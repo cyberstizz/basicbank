@@ -41,6 +41,24 @@ const Accounts = () => {
 
   //now declaring the usestate variables for the page
 
+const [depositAccount, setDepositAccount] = useState(null)
+
+const [depositAmount, setDepositAmount] = useState(0)
+
+const [withdrawAccount, setWithdrawAccount] = useState(null)
+
+const [withdrawAmount, setWithdrawAmount] = useState(0)
+
+const [transferFrom, setTransferFrom] = useState(null)
+
+const [transferTo, setTransferTo] = useState(null)
+
+const [transferType, setTransferType] = useState('')
+
+const [transferAmount, setTransferAmount] = useState(0)
+
+
+
 const [data, setData] = useState([])
 
 const [usersname, setUsersName] = useState()
