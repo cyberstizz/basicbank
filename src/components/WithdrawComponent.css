@@ -4,3 +4,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.toprow{
+    display: flex;
+    flex-direction: row;
+}
