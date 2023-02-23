@@ -30,10 +30,77 @@ const Accounts = () => {
 
 
   //now the functions which will be handlers for text input and opening modals
+  //and fyi I hate leaving non descriptive variables but react now INSISTS upon
+  //this e variable I am using as a parameter for the event
+
+
 
   const handleDepositText = (e) => {
     e.preventDefault()
     //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+
+
+
+
+
+  const startDeposit = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+  
+
+
+
+
+  const handleWitdrawText = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  } 
+  
+  
+
+
+  
+  const startWithdrawal = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+  
+  
+  
+  
+  const handleTransferTo = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+
+
+  const handleTransferFrom = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+
+
+
+  const handleTransferAmount = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
+  }
+
+
+
+  const handleStartTransfer = (e) => {
+    e.preventDefault()
+    //set depositAmount useState variable
+    //setDepositAmount(e.target.value)
   }
 
 
