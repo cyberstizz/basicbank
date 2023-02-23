@@ -193,7 +193,7 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent />, <TransferConfirmation />, 'none']
+const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={} toChangeHandler={} fromChangeHandler={} handler={} />, <TransferConfirmation  handler={makeTranser} />, 'none']
 
 
 //function for setting data 
@@ -298,7 +298,7 @@ const handleLogout = async () => {
          {data.map((acc, index) => {
 
           if(acc.accounttype){
-      return <AccountCard key={index} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
+      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
         }     
                             })} 
           
