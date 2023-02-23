@@ -3,7 +3,7 @@ import './DepositComponent.css'
 
 const DepositComponent = () => {
     return (
-        <div>something</div>
+        <div>DepositComponent</div>
       )
 }
 

@@ -1,11 +1,11 @@
 import {Link} from 'react-router-dom'
-import './DepositComponent.css'
+import './WithdrawConfirmation.css'
 
-const DepositComponent = () => {
+const WithdrawConfirmation = () => {
     return (
-        <div>something</div>
+        <div>WithdrawConfirmation</div>
       )
 }
 
 
-export default DepositComponent;
+export default WithdrawConfirmation;
