@@ -17,7 +17,9 @@ const Accounts = () => {
 
   }
   
-   
+  const makeTranser = async (from, to, type, to) => {
+
+  }
 
 
 
