@@ -77,10 +77,9 @@
     position: absolute;
     height: 61vh;
     width: 26vw;
-    background-color: gold;
+    /* background-color: gold; */
     align-self: center;
     margin-left: 35vw;
-    border: solid 3px green;
     z-index: 100;
 }
 
