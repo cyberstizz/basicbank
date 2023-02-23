@@ -39,6 +39,7 @@ const Accounts = () => {
     return _csrfToken;
   }
 
+  //now declaring the usestate variables for the page
 
 const [data, setData] = useState([])
 
