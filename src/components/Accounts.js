@@ -68,7 +68,7 @@ const Accounts = () => {
 
 
 
-  const startDeposit = (e) => {
+  const startDeposit = (e, accountNumber) => {
     e.preventDefault()
 
     //open modal by setting the display to the deposit value of
