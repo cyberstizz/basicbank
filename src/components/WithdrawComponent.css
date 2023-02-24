@@ -39,6 +39,11 @@
     margin-top: 2vh;
 }
 
+.withdrawSectionHeader{
+    border: solid 2px green;
+    height: 10vh;
+}
+
 .withdrawButton{
     background-color: rgb(139, 110, 35);
     font-size: 18px;
