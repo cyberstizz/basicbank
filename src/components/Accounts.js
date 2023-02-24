@@ -342,7 +342,9 @@ const handleLogout = async () => {
 }
 
 
-
+const testFunction = () => {
+  console.log("i have been called.... step one complete!!!!")
+}
 
 
 
@@ -390,7 +392,7 @@ const handleLogout = async () => {
         <div className='coverimage'>
 
         <div id='displayField'>
-          <WithdrawComponent />
+          <WithdrawComponent onChange={testFunction} />
         </div>
          {data.map((acc, index) => {
 
