@@ -36,6 +36,8 @@ const Accounts = () => {
  
  const [usersname, setUsersName] = useState()
 
+ const [depositWillBee, SetDepositWillBe] = useState(null)
+
 
   //next are the functions that will actually make the transactions
 
@@ -247,12 +249,15 @@ const handleWithdrawAmountChange = (e) => {
   setWithdrawAmount(e.target.value)
 }
 
+const handleSetDepositWillBe = (e) => {
+  SetDepositWillBe(e.target.value)
+}
+
 const completeWithdraw = (e) => {
   
   //first set changes to the useState variables
 
 
-  setDepositWillBe()
 
   
   //this section will set the element to the confirmation prompt
