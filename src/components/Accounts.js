@@ -234,11 +234,13 @@ console.log(transferCall.status())
 
 const completeDeposit = () => {
 
-  let transactionSpace = document.getElementById('displayField');
+  console.log('I am the complete deposit component and I have been pushed')
 
-  let selectedComponent = displayArray[1];
+  // let transactionSpace = document.getElementById('displayField');
 
-  transactionSpace.innerHTML = selectedComponent;
+  // let selectedComponent = displayArray[1];
+
+  // transactionSpace.innerHTML = selectedComponent;
 
 
 }
@@ -246,7 +248,15 @@ const completeDeposit = () => {
 /////////////////////////////////////////////////////////
 
 const handleWithdrawAmountChange = (e) => {
-  setWithdrawAmount(e.target.value)
+
+  let withdrawAmountCurrently = e.target.value;
+
+  setWithdrawAmount(withdrawAmountCurrently)
+
+  console.log(`i have been called without interruption hopefully, and the secret is.....${withdrawAmountCurrently}`)
+
+
+  // SetDepositWillBe()
 }
 
 const handleSetDepositWillBe = (e) => {
@@ -307,7 +317,7 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
 
 
 //function for setting data 
@@ -361,9 +371,7 @@ const handleLogout = async () => {
 }
 
 
-const testFunction = (e) => {
-  console.log(`i have been called without interruption hopefully, and the secret is.....${e.target.value}`)
-}
+
 
 
 
@@ -411,7 +419,7 @@ const testFunction = (e) => {
         <div className='coverimage'>
 
         <div id='displayField'>
-          <WithdrawComponent onChange={testFunction} />
+          <WithdrawComponent handleWithdrawAmountChange={handleWithdrawAmountChange} completeDeposit={completeDeposit} />
         </div>
          {data.map((acc, index) => {
 
