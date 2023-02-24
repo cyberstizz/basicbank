@@ -35,26 +35,38 @@
 .withdrawSection{
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: #414E65;
     height: 20vh;
     width: 20vw;
     align-self: center;
     margin-top: 2vh;
+    margin-left: 2vh;
+
 }
 
 .withdrawSectionHeader{
-    border: solid 2px green;
-    height: 10vh;
-
+    height: 5vh;
+    color: white;
 }
 
 .withdrawField{
-    background-color: blueviolet;
+    background-color: #414E65;
     height: 10vh;
     font-size: 30px;
+    color: white;
     font-family: 'Titan One', cursive;
-    margin-left: 2vw;
-    border: solid 1px blueviolet;
+    margin-left: 1vw;
+    border: solid 1px #414E65;
+}
+
+.withdrawField::placeholder{
+    background-color: #414E65;
+    height: 10vh;
+    font-size: 30px;
+    color: white;
+    font-family: 'Titan One', cursive;
+    margin-left: 1vw;
+    border: solid 1px #414E65;
 }
 
 .withdrawButton{

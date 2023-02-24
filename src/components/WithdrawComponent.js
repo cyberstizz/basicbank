@@ -12,8 +12,8 @@ const WithdrawComponent = () => {
           </div>
 
           <div className='withdrawSection'>
-            <div className='withdrawSectionHeader'></div>
-            <input type='text' placeholder='Withdraw Amount' className='withdrawField'></input>
+            <div className='withdrawSectionHeader'>Withdrawal Amount</div>
+            <input type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
           <button className='withdrawButton'>Make Withdrawal</button>
