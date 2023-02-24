@@ -42,6 +42,11 @@
 .withdrawSectionHeader{
     border: solid 2px green;
     height: 10vh;
+
+}
+
+.withdrawField{
+    background-color: blueviolet;
 }
 
 .withdrawButton{
