@@ -9,11 +9,13 @@ const WithdrawComponent = () => {
           <div className='toprow'>
             <div className='Xout'>x</div>
             <div className='withdrawHeader'>Withdraw</div>
-
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+          <div className='withdrawSection'>
+            <input type='text' value='Withdraw Amount'></input>
+          </div>
+          <div className='descriptionSection'>description</div>
+          <button className='withdrawButton'>Withdraw</button>
 
           
           
