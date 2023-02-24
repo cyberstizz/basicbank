@@ -10,6 +10,22 @@
     flex-direction: row;
 }
 
+.Xout{
+    margin-left: 2vw;
+    color: white;
+    height: 3vh;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.withdrawHeader{
+    font-size: 40px;
+    color: white;
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+    margin-top: .8vh;
+}
+
 .withdrawSection{
     display: flex;
     flex-direction: column;
@@ -17,4 +33,10 @@
     height: 20vh;
     width: 20vw;
     align-self: center;
+    margin-top: 2vh;
+}
+
+.withdrawButton{
+    background-color: rgb(139, 110, 35);
+    font-size: 18px;
 }

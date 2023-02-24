@@ -7,7 +7,7 @@ const WithdrawComponent = () => {
           
           
           <div className='toprow'>
-            <div className='Xout'>x</div>
+            <div className='Xout'>&#9747;</div>
             <div className='withdrawHeader'>Withdraw</div>
           </div>
 
