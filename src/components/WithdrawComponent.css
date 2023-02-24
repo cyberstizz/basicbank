@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mynerve&family=Titan+One&display=swap');
+
+
 .fullWithdrawComponent{
     background-image: linear-gradient(45.34deg, rgb(0, 16, 43) 5.66%, #10203b 94.35%);
     height: 60vh;
@@ -49,6 +52,7 @@
     background-color: blueviolet;
     height: 10vh;
     font-size: 30px;
+    font-family: 'Titan One', cursive;
     margin-left: 2vw;
     border: solid 1px blueviolet;
 }
