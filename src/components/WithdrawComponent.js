@@ -23,7 +23,7 @@ const [withdrawField, setWithdrawField] = useState('')
             <input onChange={props.handleWithdrawAmountChange} type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
-          <button onClick={props.completeDeposit} className='withdrawButton'>Make Withdrawal</button>
+          <button onClick={props.completeWithdraw} className='withdrawButton'>Make Withdrawal</button>
 
           
           

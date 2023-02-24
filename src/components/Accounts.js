@@ -12,31 +12,14 @@ import WithdrawConfirmation from './WithdrawConfirmation'
 
 
 
+
 const Accounts = () => {
 
- //first are the usestate variables for the page
 
- const [depositAccount, setDepositAccount] = useState(null)
 
- const [depositAmount, setDepositAmount] = useState(0)
- 
- const [withdrawAccount, setWithdrawAccount] = useState(null)
- 
- const [withdrawAmount, setWithdrawAmount] = useState(0)
- 
- const [transferFrom, setTransferFrom] = useState(null)
- 
- const [transferTo, setTransferTo] = useState(null)
- 
- const [transferType, setTransferType] = useState('')
- 
- const [transferAmount, setTransferAmount] = useState(0)
- 
- const [data, setData] = useState([])
- 
- const [usersname, setUsersName] = useState()
+  //the required functions
 
- const [depositWillBee, SetDepositWillBe] = useState(null)
+
 
 
   //next are the functions that will actually make the transactions
@@ -180,6 +163,8 @@ console.log(transferCall.status())
     transactionSpace.innerHTML = selectedComponent;
 
 
+
+
     setWithdrawAccount(accountNumber)
   }
   
@@ -236,11 +221,12 @@ const completeDeposit = () => {
 
   console.log('I am the complete deposit component and I have been pushed')
 
-  // let transactionSpace = document.getElementById('displayField');
 
-  // let selectedComponent = displayArray[1];
 
-  // transactionSpace.innerHTML = selectedComponent;
+  let selectedComponent = displayArray[1];
+
+  setComponentToShow(<TransferComponent />)
+
 
 
 }
@@ -256,6 +242,7 @@ const handleWithdrawAmountChange = (e) => {
   console.log(`i have been called without interruption hopefully, and the secret is.....${withdrawAmountCurrently}`)
 
 
+
   // SetDepositWillBe()
 }
 
@@ -263,20 +250,21 @@ const handleSetDepositWillBe = (e) => {
   SetDepositWillBe(e.target.value)
 }
 
-const completeWithdraw = (e) => {
+const completeWithdraw = () => {
   
   //first set changes to the useState variables
 
+console.log('lets work')
 
-
-  
   //this section will set the element to the confirmation prompt
   
   let transactionSpace = document.getElementById('displayField');
 
   let selectedComponent = displayArray[3];
 
-  transactionSpace.innerHTML = selectedComponent;
+  setComponentToShow(selectedComponent)
+
+  // transactionSpace.innerText = componentToShow
 
 
 }
@@ -317,7 +305,46 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+
+
+
+  /////////////////////////
+
+  const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} completeWithdraw={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+
+
+
+  //just a silly test function
+
+const [componentToShow, setComponentToShow] = useState(displayArray[2])
+
+
+
+ //first are the usestate variables for the page
+
+ const [depositAccount, setDepositAccount] = useState(null)
+
+ const [depositAmount, setDepositAmount] = useState(0)
+ 
+ const [withdrawAccount, setWithdrawAccount] = useState(null)
+ 
+ const [withdrawAmount, setWithdrawAmount] = useState(0)
+ 
+ const [transferFrom, setTransferFrom] = useState(null)
+ 
+ const [transferTo, setTransferTo] = useState(null)
+ 
+ const [transferType, setTransferType] = useState('')
+ 
+ const [transferAmount, setTransferAmount] = useState(0)
+ 
+ const [data, setData] = useState([])
+ 
+ const [usersname, setUsersName] = useState()
+
+ const [depositWillBee, SetDepositWillBe] = useState(null)
+
+
 
 
 //function for setting data 
@@ -419,7 +446,8 @@ const handleLogout = async () => {
         <div className='coverimage'>
 
         <div id='displayField'>
-          <WithdrawComponent handleWithdrawAmountChange={handleWithdrawAmountChange} completeDeposit={completeDeposit} />
+          {/* <WithdrawComponent handleWithdrawAmountChange={handleWithdrawAmountChange} completeDeposit={completeDeposit} /> */}
+          {componentToShow}
         </div>
          {data.map((acc, index) => {
 
