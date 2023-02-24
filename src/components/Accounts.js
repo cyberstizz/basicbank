@@ -241,7 +241,21 @@ const completeDeposit = () => {
 
 }
 
-const completeWithdraw = () => {
+/////////////////////////////////////////////////////////
+
+const handleWithdrawAmountChange = (e) => {
+  setWithdrawAmount(e.target.value)
+}
+
+const completeWithdraw = (e) => {
+  
+  //first set changes to the useState variables
+
+
+  setDepositWillBe()
+
+  
+  //this section will set the element to the confirmation prompt
   
   let transactionSpace = document.getElementById('displayField');
 
