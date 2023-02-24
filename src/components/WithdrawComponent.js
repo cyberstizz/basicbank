@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import './WithdrawComponent.css'
 
-const WithdrawComponent = () => {
+const WithdrawComponent = (props) => {
     return (
         <div className='fullWithdrawComponent'>
           
@@ -13,7 +13,7 @@ const WithdrawComponent = () => {
 
           <div className='withdrawSection'>
             <div className='withdrawSectionHeader'>Withdrawal Amount</div>
-            <input type='text' placeholder='$0.00' className='withdrawField'></input>
+            <input onChange={props.onChange} type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
           <button className='withdrawButton'>Make Withdrawal</button>
