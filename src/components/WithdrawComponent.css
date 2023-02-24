@@ -8,6 +8,7 @@
 .toprow{
     display: flex;
     flex-direction: row;
+    margin-top: 1vh;
 }
 
 .Xout{
@@ -19,9 +20,11 @@
 }
 
 .withdrawHeader{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
     font-size: 40px;
     color: white;
-    margin-left: 4vw;
+    margin-left: 3.5vw;
     margin-bottom: 2vh;
     margin-top: .8vh;
 }

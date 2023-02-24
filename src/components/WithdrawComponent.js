@@ -12,6 +12,7 @@ const WithdrawComponent = () => {
           </div>
 
           <div className='withdrawSection'>
+            <div className='withdrawSectionHeader'></div>
             <input type='text' value='Withdraw Amount'></input>
           </div>
           <div className='descriptionSection'>description</div>
