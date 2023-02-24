@@ -1,7 +1,14 @@
 import {Link} from 'react-router-dom'
 import './WithdrawComponent.css'
+import { useState } from 'react'
 
 const WithdrawComponent = (props) => {
+
+//first the useState varaibles
+
+const [withdrawField, setWithdrawField] = useState('')
+
+
     return (
         <div className='fullWithdrawComponent'>
           

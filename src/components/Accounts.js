@@ -342,8 +342,8 @@ const handleLogout = async () => {
 }
 
 
-const testFunction = (secret) => {
-  console.log(`i have been called without interruption hopefully, and the secret is.....${secret}`)
+const testFunction = (e) => {
+  console.log(`i have been called without interruption hopefully, and the secret is.....${e.target.value}`)
 }
 
 
