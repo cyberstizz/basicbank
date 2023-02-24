@@ -49,6 +49,8 @@
     background-color: blueviolet;
     height: 10vh;
     font-size: 30px;
+    margin-left: 2vw;
+    border: solid 1px blueviolet;
 }
 
 .withdrawButton{
