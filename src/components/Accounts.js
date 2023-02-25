@@ -7,8 +7,10 @@ import DepositComponent from './DepositComponent'
 import DepositConfirmation from './DepositConfirmation'
 import TransferComponent from './TransferComponent'
 import TransferConfirmation from './TransferConfirmation'
-import WithdrawComponent from './WithdrawComponent'
 import WithdrawConfirmation from './WithdrawConfirmation'
+
+
+
 
 
 
@@ -16,6 +18,30 @@ import WithdrawConfirmation from './WithdrawConfirmation'
 const Accounts = () => {
 
 
+
+  const [depositAccount, setDepositAccount] = useState(null)
+
+  const [depositAmount, setDepositAmount] = useState(0)
+  
+  const [withdrawAccount, setWithdrawAccount] = useState(null)
+  
+  const [withdrawAmount, setWithdrawAmount] = useState('')
+
+  let surprise = ''
+  
+  const [transferFrom, setTransferFrom] = useState(null)
+  
+  const [transferTo, setTransferTo] = useState(null)
+  
+  const [transferType, setTransferType] = useState('')
+  
+  const [transferAmount, setTransferAmount] = useState(0)
+  
+  const [data, setData] = useState([])
+  
+  const [usersname, setUsersName] = useState()
+ 
+  const [depositWillBee, SetDepositWillBe] = useState(null)
 
   //the required functions
 
@@ -113,7 +139,45 @@ console.log(transferCall.status())
   //and fyi I hate leaving non descriptive variables but react now INSISTS upon
   //this e variable I am using as a parameter for the event
 
+///////////////////////////////////////////////////////////////componenets will go here
 
+
+const WithdrawComponent = () => {
+
+  //first the useState varaibles
+  
+  // const [withdrawField, setWithdrawField] = useState('')
+  
+  
+      return (
+          <div className='fullWithdrawComponent'>
+            
+            
+            <div className='toprow'>
+              <div className='Xout'>&#9747;</div>
+              <div className='withdrawHeader'>Withdraw</div>
+            </div>
+  
+            <div className='withdrawSection'>
+              <div className='withdrawSectionHeader'>Withdrawal Amount</div>
+              <input onChange={handleWithdrawAmountChange} type='text' placeholder='$0.00' className='withdrawField'></input>
+            </div>
+            <div className='descriptionSection'>description</div>
+            <button onClick={completeWithdraw} className='withdrawButton'>Make Withdrawal</button>
+  
+            
+            
+            </div>
+        )
+  }
+
+
+  
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
 
   const handleDepositText = (e) => {
     e.preventDefault()
@@ -128,26 +192,22 @@ console.log(transferCall.status())
   const startDeposit = (accountNumber) => {
 
     //open modal by setting the display to the deposit value of
-    //the display array which is 0
-    let transactionSpace = document.getElementById('displayField');
+    // //the display array which is 0
+    // let transactionSpace = document.getElementById('displayField');
 
-    let selectedComponent = displayArray[0];
+    // let selectedComponent = displayArray[0];
 
-    transactionSpace.innerHTML = selectedComponent;
+    // transactionSpace.innerHTML = selectedComponent;
 
 
-    setDepositAccount(accountNumber)
+    // setDepositAccount(accountNumber)
   }
   
 
 
 
 
-  const handleWithdrawText = (e) => {
-    e.preventDefault()
-
-    setWithdrawAmount(e.target.value)
-  } 
+  
   
   
 
@@ -166,6 +226,8 @@ console.log(transferCall.status())
 
 
     setWithdrawAccount(accountNumber)
+
+    console.log(`this is the withdraw account ${withdrawAccount}`)
   }
   
   
@@ -233,14 +295,15 @@ const completeDeposit = () => {
 
 /////////////////////////////////////////////////////////
 
-const handleWithdrawAmountChange = (e) => {
+const handleWithdrawAmountChange = async (event) => {
+event.preventDefault()
+const enteredText = event.target.value
+console.log(enteredText)
 
-  let withdrawAmountCurrently = e.target.value;
-
-  setWithdrawAmount(withdrawAmountCurrently)
-
-  console.log(`i have been called without interruption hopefully, and the secret is.....${withdrawAmountCurrently}`)
-
+surprise = enteredText
+setWithdrawAmount(enteredText)
+  console.log(surprise)
+              
 
 
   // SetDepositWillBe()
@@ -254,11 +317,10 @@ const completeWithdraw = () => {
   
   //first set changes to the useState variables
 
-console.log('lets work')
+console.log(`lets go to work, btw this is the amount: ${surprise}`)
 
   //this section will set the element to the confirmation prompt
   
-  let transactionSpace = document.getElementById('displayField');
 
   let selectedComponent = displayArray[3];
 
@@ -310,41 +372,22 @@ const completeTransfer = () => {
 
   /////////////////////////
 
-  const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} completeWithdraw={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
 
 
 
   //just a silly test function
 
-const [componentToShow, setComponentToShow] = useState(displayArray[2])
 
 
 
  //first are the usestate variables for the page
 
- const [depositAccount, setDepositAccount] = useState(null)
-
- const [depositAmount, setDepositAmount] = useState(0)
- 
- const [withdrawAccount, setWithdrawAccount] = useState(null)
- 
- const [withdrawAmount, setWithdrawAmount] = useState(0)
- 
- const [transferFrom, setTransferFrom] = useState(null)
- 
- const [transferTo, setTransferTo] = useState(null)
- 
- const [transferType, setTransferType] = useState('')
- 
- const [transferAmount, setTransferAmount] = useState(0)
- 
- const [data, setData] = useState([])
- 
- const [usersname, setUsersName] = useState()
-
- const [depositWillBee, SetDepositWillBe] = useState(null)
 
 
+ const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent />, <WithdrawConfirmation withdrawAmount={surprise} makeWithdrawal={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+
+
+ const [componentToShow, setComponentToShow] = useState(displayArray[2])
 
 
 //function for setting data 
@@ -398,10 +441,15 @@ const handleLogout = async () => {
 }
 
 
+////////////////////////////////////////////////////////////////////
+
+
+  
 
 
 
 
+/////////////////////////////////////////////////////////////////////
   return (
     <div className='fullAccountsPage'>
     
@@ -446,7 +494,6 @@ const handleLogout = async () => {
         <div className='coverimage'>
 
         <div id='displayField'>
-          {/* <WithdrawComponent handleWithdrawAmountChange={handleWithdrawAmountChange} completeDeposit={completeDeposit} /> */}
           {componentToShow}
         </div>
          {data.map((acc, index) => {
@@ -465,5 +512,14 @@ const handleLogout = async () => {
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
 
 export default Accounts;

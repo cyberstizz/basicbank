@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mynerve&family=Titan+One&display=swap');
 
 
-.fullWithdrawComponent{
+.thefullWithdrawComponent{
     background-image: linear-gradient(45.34deg, rgb(0, 16, 43) 5.66%, #10203b 94.35%);
     height: 60vh;
     display: flex;
     flex-direction: column;
 }
 
-.toprow{
+.thetoprow{
     display: flex;
     flex-direction: row;
     margin-top: 1vh;
 }
 
-.Xout{
+.theXout{
     margin-left: 2vw;
     color: white;
     height: 3vh;
@@ -22,19 +22,18 @@
     font-weight: 600;
 }
 
-.withdrawHeader{
+.thewithdrawHeader{
     font-family: 'Titan One', cursive;
     letter-spacing: 1px;
     font-size: 25px;
     color: white;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
     margin-bottom: 2vh;
-    margin-top: .8vh;
-    border: solid 2px green;
+    margin-top: 2.5vh;
     width: 15vw;
 }
 
-.withdrawSection{
+.thewithdrawSection{
     display: flex;
     flex-direction: column;
     background-color: #414E65;
@@ -46,12 +45,22 @@
     border-radius: 8px;
 }
 
-.withdrawSectionHeader{
+.thewithdrawSectionHeader{
     height: 5vh;
     color: white;
 }
 
-.withdrawField{
+.thewithdrawField{
+    background-color: #414E65;
+    height: 10vh;
+    font-size: 20px;
+    color: white;
+    font-family: 'Titan One', cursive;
+    border: solid 1px #414E65;
+    border: solid 2px green;
+}
+
+.thewithdrawField::placeholder{
     background-color: #414E65;
     height: 10vh;
     font-size: 30px;
@@ -61,17 +70,7 @@
     border: solid 1px #414E65;
 }
 
-.withdrawField::placeholder{
-    background-color: #414E65;
-    height: 10vh;
-    font-size: 30px;
-    color: white;
-    font-family: 'Titan One', cursive;
-    margin-left: 1vw;
-    border: solid 1px #414E65;
-}
-
-.withdrawButton{
+.thewithdrawButton{
     background-color: rgb(139, 110, 35);
     font-size: 18px;
     border-radius: 10px;
