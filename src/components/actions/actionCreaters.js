@@ -1,13 +1,19 @@
 //withddraw amont
-export const withdrawAmountActionCreater = (name) => {
+export const withdrawAmountActionCreater = (amount) => {
     return {
-        type: 'ADD_TO_CART',
-        name: name
+        type: 'WITHDRAW_AMOUNT',
+        amount: amount
     }
 };
 
-//withdraw from
 
+//withdraw from
+export const withdrawFromActionCreater = (account) => {
+    return {
+        type: 'WITHDRAW_FROM',
+        account: account
+    }
+};
 
 //deposit amount
 
