@@ -1,6 +1,6 @@
 //withdraw amount
 
-export const WithdrawAmountReducer = (state, action) => {
+export const WithdrawReducer = (state, action) => {
 
     switch(action.type){
         case 'WITHDRAW_AMOUNT':
@@ -18,11 +18,3 @@ export const WithdrawAmountReducer = (state, action) => {
 };
 
 
-//withdraw from
-//deposit amount
-//deposit from
-//transfer amount
-//transfer from
-
-
-//transfer to
