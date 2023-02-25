@@ -11,25 +11,18 @@ const initialState = initialWithdrawState()
 export const WithdrawReducer = (state = initialState, action) => {
 
     switch(action.type){
-        case 'Withdraw':
-        return {...state,
-                items: [...state.items, action.name] 
+        case 'WITHDRAW_AMOUNT':
+        return {
+            amount: action.amount
             };
-        case 'REMOVE_FROM_CART':
-            return {...state.items.map(item => item.title !== action.payload)};
-        // case 'CHANGE_QUANTITY':
-        //     // return {...state.items.map(item => {
-        //     //         item.title !== action.payload.title ? {...item,quantity: action.payload.quantity} : {item}
-        //     // })
-        //     //     };
-        case 'CLEAR_CART':
+        case 'WITHDRAW_FROM':
             return {
-                items: []
+                account: action.account
             };
             default:
             return state;
-    }
-    return state
+    };
+    
 };
 
 
