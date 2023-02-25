@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { configureStore } from 'redux';
 import { Provider } from 'react-redux';
 
+const basicBankstore = configureStore();
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={configureStore}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 
