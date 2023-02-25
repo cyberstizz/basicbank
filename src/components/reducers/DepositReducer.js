@@ -19,7 +19,7 @@ export const DepositReducer = (state = initialState, action) => {
             };
         case 'DEPOSIT_AMOUNT':
         return {...state,
-                deposit_amount: action.deposit_amount
+            deposit_amount: action.deposit_amount
             };
             default:
             return state;
