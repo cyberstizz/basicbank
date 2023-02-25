@@ -13,12 +13,12 @@ import { TransferReducer } from './components/reducers/TransferReducer';
 export const basicBankstore = configureStore({
   reducer: {
   DEPOSIT_FROM: DepositReducer,
-  DEPOSIT_AMOUNT: 'PASS',
-  WITHDRAW_FROM: 'PASS',
-  WITHDRAW_AMOUNT: 'PASS',
-  TRANSFER_FROM: 'PASS',
-  TRANSFER_TO: 'PASS',
-  TRANSFER_AMOUNT: 'PASS'
+  DEPOSIT_AMOUNT: DepositReducer,
+  WITHDRAW_FROM: WithdrawReducer,
+  WITHDRAW_AMOUNT: WithdrawReducer,
+  TRANSFER_FROM: TransferReducer,
+  TRANSFER_TO: TransferReducer,
+  TRANSFER_AMOUNT: TransferReducer
   }
 });
 
