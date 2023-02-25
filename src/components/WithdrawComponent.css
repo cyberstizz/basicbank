@@ -14,6 +14,7 @@
     margin-top: 1vh;
 }
 
+<<<<<<< HEAD
 .Xout{
     margin-left: 2vw;
     color: white;
@@ -32,6 +33,8 @@
     margin-top: .8vh;
 }
 
+=======
+>>>>>>> parent of f96e1c6 (added css for withdraw button)
 .withdrawSection{
     display: flex;
     flex-direction: column;
@@ -39,6 +42,7 @@
     height: 20vh;
     width: 20vw;
     align-self: center;
+<<<<<<< HEAD
     margin-top: 2vh;
     margin-left: 2vh;
     border-radius: 8px;
@@ -72,4 +76,6 @@
 .withdrawButton{
     background-color: rgb(139, 110, 35);
     font-size: 18px;
+=======
+>>>>>>> parent of f96e1c6 (added css for withdraw button)
 }

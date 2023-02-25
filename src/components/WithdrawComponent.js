@@ -14,7 +14,7 @@ const [withdrawField, setWithdrawField] = useState('')
           
           
           <div className='toprow'>
-            <div className='Xout'>&#9747;</div>
+            <div className='Xout'>x</div>
             <div className='withdrawHeader'>Withdraw</div>
           </div>
 
