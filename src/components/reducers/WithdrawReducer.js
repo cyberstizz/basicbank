@@ -22,26 +22,14 @@ export const WithdrawReducer = (state = initialState, action) => {
             default:
             return state;
     };
-    
+
 };
 
 
 //withdraw from
-
-
-
 //deposit amount
-
-
-
 //deposit from
-
-
-
 //transfer amount
-
-
-
 //transfer from
 
 
