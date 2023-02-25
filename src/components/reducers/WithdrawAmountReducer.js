@@ -1,23 +1,15 @@
 //withdraw amount
 
-const initialWithdrawState = () => {
-    return {
-        amount: 0
-    }
-}
-
-const initialState = initialWithdrawState()
-
-export const WithdrawReducer = (state = initialState, action) => {
+export const WithdrawAmountReducer = (state, action) => {
 
     switch(action.type){
         case 'WITHDRAW_AMOUNT':
-        return {
-            amount: action.amount
+        return {...state,
+            withdraw_amount: action.withdraw_amount
             };
         case 'WITHDRAW_FROM':
-            return {
-                account: action.account
+            return {...state,
+                from_account: action.from_account
             };
             default:
             return state;
