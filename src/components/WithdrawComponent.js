@@ -23,7 +23,11 @@ const [withdrawField, setWithdrawField] = useState('')
             <input onChange={props.onChange} type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
+<<<<<<< HEAD
           <button onClick={props.completeDeposit} className='withdrawButton'>Make Withdrawal</button>
+=======
+          <button className='withdrawButton'>Withdraw</button>
+>>>>>>> parent of 493a7c2 (lots o changes)
 
           
           
