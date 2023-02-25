@@ -63,6 +63,27 @@ const Accounts = () => {
     //   alert(`you have sucessfully deposited $${amouunt} into account# ${accountNumber}`)
     // }
 
+    //make post request to server
+    const depositCall = await fetch('http://localhost:8000/deposit', {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'X-CSRFToken': await getCsrfToken()
+      },
+      credentials: 'include',
+      body: {
+        account: accountNumber,
+        amount: amount
+      }
+    })
+    console.log(depositCall.status())
+
+    //if request is succesful alert success
+    // if(depositCall.status() == 201){
+    //   alert(`you have sucessfully deposited $${amouunt} into account# ${accountNumber}`)
+    // }
+
   }
   
   const makeWithdrawal = async (accountNumber, amount) => {
@@ -457,9 +478,7 @@ const handleLogout = async () => {
     
         <div className='coverimage'>
 
-        <div id='displayField'>
-          {displayArray[2]}
-        </div>
+        <div id='displayField'></div>
          {data.map((acc, index) => {
 
           if(acc.accounttype){
