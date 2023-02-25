@@ -1,6 +1,16 @@
 //DepositReducer
 
-export const DepositReducer = (state, action) => {
+const loadState = () => {
+    return {
+        deposit_from: null,
+        deposit_amount: null
+    }
+};
+
+const initialState = loadState()
+
+
+export const DepositReducer = (state = initialState, action) => {
 
     switch(action.type){
         case 'DEPOSIT_FROM':

@@ -1,6 +1,16 @@
 //transferReducer
 
-export const TransferReducer = (state, action) => {
+const loadState = () => {
+    return {
+        transfer_from: null,
+        transfer_to: null,
+        transfer_Amount: null
+    }
+};
+
+const initialState = loadState()
+
+export const TransferReducer = (state = initialState, action) => {
 
     switch(action.type){
         case 'TRANSFER_FROM':

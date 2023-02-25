@@ -1,9 +1,9 @@
 import React from 'react';
+import { configureStore } from "@reduxjs/toolkit";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { configureStore } from 'redux';
 import { Provider } from 'react-redux';
 import { DepositReducer } from './components/reducers/DepositReducer';
 import { WithdrawReducer } from './components/reducers/WithdrawReducer';
@@ -26,7 +26,7 @@ export const basicBankstore = configureStore({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={configureStore}>
+    <Provider store={basicBankstore}>
     <App />
     </Provider>
   </React.StrictMode>
