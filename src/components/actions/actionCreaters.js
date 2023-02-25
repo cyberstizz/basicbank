@@ -5,3 +5,20 @@ export const withdrawAmountActionCreater = (name) => {
         name: name
     }
 };
+
+//withdraw from
+
+
+//deposit amount
+
+
+//deposit from
+
+
+//transfer amount
+
+
+//transfer to
+
+
+//transfer from
