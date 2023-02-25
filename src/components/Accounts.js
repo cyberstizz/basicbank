@@ -11,14 +11,20 @@ import WithdrawConfirmation from './WithdrawConfirmation'
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> parent of 63d7e26 (fixed withdraw component button to open  withdraw confirmation)
 const Accounts = () => {
 
+ //first are the usestate variables for the page
 
+ const [depositAccount, setDepositAccount] = useState(null)
 
+<<<<<<< HEAD
   const [depositAccount, setDepositAccount] = useState(null)
 
   const [depositAmount, setDepositAmount] = useState(0)
@@ -45,7 +51,27 @@ const Accounts = () => {
 
   //the required functions
 
+=======
+ const [depositAmount, setDepositAmount] = useState(0)
+ 
+ const [withdrawAccount, setWithdrawAccount] = useState(null)
+ 
+ const [withdrawAmount, setWithdrawAmount] = useState(0)
+ 
+ const [transferFrom, setTransferFrom] = useState(null)
+ 
+ const [transferTo, setTransferTo] = useState(null)
+ 
+ const [transferType, setTransferType] = useState('')
+ 
+ const [transferAmount, setTransferAmount] = useState(0)
+ 
+ const [data, setData] = useState([])
+ 
+ const [usersname, setUsersName] = useState()
+>>>>>>> parent of 63d7e26 (fixed withdraw component button to open  withdraw confirmation)
 
+ const [depositWillBee, SetDepositWillBe] = useState(null)
 
 
   //next are the functions that will actually make the transactions
@@ -223,8 +249,6 @@ const WithdrawComponent = () => {
     transactionSpace.innerHTML = selectedComponent;
 
 
-
-
     setWithdrawAccount(accountNumber)
 
     console.log(`this is the withdraw account ${withdrawAccount}`)
@@ -283,12 +307,11 @@ const completeDeposit = () => {
 
   console.log('I am the complete deposit component and I have been pushed')
 
+  // let transactionSpace = document.getElementById('displayField');
 
+  // let selectedComponent = displayArray[1];
 
-  let selectedComponent = displayArray[1];
-
-  setComponentToShow(<TransferComponent />)
-
+  // transactionSpace.innerHTML = selectedComponent;
 
 
 }
@@ -305,7 +328,6 @@ setWithdrawAmount(enteredText)
   console.log(surprise)
               
 
-
   // SetDepositWillBe()
 }
 
@@ -313,20 +335,23 @@ const handleSetDepositWillBe = (e) => {
   SetDepositWillBe(e.target.value)
 }
 
-const completeWithdraw = () => {
+const completeWithdraw = (e) => {
   
   //first set changes to the useState variables
 
+<<<<<<< HEAD
 console.log(`lets go to work, btw this is the amount: ${surprise}`)
+=======
+>>>>>>> parent of 63d7e26 (fixed withdraw component button to open  withdraw confirmation)
 
+
+  
   //this section will set the element to the confirmation prompt
   
 
   let selectedComponent = displayArray[3];
 
-  setComponentToShow(selectedComponent)
-
-  // transactionSpace.innerText = componentToShow
+  transactionSpace.innerHTML = selectedComponent;
 
 
 }
@@ -367,6 +392,7 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
+<<<<<<< HEAD
 
 
 
@@ -388,6 +414,9 @@ const completeTransfer = () => {
 
 
  const [componentToShow, setComponentToShow] = useState(displayArray[2])
+=======
+const displayArray = [<DepositComponent handleWithdrawAmountChange={handleWithdrawAmountChange} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onchange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+>>>>>>> parent of 63d7e26 (fixed withdraw component button to open  withdraw confirmation)
 
 
 //function for setting data 
@@ -494,7 +523,11 @@ const handleLogout = async () => {
         <div className='coverimage'>
 
         <div id='displayField'>
+<<<<<<< HEAD
           {componentToShow}
+=======
+          <WithdrawComponent handleWithdrawAmountChange={handleWithdrawAmountChange} completeDeposit={completeDeposit} />
+>>>>>>> parent of 63d7e26 (fixed withdraw component button to open  withdraw confirmation)
         </div>
          {data.map((acc, index) => {
 
