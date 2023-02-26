@@ -1,7 +1,7 @@
 export const withdrawAmountActionCreater = (amount) => {
     return {
         type: 'WITHDRAW_AMOUNT',
-        amount: amount
+        withdraw_amount: amount
     }
 };
 
@@ -11,7 +11,7 @@ export const withdrawAmountActionCreater = (amount) => {
 export const withdrawFromActionCreater = (account) => {
     return {
         type: 'WITHDRAW_FROM',
-        account: account
+        withdraw_from: account
     }
 };
 

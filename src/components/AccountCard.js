@@ -1,10 +1,25 @@
 import './AccountCard.css'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-
+import { withdrawFromActionCreater } from './ActionCreaters'
+import { useDispatch } from 'react-redux';
 
 
 const AccountCard = (props) => {
+
+
+  const dispatch = useDispatch();
+
+
+  const handleStartWithdrawal = () => {
+    //steps
+    //1)dispatch props.accountNumber to the top level state
+    dispatch(withdrawFromActionCreater(props.accountNumber))
+
+    //2)call the props handler that will open the withdraw component
+    props.withDrawHandler()
+  }
+
   return (
     <div className='cardbackground'>
       
@@ -15,10 +30,10 @@ const AccountCard = (props) => {
       <div className='accountBalance'><span className='dollarsign'>$</span>{props.accountBalance}</div>
       <div className='accountButtons'>
       
-      <button className='depositButton' onClick={props.depositHandler(props.accountNumber)}>Deposit</button>
+      <button className='depositButton' onClick={handleStartWithdrawal}>Deposit</button>
       <br />
-      <button className='withdrawButton' onClick={props.withdrawHandler(props.accountNumber)}>Withdraw</button>
-      <button className='WithdrawButton' onClick={props.transferHandler(props.accountNumber)}>Transfer</button>
+      <button className='withdrawButton' onClick={handleStartWithdrawal}>Withdraw</button>
+      <button className='WithdrawButton' onClick={handleStartWithdrawal}>Transfer</button>
 
 
       </div>

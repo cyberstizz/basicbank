@@ -14,7 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 const Accounts = () => {
-const tranferStore = useSelector((state) => state.transfer.transfer_to)
+const tranferStore = useSelector((state) => state.withdraw.withdraw_amount)
 
 const deposit_from = useSelector((state) => state.deposit.deposit_from)
 
@@ -189,14 +189,16 @@ console.log(transferCall.status())
 
 
   
-  const startWithdrawal = (accountNumber) => {
+  const startWithdrawal = () => {
 
 
     let transactionSpace = document.getElementById('displayField');
 
+    transactionSpace.style.visibility = 'visible';
+
     let selectedComponent = displayArray[2];
 
-    transactionSpace.innerHTML = selectedComponent;
+    transactionSpace = selectedComponent;
 
 
     // setWithdrawAccount(accountNumber)
@@ -301,7 +303,7 @@ const completeTransfer = () => {
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'
 
-const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent onChange={handleWithdrawText} handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
+const displayArray = [<DepositComponent onchange={handleDepositText} handler={completeDeposit} />, <DepositConfirmation handler={makeDeposit} />, <WithdrawComponent handler={completeWithdraw} />, <WithdrawConfirmation handler={makeWithdrawal} />, <TransferComponent onChange={handleTransferAmount} toChangeHandler={handleTransferTo} fromChangeHandler={handleTransferFrom} handler={completeTransfer} />, <TransferConfirmation  handler={makeTranser} />, 'none']
 
 
 //function for setting data 

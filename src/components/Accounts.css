@@ -74,13 +74,14 @@
 }
 
 #displayField{
+    visibility: hidden;
     position: absolute;
     height: 61vh;
     width: 26vw;
     /* background-color: gold; */
     align-self: center;
     margin-left: 35vw;
-    z-index: 100;
+    z-index: 10;
 }
 
 .coverimage{

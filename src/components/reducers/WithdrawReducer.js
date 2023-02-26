@@ -2,8 +2,8 @@
 
 const loadState = () => {
     return {
-        withdraw_from: 'this is withdraw from',
-        withdraw_amount: 'this is withdraw amount'
+        withdraw_from: null,
+        withdraw_amount: null
     }
 };
 
@@ -13,12 +13,12 @@ export const WithdrawReducer = (state = initialState, action) => {
 
     switch(action.type){
         case 'WITHDRAW_AMOUNT':
-        return {
+        return {...state,
             withdraw_amount: action.withdraw_amount
             };
         case 'WITHDRAW_FROM':
-            return {
-                from_account: action.from_account
+            return {...state,
+                withdraw_from: action.withdraw_from
             };
             default:
             return state;

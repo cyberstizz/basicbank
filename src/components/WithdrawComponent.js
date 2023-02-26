@@ -1,24 +1,35 @@
 import {Link} from 'react-router-dom'
 import './WithdrawComponent.css'
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import * as actionCreaters from './ActionCreaters'
+import { basicBankstore } from '../index'
 
 const WithdrawComponent = (props) => {
 
-//first the useState varaibles
-
+const withdrawAmountActionCreater = actionCreaters.withdrawAmountActionCreater
 
 const [withdrawField, setWithdrawField] = useState('')
 
-    const withdrawFieldHandler = (e) => {
+const withdrawState = useSelector((state) => state.withdraw.withdraw_amount)
+
+const dispatch = useDispatch(withdrawAmountActionCreater(withdrawField))
+
+
+
+    const WithdrawFieldHandler = (e) => {
       e.preventDefault()
       setWithdrawField(e)
 
-      useDispatch()
-    }
+      dispatch(withdrawAmountActionCreater(withdrawField))
 
-    c
+    }
+useEffect(() => {
+  console.log(`this is the new state the withdraw amount ${withdrawState}`)
+}, [withdrawField])
+    // useEffect(() => {
+    //   useDispatch(withdrawAmountActionCreater(withdrawField))
+    // }, [withdrawField])
 
 
 
@@ -33,10 +44,10 @@ const [withdrawField, setWithdrawField] = useState('')
 
           <div className='withdrawSection'>
             <div className='withdrawSectionHeader'>Withdrawal Amount</div>
-            <input onChange={withdrawFieldHandler} type='text' placeholder='$0.00' className='withdrawField'></input>
+            <input onChange={(event) => dispatch(withdrawAmountActionCreater(event.target.value))} type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
-          <button onClick={withdrawClickHandler} className='withdrawButton'>Make Withdrawal</button>
+          <button onClick={props.handler} className='withdrawButton'>Make Withdrawal</button>
 
           
           
