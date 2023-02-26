@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 import { WithdrawReducer } from './components/reducers/WithdrawReducer';
 import { TransferReducer } from './components/reducers/TransferReducer';
 import { DepositReducer } from './components/reducers/DepositReducer';
-import withdrawSlice from './components/reducers/WithdrawSlice';
 
 
 export const basicBankstore = configureStore({
@@ -26,6 +25,10 @@ export const basicBankstore = configureStore({
   // transfer_amount: TransferReducer
   
 });
+
+basicBankstore.subscribe(() => {
+  console.log(basicBankstore.getState())
+})
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
