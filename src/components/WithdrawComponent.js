@@ -2,17 +2,25 @@ import {Link} from 'react-router-dom'
 import './WithdrawComponent.css'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import * as actionCreaters from './ActionCreaters'
 
 const WithdrawComponent = (props) => {
 
 //first the useState varaibles
 
+
 const [withdrawField, setWithdrawField] = useState('')
 
-    const onchangeHandler = (e) => {
+    const withdrawFieldHandler = (e) => {
       e.preventDefault()
       setWithdrawField(e)
+
+      useDispatch()
     }
+
+    c
+
+
 
     return (
         <div className='fullWithdrawComponent'>
@@ -25,10 +33,10 @@ const [withdrawField, setWithdrawField] = useState('')
 
           <div className='withdrawSection'>
             <div className='withdrawSectionHeader'>Withdrawal Amount</div>
-            <input onChange={props.onChange} type='text' placeholder='$0.00' className='withdrawField'></input>
+            <input onChange={withdrawFieldHandler} type='text' placeholder='$0.00' className='withdrawField'></input>
           </div>
           <div className='descriptionSection'>description</div>
-          <button onClick={props.handler} className='withdrawButton'>Make Withdrawal</button>
+          <button onClick={withdrawClickHandler} className='withdrawButton'>Make Withdrawal</button>
 
           
           
