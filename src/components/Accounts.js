@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Accounts = () => {
 
-const state = useSelector(state => state)
+const deposit_from = useSelector((state) => state.deposit_from)
 
   const handleWithdrawText = (e) => {
     e.preventDefault()
@@ -305,7 +305,7 @@ const displayArray = [<DepositComponent onchange={handleDepositText} handler={co
 //function for setting data 
 useEffect(() => {
 
-  console.log(`this is the redux store state: ${state}`)
+  console.log(`this is the redux store state: ${deposit_from}`)
 
   
 const databaseCall = async () => {
