@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import './WithdrawComponent.css'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 
 const WithdrawComponent = (props) => {
 
@@ -8,6 +9,10 @@ const WithdrawComponent = (props) => {
 
 const [withdrawField, setWithdrawField] = useState('')
 
+    const onchangeHandler = (e) => {
+      e.preventDefault()
+      setWithdrawField(e)
+    }
 
     return (
         <div className='fullWithdrawComponent'>
