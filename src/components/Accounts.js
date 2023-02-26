@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Accounts = () => {
 
-
+const state = useSelector(state => state)
 
   const handleWithdrawText = (e) => {
     e.preventDefault()
