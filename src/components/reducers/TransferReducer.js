@@ -2,9 +2,9 @@
 
 const loadState = () => {
     return {
-        transfer_from: null,
-        transfer_to: null,
-        transfer_Amount: null
+        transfer_from: 'this is transfer from',
+        transfer_to: 'this is transfer to',
+        transfer_Amount: 'this is transfer amount'
     }
 };
 

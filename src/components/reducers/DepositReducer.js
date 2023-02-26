@@ -2,8 +2,8 @@
 
 const loadState = () => {
     return {
-        deposit_from: '',
-        deposit_amount: null
+        deposit_from: 'this is deposit from',
+        deposit_amount: 'this is deposit amount'
     }
 };
 

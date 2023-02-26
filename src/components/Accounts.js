@@ -14,31 +14,33 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 const Accounts = () => {
+const tranferStore = useSelector((state) => state.transfer.transfer_to)
 
-const deposit_from = useSelector((state) => state.withdraw.withdraw_from)
+const deposit_from = useSelector((state) => state.deposit.deposit_from)
+
+const depositAmount = useSelector((state) => state.deposit.deposit_amount)
+
+const withdrawFrom = useSelector((state) => state.withdraw.withdraw_from)
+
+const withdrawAmount = useSelector((state) => state.withdraw.withdraw_amount)
+
+const transferFrom = useSelector((state) => state.transfer.transfer_from)
+
+const transferTo = useSelector((state) => state.transfer.transfer_to)
+
+const transferType = useSelector((state) => state.transfer.transfer_type)
+
+const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
+
+// console.log(`these are all the variables for transfer all baked in ${tranferStore}`)
+
 
   const handleWithdrawText = (e) => {
     e.preventDefault()
 
-    setWithdrawAmount(e.target.value)
+    // setWithdrawAmount(e.target.value)
   } 
  //first are the usestate variables for the page
-
- const [depositAccount, setDepositAccount] = useState(null)
-
- const [depositAmount, setDepositAmount] = useState(0)
- 
- const [withdrawAccount, setWithdrawAccount] = useState(null)
- 
- const [withdrawAmount, setWithdrawAmount] = useState(0)
- 
- const [transferFrom, setTransferFrom] = useState(null)
- 
- const [transferTo, setTransferTo] = useState(null)
- 
- const [transferType, setTransferType] = useState('')
- 
- const [transferAmount, setTransferAmount] = useState(0)
 
 
  
@@ -157,7 +159,7 @@ console.log(transferCall.status())
   const handleDepositText = (e) => {
     e.preventDefault()
 
-    setDepositAmount(e.target.value)
+    // setDepositAmount(e.target.value)
   }
 
 
@@ -175,7 +177,7 @@ console.log(transferCall.status())
     transactionSpace.innerHTML = selectedComponent;
 
 
-    setDepositAccount(accountNumber)
+    // setDepositAccount(accountNumber)
   }
   
 
@@ -197,7 +199,7 @@ console.log(transferCall.status())
     transactionSpace.innerHTML = selectedComponent;
 
 
-    setWithdrawAccount(accountNumber)
+    // setWithdrawAccount(accountNumber)
   }
   
   
@@ -305,7 +307,10 @@ const displayArray = [<DepositComponent onchange={handleDepositText} handler={co
 //function for setting data 
 useEffect(() => {
 
-  console.log(`this is the redux store state: ${deposit_from}`)
+  // console.log(`this is the redux store state: ${deposit_from}`)
+
+  console.log(`these are all the variables for transfer all baked in ${tranferStore}`)
+
 
   
 const databaseCall = async () => {
