@@ -10,18 +10,20 @@ import { WithdrawReducer } from './components/reducers/WithdrawReducer';
 import { TransferReducer } from './components/reducers/TransferReducer';
 
 
-export const basicBankstore = configureStore({
-  reducer: {
-  deposit_from: DepositReducer,
-  deposit_amount: DepositReducer,
-  withdraw_from: WithdrawReducer,
-  withdraw_amount: WithdrawReducer,
-  transfer_from: TransferReducer,
-  transfer_to: TransferReducer,
-  transfer_amount: TransferReducer
-  }
-});
+// export const basicBankstore = configureStore({
+//   reducer: {
+//   deposit_from: DepositReducer,
+//   deposit_amount: DepositReducer,
+//   withdraw_from: WithdrawReducer,
+//   withdraw_amount: WithdrawReducer,
+//   transfer_from: TransferReducer,
+//   transfer_to: TransferReducer,
+//   transfer_amount: TransferReducer
+//   }
+// });
 
+
+basicBankstore = createStore
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
