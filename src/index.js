@@ -5,25 +5,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { DepositReducer } from './components/reducers/DepositReducer';
 import { WithdrawReducer } from './components/reducers/WithdrawReducer';
 import { TransferReducer } from './components/reducers/TransferReducer';
+import { DepositReducer } from './components/reducers/DepositReducer';
+import withdrawSlice from './components/reducers/WithdrawSlice';
 
 
-// export const basicBankstore = configureStore({
-//   reducer: {
-//   deposit_from: DepositSlice,
-//   deposit_amount: DepositReducer,
-//   withdraw_from: WithdrawReducer,
-//   withdraw_amount: WithdrawReducer,
-//   transfer_from: TransferReducer,
-//   transfer_to: TransferReducer,
-//   transfer_amount: TransferReducer
-//   }
-// });
+export const basicBankstore = configureStore({
+  reducer:  {
+    withdraw: WithdrawReducer,
+    transfer: TransferReducer,
+    deposit: DepositReducer
+  }
+  
+  
+  // withdraw_from: WithdrawReducer,
+  // withdraw_amount: WithdrawReducer,
+  // transfer_from: TransferReducer,
+  // transfer_to: TransferReducer,
+  // transfer_amount: TransferReducer
+  
+});
 
-
-basicBankstore = createStore
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

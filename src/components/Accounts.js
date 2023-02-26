@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Accounts = () => {
 
-const deposit_from = useSelector((state) => state.deposit_from)
+const deposit_from = useSelector((state) => state.withdraw.withdraw_from)
 
   const handleWithdrawText = (e) => {
     e.preventDefault()
