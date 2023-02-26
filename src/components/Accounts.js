@@ -305,6 +305,7 @@ const displayArray = [<DepositComponent onchange={handleDepositText} handler={co
 //function for setting data 
 useEffect(() => {
 
+  console.log(`this is the redux store state: ${state}`)
 
   
 const databaseCall = async () => {
