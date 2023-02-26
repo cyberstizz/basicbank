@@ -1,4 +1,5 @@
-//DepositReducer
+import { createSlice } from "@reduxjs/toolkit";
+
 
 const loadState = () => {
     return {
