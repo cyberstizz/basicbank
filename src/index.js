@@ -12,7 +12,7 @@ import { TransferReducer } from './components/reducers/TransferReducer';
 
 // export const basicBankstore = configureStore({
 //   reducer: {
-//   deposit_from: DepositReducer,
+//   deposit_from: DepositSlice,
 //   deposit_amount: DepositReducer,
 //   withdraw_from: WithdrawReducer,
 //   withdraw_amount: WithdrawReducer,
