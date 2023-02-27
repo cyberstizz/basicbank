@@ -2,8 +2,8 @@
 
 const loadState = () => {
     return {
-        withdraw_from: null,
-        withdraw_amount: null
+        withdraw_from: 0,
+        withdraw_amount: 0
     }
 };
 

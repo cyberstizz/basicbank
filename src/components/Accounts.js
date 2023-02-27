@@ -90,10 +90,12 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
 
   }
   
-  const makeWithdrawal = async (accountNumber, amount) => {
+  const makeWithdrawal = async () => {
+    console.log('i am the makewithdrawal function and I have been called')
+
 
 //make post request to server
-const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+  const withdrawCall = await fetch('http://localhost:8000/withdraw', {
   method: "POST",
   headers: {
     'Accept': 'application/json',
@@ -101,11 +103,12 @@ const withdrawCall = await fetch('http://localhost:8000/withdraw', {
     'X-CSRFToken': await getCsrfToken()
   },
   credentials: 'include',
-  body: {
+  body: JSON.stringify({
     account_number: withdrawFrom,
     withdrawal_amount: withdrawAmount 
-  }
+  })
 })
+
 console.log(withdrawCall.status())
 
 //if request is succesful alert success
