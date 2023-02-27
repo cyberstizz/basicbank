@@ -9,7 +9,7 @@ const [name, setName] = useState('');
 
 const [email, setEmail] = useState('');
 
-const [acoount, setAccount] = useState(0);
+const [account, setAccount] = useState(0);
 
 const [deposit, setDeposit] = useState(0);
 
