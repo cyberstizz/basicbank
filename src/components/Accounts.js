@@ -169,18 +169,23 @@ console.log(transferCall.status())
 
 
 
-  const startDeposit = (accountNumber) => {
+  const startDeposit = () => {
 
     //open modal by setting the display to the deposit value of
     //the display array which is 0
     let transactionSpace = document.getElementById('displayField');
 
+    transactionSpace.style.visibility = 'visible';
+
+
     let selectedComponent = displayArray[0];
 
-    transactionSpace.innerHTML = selectedComponent;
+    transactionSpace = selectedComponent;
 
 
-    // setDepositAccount(accountNumber)
+    setComponentToShow(<DepositComponent onchange={handleDepositText} handler={completeDeposit} />)
+
+
   }
   
 
@@ -246,13 +251,16 @@ console.log(transferCall.status())
   //the display array which is 4
     let transactionSpace = document.getElementById('displayField');
 
+    transactionSpace.style.visibility = 'visible';
+
+
     let selectedComponent = displayArray[4];
 
-    transactionSpace.innerHTML = selectedComponent;
+    transactionSpace = selectedComponent;
 
 
-    //set depositAmount useState variable
-    //setDepositAmount(e.target.value)
+    setComponentToShow(<TransferComponent transferHandler={completeTransfer} />)
+
   }
 
 
@@ -260,11 +268,13 @@ const completeDeposit = () => {
 
   let transactionSpace = document.getElementById('displayField');
 
+  transactionSpace.style.visibility = 'visible';
+
   let selectedComponent = displayArray[1];
 
   transactionSpace.innerHTML = selectedComponent;
 
-
+  setComponentToShow(<DepositComponent onchange={handleDepositText} handler={completeDeposit} />)
 }
 
 
@@ -417,7 +427,7 @@ const handleLogout = async () => {
          {data.map((acc, index) => {
 
           if(acc.accounttype){
-      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} tranferHandler={StartTransfer} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
+      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} transferHandler={StartTransfer} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
         }     
                             })} 
           

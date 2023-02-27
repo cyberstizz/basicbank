@@ -1,10 +1,35 @@
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
 import './DepositComponent.css'
+import { useDispatch } from 'react-redux'
+import { depositAmountActionCreater } from './ActionCreaters'
 
-const DepositComponent = () => {
+const DepositComponent = (props) => {
+
+  const dispatch = useDispatch()
+
     return (
-        <div>DepositComponent</div>
-      )
+<div className='fullDepositComponent'>
+          
+          
+          <div className='toprow'>
+            <div className='Xout'>x</div>
+            <div className='depositHeader'>deposit</div>
+          </div>
+
+          <div className='depositSection'>
+            <div className='depositSectionHeader'>Deposit Amount</div>
+            <input onChange={(event) => dispatch(depositAmountActionCreater(event.target.value))} type='text' placeholder='$0.00' className='withdrawField'></input>
+          </div>
+          <div className='descriptionSection'>description</div>
+          <button onClick={props.depositHandler} className='depositButton'>Make deposit</button>
+
+          
+          
+          
+          </div>      
+          
+          )
 }
 
 
