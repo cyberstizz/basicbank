@@ -21,7 +21,7 @@ const withdrawFrom = useSelector((state) => state.withdraw.withdraw_from)
 
           <div className='withdrawSection'>
             <div className='withdrawSectionHeader'>Withdraw Amount</div>
-            <div className='withdrawField'>you will be withdrawing {withdrawAmount} from account # {withdrawFrom}</div>
+            <div className='withdrawField'>you will be withdrawing ${withdrawAmount} from account # {withdrawFrom}</div>
           </div>
           <div className='descriptionSection'>description</div>
           <button onClick={props.makeWithdrawal} className='withdrawButton'>Make Deposit</button>

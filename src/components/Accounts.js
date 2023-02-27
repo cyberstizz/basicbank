@@ -102,8 +102,8 @@ const withdrawCall = await fetch('http://localhost:8000/withdraw', {
   },
   credentials: 'include',
   body: {
-    account: accountNumber,
-    amount: amount
+    account_number: withdrawFrom,
+    withdrawal_amount: withdrawAmount 
   }
 })
 console.log(withdrawCall.status())
