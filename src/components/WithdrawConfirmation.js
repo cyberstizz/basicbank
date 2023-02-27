@@ -74,7 +74,7 @@ success = 'succeeded'
 
           <div className='withdrawSection'>
             <div className='withdrawSectionHeader'>Withdraw Amount</div>
-            <div className='withdrawField'>you will be withdrawing ${withdrawAmount} from account # {withdrawFrom}</div>
+            <div className='thewithdrawField'>you will be withdrawing ${withdrawAmount} from account # {withdrawFrom}</div>
           </div>
           <div className='descriptionSection'>description</div>
           <button onClick={makeWithdrawal} className='withdrawButton'>Make Deposit</button>

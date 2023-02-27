@@ -22,7 +22,7 @@ export const withdrawFromActionCreater = (account) => {
 export const depositAmountActionCreater = (amount) => {
     return {
         type: 'DEPOSIT_AMOUNT',
-        amount: amount
+        deposit_amount: amount
     }
 };
 
@@ -32,7 +32,7 @@ export const depositAmountActionCreater = (amount) => {
 export const depositFromActionCreater = (account) => {
     return {
         type: 'DEPOSIT_FROM',
-        account: account
+        from_account: account
     }
 };
 

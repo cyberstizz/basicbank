@@ -183,7 +183,7 @@ console.log(transferCall.status())
     transactionSpace = selectedComponent;
 
 
-    setComponentToShow(<DepositComponent onchange={handleDepositText} handler={completeDeposit} />)
+    setComponentToShow(<DepositComponent depositHandler={completeDeposit} />)
 
 
   }
@@ -270,11 +270,11 @@ const completeDeposit = () => {
 
   transactionSpace.style.visibility = 'visible';
 
-  let selectedComponent = displayArray[1];
+  // let selectedComponent = displayArray[1];
 
-  transactionSpace.innerHTML = selectedComponent;
+  // transactionSpace.innerHTML = selectedComponent;
 
-  setComponentToShow(<DepositComponent onchange={handleDepositText} handler={completeDeposit} />)
+  setComponentToShow(<DepositConfirmation handler={completeDeposit} />)
 }
 
 
