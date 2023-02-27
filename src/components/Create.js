@@ -7,6 +7,8 @@ const Create = () => {
 
 const [name, setName] = useState('');
 
+const [password, setPasswrod] = useState('');
+
 const [email, setEmail] = useState('');
 
 const [account, setAccount] = useState(0);
