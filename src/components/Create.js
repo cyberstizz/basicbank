@@ -2,6 +2,19 @@
  import { useState } from 'react';
 
 const Create = () => {
+
+//name, email, account, deposit
+
+const [name, setName] = useState('');
+
+const [email, setEmail] = useState('');
+
+const [acoount, setAccount] = useState('');
+
+
+
+
+
     return(
 
 <div className='fullAccountsPage'>
