@@ -68,7 +68,7 @@ success = 'succeeded'
           
           
           <div className='toprow'>
-            <div className='Xout'>&#9747;</div>
+            <div className='Xout' onClick={props.xoutHandler}>&#9747;</div>
             <div className='withdrawHeader'>Are you sure</div>
           </div>
 

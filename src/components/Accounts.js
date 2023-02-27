@@ -54,7 +54,7 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
   const completeWithdraw = () => {
   
     console.log('this is the complete withdraw function and I have been called')
-      setComponentToShow(<WithdrawConfirmation handler={makeWithdrawal} />)
+      setComponentToShow(<WithdrawConfirmation xoutHandler={xoutHandler} handler={makeWithdrawal} />)
       
     
     
@@ -183,7 +183,7 @@ console.log(transferCall.status())
     transactionSpace = selectedComponent;
 
 
-    setComponentToShow(<DepositComponent depositHandler={completeDeposit} />)
+    setComponentToShow(<DepositComponent xoutHandler={xoutHandler} depositHandler={completeDeposit} />)
 
 
   }
@@ -204,10 +204,10 @@ console.log(transferCall.status())
 
     transactionSpace.style.visibility = 'visible';
 
-    let selectedComponent = displayArray[2];
+    // let selectedComponent = displayArray[2];
 
-    transactionSpace = selectedComponent;
-
+    // transactionSpace = selectedComponent;
+    setComponentToShow(<WithdrawComponent xoutHandler={xoutHandler} onChange={handleWithdrawText} handler={completeWithdraw} />)
 
     // setWithdrawAccount(accountNumber)
   }
@@ -259,7 +259,7 @@ console.log(transferCall.status())
     transactionSpace = selectedComponent;
 
 
-    setComponentToShow(<TransferComponent transferHandler={completeTransfer} />)
+    setComponentToShow(<TransferComponent xoutHandler={xoutHandler} transferHandler={completeTransfer} />)
 
   }
 
@@ -274,7 +274,7 @@ const completeDeposit = () => {
 
   // transactionSpace.innerHTML = selectedComponent;
 
-  setComponentToShow(<DepositConfirmation handler={completeDeposit} />)
+  setComponentToShow(<DepositConfirmation xoutHandler={xoutHandler} handler={completeDeposit} />)
 }
 
 
@@ -291,7 +291,14 @@ const completeTransfer = () => {
 
 }
 
+const xoutHandler = () => {
 
+  let transactionSpace = document.getElementById('displayField');
+
+  transactionSpace.style.visibility = 'hidden';
+
+
+}
 
 
 
@@ -311,7 +318,7 @@ const completeTransfer = () => {
   }
 
 
-  const [componentToShow, setComponentToShow] = useState(<WithdrawComponent onChange={handleWithdrawText} handler={completeWithdraw} />)
+  const [componentToShow, setComponentToShow] = useState(<WithdrawComponent xoutHandler={xoutHandler} onChange={handleWithdrawText} handler={completeWithdraw} />)
 
 //this is an array that will toggle between values in the display field
 //it will consist of six components and the string 'none'

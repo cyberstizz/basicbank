@@ -13,7 +13,7 @@ const DepositComponent = (props) => {
           
           
           <div className='toprow'>
-            <div className='Xout'>x</div>
+            <div className='Xout' onClick={props.xoutHandler}>x</div>
             <div className='depositHeader'>deposit</div>
           </div>
 

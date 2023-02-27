@@ -38,7 +38,7 @@ useEffect(() => {
           
           
           <div className='toprow'>
-            <div className='Xout'>x</div>
+            <div className='Xout' onClick={props.xoutHandler}>x</div>
             <div className='withdrawHeader'>Withdraw</div>
           </div>
 
