@@ -21,6 +21,8 @@ const setNameHandler = (e) => {
 
 e.preventDefault()
 
+setName(e.tartget.value)
+
 }
 
 
