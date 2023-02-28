@@ -7,7 +7,7 @@ const Create = () => {
 
 const [name, setName] = useState('');
 
-const [password, setPasswrod] = useState('');
+const [password, setPassword] = useState('');
 
 const [email, setEmail] = useState('');
 
@@ -24,6 +24,14 @@ e.preventDefault()
 setName(e.tartget.value)
 
 }
+
+const setPasswordHandler = (e) => {
+
+    e.preventDefault()
+    
+    setPassword(e.tartget.value)
+    
+    }
 
 
 
