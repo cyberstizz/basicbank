@@ -300,6 +300,10 @@ const xoutHandler = () => {
 
 }
 
+const startDelete = () => {
+  
+}
+
 
 
   const API_HOST = 'http://localhost:8000';
