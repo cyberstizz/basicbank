@@ -3,8 +3,8 @@
  import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
-    
 
+const navigate = useNavigate();
 //name, email, account, deposit
 
 const [name, setName] = useState('');
