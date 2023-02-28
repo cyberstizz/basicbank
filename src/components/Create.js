@@ -57,6 +57,15 @@ const setDepositHandler = (e) => {
     
     setDeposit(e.tartget.value)
     
+    };
+
+
+    const makeAccount = () => {
+
+        
+
+
+
     }
 
 
