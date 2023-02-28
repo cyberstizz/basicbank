@@ -103,7 +103,7 @@ const setDepositHandler = (e) => {
 
         
         
-        <form className="createNewAccountForm">
+        <div className="createNewAccountForm">
             <div className="createUserSection">
                 
                 
@@ -163,7 +163,7 @@ const setDepositHandler = (e) => {
 
 
 
-        </form>
+        </div>
 
 
 
