@@ -21,17 +21,13 @@ const [deposit, setDeposit] = useState(0);
 
 const setNameHandler = (e) => {
 
-e.preventDefault()
-
-setName(e.tartget.value)
+setName(e.target.value)
 
 }
 
 const setPasswordHandler = (e) => {
-
-    e.preventDefault()
     
-    setPassword(e.tartget.value)
+    setPassword(e.target.value)
     
     }
 
@@ -40,7 +36,7 @@ const setEmailHandler = (e) => {
 
     e.preventDefault()
         
-    setEmail(e.tartget.value)
+    setEmail(e.target.value)
         
 }
 
@@ -48,7 +44,7 @@ const setAccountHandler = (e) => {
 
     e.preventDefault()
             
-    setAccount(e.tartget.value)
+    setAccount(e.target.value)
             
 };
 
@@ -57,7 +53,7 @@ const setDepositHandler = (e) => {
 
     e.preventDefault()
     
-    setDeposit(e.tartget.value)
+    setDeposit(e.target.value)
     
     };
 
@@ -91,7 +87,7 @@ const setDepositHandler = (e) => {
     
         console.log(`I am the makeAccount function and I have been called,
         further, you should know that this is the information that you will be sending
-        ${allMyStuffObject}`)
+        ${allMyStuffObject.name}`)
 
 
 
