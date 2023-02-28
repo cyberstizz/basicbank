@@ -124,7 +124,7 @@ const setDepositHandler = (e) => {
 
 
                 <div className="emailBlock">
-        <input placeholder="email" type="text" className="email"></input>
+        <input placeholder="email" type="text" className="email" onChange={setEmailHandler}></input>
         <div className="decorativeLine"></div>
         <p className="emailText">Email</p>
                 </div>
