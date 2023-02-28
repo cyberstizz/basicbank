@@ -9,6 +9,7 @@ import TransferComponent from './TransferComponent'
 import TransferConfirmation from './TransferConfirmation'
 import WithdrawComponent from './WithdrawComponent'
 import WithdrawConfirmation from './WithdrawConfirmation'
+import DeleteComponent from './DeleteComponent';
 import { useDispatch, useSelector } from 'react-redux';
 
 
