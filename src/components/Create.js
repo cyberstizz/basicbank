@@ -36,11 +36,19 @@ const setPasswordHandler = (e) => {
 
 const setEmailHandler = (e) => {
 
-        e.preventDefault()
+    e.preventDefault()
         
-        setEmail(e.tartget.value)
+    setEmail(e.tartget.value)
         
-        }
+}
+
+const setAccountHandler = (e) => {
+
+    e.preventDefault()
+            
+    setAccount(e.tartget.value)
+            
+}
 
 
 
