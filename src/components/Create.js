@@ -60,7 +60,7 @@ const setDepositHandler = (e) => {
     };
 
 
-    const makeAccount = () => {
+    const makeAccount = async () => {
 
         const allMyStuffObject = {
             name: name,
@@ -72,9 +72,10 @@ const setDepositHandler = (e) => {
     
         console.log(`I am the makeAccount function and I have been called,
         further, you should know that this is the information that you will be sending
-        
-        
         ${allMyStuffObject}`)
+
+
+
         
 
 
