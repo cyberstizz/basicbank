@@ -301,7 +301,19 @@ const xoutHandler = () => {
 }
 
 const startDelete = () => {
-  
+
+//open modal by setting the display to the transaction conponent from
+  //the display array which is 4
+  let transactionSpace = document.getElementById('displayField');
+
+  transactionSpace.style.visibility = 'visible';
+
+
+
+
+  setComponentToShow(<DeleteComponent xoutHandler={xoutHandler} deleteHandler={completeDelete} />)
+
+
 }
 
 
