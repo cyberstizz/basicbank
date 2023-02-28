@@ -13,7 +13,7 @@ const [password, setPassword] = useState('');
 
 const [email, setEmail] = useState('');
 
-const [account, setAccount] = useState(0);
+const [account, setAccount] = useState('checking');
 
 const [deposit, setDeposit] = useState(0);
 
@@ -33,8 +33,6 @@ const setPasswordHandler = (e) => {
 
 
 const setEmailHandler = (e) => {
-
-    e.preventDefault()
         
     setEmail(e.target.value)
         
@@ -42,7 +40,6 @@ const setEmailHandler = (e) => {
 
 const setAccountHandler = (e) => {
 
-    e.preventDefault()
             
     setAccount(e.target.value)
             
@@ -51,7 +48,6 @@ const setAccountHandler = (e) => {
 
 const setDepositHandler = (e) => {
 
-    e.preventDefault()
     
     setDeposit(e.target.value)
     
@@ -78,16 +74,18 @@ const setDepositHandler = (e) => {
     const makeAccount = async () => {
 
         const allMyStuffObject = {
+            body: {
             name: name,
             password: password,
             email: email,
             account: account,
             deposit: deposit
+            }
         }
     
         console.log(`I am the makeAccount function and I have been called,
         further, you should know that this is the information that you will be sending
-        ${allMyStuffObject.name}`)
+        ${allMyStuffObject.body.account}`)
 
 
 
