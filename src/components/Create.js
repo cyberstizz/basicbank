@@ -75,7 +75,7 @@ const setDepositHandler = (e) => {
 
         const allMyStuffObject = {
             body: {
-            name: name,
+            username: name,
             password: password,
             email: email,
             account: account,
@@ -100,7 +100,7 @@ const setDepositHandler = (e) => {
         },
         credentials: 'include',
         body: JSON.stringify({
-            name: name,
+            username: name,
             password: password,
             email: email,
             account: account,
@@ -109,7 +109,7 @@ const setDepositHandler = (e) => {
         })
 
 console.log(createAccountCall.status)
-if(createAccountCall.status == 200){
+if(createAccountCall.status === 200){
   alert('success! your account has been succesfulyy created!')
   navigate('/')
 }
