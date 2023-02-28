@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
-import './DepositComponent.css'
+import './DeleteComponent.css'
 import { useDispatch } from 'react-redux'
-import { depositAmountActionCreater } from './ActionCreaters'
+// import { depositAmountActionCreater } from './ActionCreaters'
 
-const DepositComponent = (props) => {
+const DeleteComponent = (props) => {
 
   const dispatch = useDispatch()
 
@@ -14,4 +14,4 @@ const DepositComponent = (props) => {
     }
     
     
-    export default DepositComponent;
+    export default DeleteComponent;
