@@ -1,10 +1,17 @@
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import './DeleteComponent.css'
 import { useDispatch } from 'react-redux'
 // import { depositAmountActionCreater } from './ActionCreaters'
 
 const DeleteComponent = (props) => {
+
+
+useEffect(() => {
+
+    console.log(props)
+}, [])
 
 const [deleteAccount, setDeleteAccount] = useState(null)
 
@@ -13,7 +20,6 @@ const [deleteAccount, setDeleteAccount] = useState(null)
         setDeleteAccount(event.target.value)
     }
 
-  const dispatch = useDispatch()
 
     return (
 <div className='fullDeleteComponent'>
@@ -27,8 +33,10 @@ const [deleteAccount, setDeleteAccount] = useState(null)
           <div className='deleteSection'>
             <div className='deleteSectionHeader'>Which account do you want to delete</div>
             <select placeholder="Delete Type" type="text" className="deletetype" onChange={deleteChangeHandler}>
-                <option>Checking</option>
-                <option>Savings</option>
+                
+                {props.data.accountnumber.map((account) => {
+                    <option>account</option>
+                })}
             </select>
           </div>
           <div className='descriptionSection'>description</div>
