@@ -103,7 +103,7 @@ const setDepositHandler = (e) => {
 
         
         
-        <form className="createNewAccountForm">
+        <form className="createNewAccountForm" onSubmit={makeAccount}>
             <div className="createUserSection">
                 
                 
