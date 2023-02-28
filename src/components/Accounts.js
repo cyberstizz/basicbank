@@ -311,10 +311,11 @@ const startDelete = () => {
   transactionSpace.style.visibility = 'visible';
 
 
-  setComponentToShow(<DeleteComponent xoutHandler={xoutHandler} deleteHandler={completeDelete} />)
+  setComponentToShow(<DeleteComponent xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
 
 
 }
+
 
 
 
@@ -423,7 +424,7 @@ const handleLogout = async () => {
 
         <div className='accountnumber'>Accounts</div>
 
-        <div className='state'>Delete</div>
+        <div className='state' onClick={startDelete}>Delete</div>
 
     </div>
   
