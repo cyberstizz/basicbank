@@ -48,7 +48,16 @@ const setAccountHandler = (e) => {
             
     setAccount(e.tartget.value)
             
-}
+};
+
+
+const setDepositHandler = (e) => {
+
+    e.preventDefault()
+    
+    setPassword(e.tartget.value)
+    
+    }
 
 
 
