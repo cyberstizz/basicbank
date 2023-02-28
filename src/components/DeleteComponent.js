@@ -18,6 +18,10 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
     const deleteChangeHandler = (event) => {
         setDeleteAccount(event.target.value)
+    };
+
+    const depositHandler = () => {
+        
     }
 
 
