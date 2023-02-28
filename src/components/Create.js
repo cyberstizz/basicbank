@@ -108,7 +108,7 @@ const setDepositHandler = (e) => {
                 
                 
                 <div className="firstNameBlock">
-        <input placeholder="Name" type="text" className="firstname"></input>
+        <input placeholder="Name" type="text" className="firstname" onChange={setNameHandler}></input>
         <div className="decorativeLine"></div>
         <p className="nameText">Name</p>
 
@@ -116,7 +116,7 @@ const setDepositHandler = (e) => {
 
 
                 <div className="lastNameBlock">
-        <input placeholder="Password" type="password" className="lastname"></input>
+        <input placeholder="Password" type="password" className="lastname" onChange={setEmailHandler}></input>
         <div className="decorativeLine"></div>
         <p className="lastNameText">Password</p>
                 </div>
