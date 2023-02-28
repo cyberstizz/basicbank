@@ -55,7 +55,7 @@ const setDepositHandler = (e) => {
 
     e.preventDefault()
     
-    setPassword(e.tartget.value)
+    setDeposit(e.tartget.value)
     
     }
 
