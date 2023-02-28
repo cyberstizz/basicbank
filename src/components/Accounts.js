@@ -407,7 +407,7 @@ const handleLogout = async () => {
 
         <div className='accountnumber'>Accounts</div>
 
-        <div className='state'>State</div>
+        <div className='state'>Delete</div>
 
     </div>
   
