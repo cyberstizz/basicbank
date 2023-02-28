@@ -159,7 +159,7 @@ const setDepositHandler = (e) => {
 
 
         </div>
-        <input type="submit" value="Open Account" className="openAccountButton"></input>
+        <input type="submit" value="Open Account" className="openAccountButton" onClick={makeAccount}></input>
 
 
 
