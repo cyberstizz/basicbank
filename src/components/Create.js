@@ -34,6 +34,15 @@ const setPasswordHandler = (e) => {
     }
 
 
+const setEmailHandler = (e) => {
+
+        e.preventDefault()
+        
+        setEmail(e.tartget.value)
+        
+        }
+
+
 
 
     return(
