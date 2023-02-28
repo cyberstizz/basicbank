@@ -311,7 +311,7 @@ const startDelete = () => {
   transactionSpace.style.visibility = 'visible';
 
 
-  setComponentToShow(<DeleteComponent xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
+  setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
 
 
 }
