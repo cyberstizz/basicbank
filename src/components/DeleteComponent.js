@@ -26,7 +26,10 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
           <div className='deleteSection'>
             <div className='deleteSectionHeader'>Delete Amount</div>
-            <input onChange={deleteChangeHandler} type='text' placeholder='$0.00' className='depositField'></input>
+            <select placeholder="Account Type" type="text" className="accounttype" onChange={deleteChangeHandler}>
+                <option>Checking</option>
+                <option>Savings</option>
+            </select>
           </div>
           <div className='descriptionSection'>description</div>
           <button onClick={props.depositHandler} className='depositButton'>Make deposit</button>
