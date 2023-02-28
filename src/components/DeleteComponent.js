@@ -25,7 +25,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
           </div>
 
           <div className='deleteSection'>
-            <div className='deleteSectionHeader'>Delete Amount</div>
+            <div className='deleteSectionHeader'>Which account do you want to delete</div>
             <select placeholder="Account Type" type="text" className="accounttype" onChange={deleteChangeHandler}>
                 <option>Checking</option>
                 <option>Savings</option>
