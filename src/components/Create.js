@@ -76,6 +76,31 @@ const setDepositHandler = (e) => {
 
 
 
+
+
+        const createAccountCall = await fetch('http://localhost:8000/deposit', {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'X-CSRFToken': await getCsrfToken()
+        },
+        credentials: 'include',
+        body: JSON.stringify({
+            name: name,
+            password: password,
+            email: email,
+            account: account,
+            deposit: deposit
+        })
+        })
+
+console.log(createAccountCall.status)
+if(createAccountCall.status == 200){
+  alert('success! your account has been succesfulyy created!')
+  window.location.reload();
+}
+
         
 
 
