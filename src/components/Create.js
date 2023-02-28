@@ -17,6 +17,12 @@ const [deposit, setDeposit] = useState(0);
 
 
 
+const setNameHandler = (e) => {
+
+e.preventDefault()
+
+}
+
 
 
 
