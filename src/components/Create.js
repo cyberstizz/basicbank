@@ -140,7 +140,7 @@ const setDepositHandler = (e) => {
 
         <div className="accountTypeBlock">
 
-        <select placeholder="Account Type" type="text" className="accounttype">
+        <select placeholder="Account Type" type="text" className="accounttype" onChange={setAccountHandler}>
             <option>Checking</option>
             <option>Savings</option>
         </select>
