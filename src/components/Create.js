@@ -80,7 +80,7 @@ const setDepositHandler = (e) => {
 
 
 
-        const createAccountCall = await fetch('http://localhost:8000/deposit', {
+        const createAccountCall = await fetch('http://localhost:8000/create', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -100,7 +100,7 @@ const setDepositHandler = (e) => {
 console.log(createAccountCall.status)
 if(createAccountCall.status == 200){
   alert('success! your account has been succesfulyy created!')
-  window.location.reload();
+  navigate('/')
 }
 
         
