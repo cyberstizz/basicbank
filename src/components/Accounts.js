@@ -10,6 +10,7 @@ import TransferConfirmation from './TransferConfirmation'
 import WithdrawComponent from './WithdrawComponent'
 import WithdrawConfirmation from './WithdrawConfirmation'
 import DeleteComponent from './DeleteComponent';
+import CompleteDelete from './CompleteDelete'
 import { useDispatch, useSelector } from 'react-redux';
 
 
@@ -308,8 +309,6 @@ const startDelete = () => {
   let transactionSpace = document.getElementById('displayField');
 
   transactionSpace.style.visibility = 'visible';
-
-
 
 
   setComponentToShow(<DeleteComponent xoutHandler={xoutHandler} deleteHandler={completeDelete} />)
