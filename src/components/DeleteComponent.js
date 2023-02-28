@@ -6,9 +6,11 @@ import { useDispatch } from 'react-redux'
 
 const DeleteComponent = (props) => {
 
+const [deleteAccount, setDeleteAccount] = useState(null)
 
-    const deleteChangeHandler = (e) => {
 
+    const deleteChangeHandler = (event) => {
+        setDeleteAccount(event.target.value)
     }
 
   const dispatch = useDispatch()
