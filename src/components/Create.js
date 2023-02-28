@@ -61,6 +61,14 @@ const setDepositHandler = (e) => {
 
 
     const makeAccount = () => {
+
+        const allMyStuffObject = {
+            name: name,
+            password: password,
+            email: email,
+            account: account,
+            deposit: deposit
+        }
     
         console.log(`I am the makeAccount function and I have been called,
         further, you should know that this is the information that you will be sending
