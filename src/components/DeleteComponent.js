@@ -33,14 +33,13 @@ const [deleteAccount, setDeleteAccount] = useState(null)
           <div className='deleteSection'>
             <div className='deleteSectionHeader'>Which account do you want to delete</div>
             <select placeholder="Delete Type" type="text" className="deletetype" onChange={deleteChangeHandler}>
-                
-                {props.data.accountnumber.map((account) => {
-                    <option>account</option>
+                {props.data.map((account) => {
+                   return <option>{account.accountnumber}</option>
                 })}
             </select>
           </div>
           <div className='descriptionSection'>description</div>
-          <button onClick={props.depositHandler} className='deleteButton'>Make deposit</button>
+          <button onClick={props.depositHandler} className='deleteButton'>Delete</button>
 
           
           
