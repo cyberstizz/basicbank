@@ -108,9 +108,9 @@ const setDepositHandler = (e) => {
                 
                 
                 <div className="firstNameBlock">
-        <input placeholder="First Name" type="text" className="firstname"></input>
+        <input placeholder="Name" type="text" className="firstname"></input>
         <div className="decorativeLine"></div>
-        <p className="nameText">First Name</p>
+        <p className="nameText">Name</p>
 
                 </div>
 
