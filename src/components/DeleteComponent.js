@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './DeleteComponent.css'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 // import { depositAmountActionCreater } from './ActionCreaters'
 
 const DeleteComponent = (props) => {
@@ -23,10 +23,15 @@ const [deleteAccount, setDeleteAccount] = useState(null)
     const depositHandler = (event) => {
         event.preventDefault();
 
+        //put account into top level basic bank store
+
         const account_to_delete = event.target.value;
 
 
-        
+        //
+
+
+
     }
 
 
