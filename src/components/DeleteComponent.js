@@ -8,6 +8,8 @@ import { DeleteFromActionCreater } from './ActionCreaters';
 
 const DeleteComponent = (props) => {
 
+    const accountToDelete = useSelector((state) => state.delete.delete_account)
+
 
     const API_HOST = 'http://localhost:8000';
 
@@ -39,14 +41,11 @@ const [deleteAccount, setDeleteAccount] = useState(null)
         setDeleteAccount(event.target.value)
     };
 
-    const deleteHandler = (event) => {
+    const deleteHandler = () => {
 
-        //put account into top level basic bank store
-
-        const account_to_delete = event.target.value;
 
         //make sure that it is working correctly
-        console.log(account_to_delete)
+        console.log(accountToDelete)
 
        
 
