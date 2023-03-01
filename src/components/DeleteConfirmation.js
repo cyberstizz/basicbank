@@ -2,7 +2,7 @@ import './DeleteConfirmation.css'
 import { useSelector } from 'react-redux';
 
 const DeleteConfirmation = () => {
-    const withdrawFrom = useSelector((state) => state.withdraw.withdraw_from)
+    const delete_account = useSelector((state) => state.delete.delete_account)
 
 
     const API_HOST = 'http://localhost:8000';
@@ -35,7 +35,7 @@ const DeleteConfirmation = () => {
     },
     credentials: 'include',
     body: JSON.stringify({
-        delete_account: deleteFrom,
+        delete_account: delete_account,
         })
     })
     
