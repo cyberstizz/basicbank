@@ -39,8 +39,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
         setDeleteAccount(event.target.value)
     };
 
-    const depositHandler = (event) => {
-        event.preventDefault();
+    const deleteHandler = (event) => {
 
         //put account into top level basic bank store
 
