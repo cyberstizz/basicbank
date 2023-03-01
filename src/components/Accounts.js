@@ -11,6 +11,7 @@ import WithdrawComponent from './WithdrawComponent';
 import WithdrawConfirmation from './WithdrawConfirmation';
 import DeleteComponent from './DeleteComponent';
 import CompleteDelete from './CompleteDelete';
+import DeleteConfirmation from './'
 import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -325,7 +326,7 @@ const deleteConfirmation = () => {
 
   //make deleteConfirmation show up
 
-  
+
 
 }
 
