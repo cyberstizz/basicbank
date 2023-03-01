@@ -8,13 +8,15 @@ import { Provider } from 'react-redux';
 import { WithdrawReducer } from './components/reducers/WithdrawReducer';
 import { TransferReducer } from './components/reducers/TransferReducer';
 import { DepositReducer } from './components/reducers/DepositReducer';
+import { DeleteReducer } from './components/reducers/DeleteReducer';
 
 
 export const basicBankstore = configureStore({
   reducer:  {
     withdraw: WithdrawReducer,
     transfer: TransferReducer,
-    deposit: DepositReducer
+    deposit: DepositReducer,
+    delete: DeleteReducer
   }
   
   
