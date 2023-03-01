@@ -1,7 +1,7 @@
 import './DeleteConfirmation.css'
 import { useSelector } from 'react-redux';
 
-const DeleteConfirmation = () => {
+const DeleteConfirmation = (props) => {
     const delete_account = useSelector((state) => state.delete.delete_account)
 
 
@@ -45,7 +45,6 @@ const DeleteConfirmation = () => {
       window.location.reload();
     }
     
-    success = 'succeeded'
     
     //if request is succesful alert success
     // if(withdrawCall.status() == 201){
@@ -55,7 +54,7 @@ const DeleteConfirmation = () => {
     
     
         return (
-    <div className='fulldeleteComponent'>
+    <div className='thefulldeleteComponent'>
               
               
               <div className='toprow'>
@@ -65,7 +64,7 @@ const DeleteConfirmation = () => {
     
               <div className='deleteSection'>
                 <div className='deleteSectionHeader'>Withdraw Amount</div>
-                <div className='thedeleteField'>you will be deleting account # {deleteFrom}</div>
+                <div className='thedeleteField'>you will be deleting account # {delete_account}</div>
               </div>
               <div className='descriptionSection'>description</div>
               <button onClick={makeDeletion} className='deleteButton'>Make Deletion</button>

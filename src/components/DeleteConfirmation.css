@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mynerve&family=Titan+One&display=swap');
 
 
-.thefullWithdrawComponent{
+.thefulldeleteComponent{
     background-image: linear-gradient(45.34deg, rgb(0, 16, 43) 5.66%, #10203b 94.35%);
     height: 60vh;
     display: flex;
@@ -23,7 +23,7 @@
     font-weight: 600;
 }
 
-.thewithdrawHeader{
+.thedeleteHeader{
     font-family: 'Titan One', cursive;
     letter-spacing: 1px;
     font-size: 25px;
@@ -34,7 +34,7 @@
     width: 15vw;
 }
 
-.thewithdrawSection{
+.thedeleteSection{
     display: flex;
     flex-direction: column;
     background-color: #414E65;
@@ -46,12 +46,12 @@
     border-radius: 8px;
 }
 
-.thewithdrawSectionHeader{
+.thedeleteSectionHeader{
     height: 5vh;
     color: white;
 }
 
-.thewithdrawField{
+.thedeleteField{
     background-color: #414E65;
     height: 10vh;
     font-size: 20px;
@@ -61,7 +61,7 @@
     border: solid 2px green;
 }
 
-.thewithdrawField::placeholder{
+.thedeleteField::placeholder{
     background-color: #414E65;
     height: 10vh;
     font-size: 30px;
@@ -71,7 +71,7 @@
     border: solid 1px #414E65;
 }
 
-.thewithdrawButton{
+.deleteButton{
     background-color: rgb(139, 110, 35);
     font-size: 18px;
     border-radius: 10px;
