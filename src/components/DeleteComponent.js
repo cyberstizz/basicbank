@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { useEffect } from 'react'
 import './DeleteComponent.css'
 import { useDispatch } from 'react-redux'
@@ -24,6 +24,8 @@ const DeleteComponent = (props) => {
       return _csrfToken;
     }
 
+
+    const dispatch = useDispatch();
 
 useEffect(() => {
 
