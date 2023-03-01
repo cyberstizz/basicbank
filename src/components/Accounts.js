@@ -13,7 +13,6 @@ import DeleteComponent from './DeleteComponent';
 import CompleteDelete from './CompleteDelete';
 import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 import { useDispatch, useSelector } from 'react-redux';
-import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 
 
 
