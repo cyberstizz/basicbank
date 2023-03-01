@@ -48,9 +48,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
         //make sure that it is working correctly
         console.log(account_to_delete)
 
-        //dispatch the account to deleter
-
-        dispatch(DeleteFromActionCreater(account_to_delete))
+       
 
         //open the confirmation page
 
