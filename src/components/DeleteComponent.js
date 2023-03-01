@@ -21,7 +21,12 @@ const [deleteAccount, setDeleteAccount] = useState(null)
     };
 
     const depositHandler = (event) => {
-        event.preventDefault()
+        event.preventDefault();
+
+        const account_to_delete = event.target.value;
+
+
+        
     }
 
 
