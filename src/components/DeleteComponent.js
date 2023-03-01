@@ -2,10 +2,13 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './DeleteComponent.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { DeleteFromActionCreater } from './ActionCreaters';
 // import { depositAmountActionCreater } from './ActionCreaters'
 
 const DeleteComponent = (props) => {
+
+
 
 
 useEffect(() => {
