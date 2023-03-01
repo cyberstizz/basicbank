@@ -318,6 +318,15 @@ const startDelete = () => {
   setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteOne={deleteConfirmation} />)
   }
 
+};
+
+
+const deleteConfirmation = () => {
+
+  //make deleteConfirmation show up
+
+  
+
 }
 
 
