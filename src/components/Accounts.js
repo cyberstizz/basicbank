@@ -1,17 +1,19 @@
-import './Accounts.css'
+import './Accounts.css';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import AccountCard from './AccountCard';
 import { Link } from 'react-router-dom';
-import DepositComponent from './DepositComponent'
-import DepositConfirmation from './DepositConfirmation'
-import TransferComponent from './TransferComponent'
-import TransferConfirmation from './TransferConfirmation'
-import WithdrawComponent from './WithdrawComponent'
-import WithdrawConfirmation from './WithdrawConfirmation'
+import DepositComponent from './DepositComponent';
+import DepositConfirmation from './DepositConfirmation';
+import TransferComponent from './TransferComponent';
+import TransferConfirmation from './TransferConfirmation';
+import WithdrawComponent from './WithdrawComponent';
+import WithdrawConfirmation from './WithdrawConfirmation';
 import DeleteComponent from './DeleteComponent';
-import CompleteDelete from './CompleteDelete'
+import CompleteDelete from './CompleteDelete';
+import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 import { useDispatch, useSelector } from 'react-redux';
+import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 
 
 
@@ -311,7 +313,7 @@ const startDelete = () => {
   transactionSpace.style.visibility = 'visible';
 
   if(Date.length == 1){
-    setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
+    setComponentToShow(<DeleteBasicBankComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
   }else{
 
   setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
