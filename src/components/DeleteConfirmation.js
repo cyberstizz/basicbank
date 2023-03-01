@@ -1,4 +1,5 @@
 import './DeleteConfirmation.css'
+import { useSelector } from 'react-redux';
 
 const DeleteConfirmation = () => {
     const withdrawFrom = useSelector((state) => state.withdraw.withdraw_from)
