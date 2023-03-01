@@ -311,7 +311,7 @@ const startDelete = () => {
 
   transactionSpace.style.visibility = 'visible';
 
-  if(Data.length == 1){
+  if(data.length == 1){
     setComponentToShow(<DeleteBasicBankComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
   }else{
 
