@@ -330,7 +330,8 @@ const deleteConfirmation = () => {
 
   transactionSpace.style.visibility = 'visible';
 
-  
+    setComponentToShow(<DeleteConfirmation />)
+
 
 }
 

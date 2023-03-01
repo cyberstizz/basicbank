@@ -5,3 +5,5 @@ const DeleteConfirmation = () => {
         <div>say something or nothing</div>
     )
 }
+
+export default DeleteConfirmation;
