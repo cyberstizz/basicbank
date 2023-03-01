@@ -34,13 +34,12 @@ const DeleteConfirmation = () => {
     },
     credentials: 'include',
     body: JSON.stringify({
-      account_number: withdrawFrom,
-      withdrawal_amount: Number(withdrawAmount) 
-    })
+        delete_account: deleteFrom,
+        })
     })
     
-    console.log(withdrawCall.status)
-    if(withdrawCall.status == 200){
+    console.log(deleteCall.status)
+    if(deleteCall.status == 200){
       alert('success! your withdrawal went through')
       window.location.reload();
     }
@@ -55,20 +54,20 @@ const DeleteConfirmation = () => {
     
     
         return (
-    <div className='fullWithdrawComponent'>
+    <div className='fulldeleteComponent'>
               
               
               <div className='toprow'>
                 <div className='Xout' onClick={props.xoutHandler}>&#9747;</div>
-                <div className='withdrawHeader'>Are you sure</div>
+                <div className='deleteHeader'>Are you sure</div>
               </div>
     
-              <div className='withdrawSection'>
-                <div className='withdrawSectionHeader'>Withdraw Amount</div>
-                <div className='thewithdrawField'>you will be withdrawing ${withdrawAmount} from account # {withdrawFrom}</div>
+              <div className='deleteSection'>
+                <div className='deleteSectionHeader'>Withdraw Amount</div>
+                <div className='thedeleteField'>you will be deleting account # {deleteFrom}</div>
               </div>
               <div className='descriptionSection'>description</div>
-              <button onClick={makeWithdrawal} className='withdrawButton'>Make Deposit</button>
+              <button onClick={makeDeletion} className='deleteButton'>Make Deletion</button>
               
               
               </div>    
