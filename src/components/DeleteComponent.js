@@ -46,7 +46,14 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
         const account_to_delete = event.target.value;
 
+        //make sure that it is working correctly
+
+
+        //dispatch the account to deleter
+
         dispatch(DeleteFromActionCreater(account_to_delete))
+
+        //open the confirmation page
 
 
 
