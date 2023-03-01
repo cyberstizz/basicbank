@@ -1,4 +1,4 @@
-
+import './DeleteConfirmation.css'
 
 const DeleteConfirmation = () => {
     return (

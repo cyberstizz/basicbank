@@ -326,7 +326,11 @@ const deleteConfirmation = () => {
 
   //make deleteConfirmation show up
 
+  let transactionSpace = document.getElementById('displayField');
 
+  transactionSpace.style.visibility = 'visible';
+
+  
 
 }
 
