@@ -46,7 +46,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
         const account_to_delete = event.target.value;
 
-        dispatch(withdrawFromActionCreater(account_to_delete))
+        dispatch(DeleteFromActionCreater(account_to_delete))
 
 
 
