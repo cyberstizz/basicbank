@@ -21,7 +21,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
     };
 
     const depositHandler = () => {
-        
+
     }
 
 
@@ -35,7 +35,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
           </div>
 
           <div className='deleteSection'>
-            <div className='deleteSectionHeader'>Which account do you want to delete</div>
+            <div className='deleteSectionHeader'>Delete which account</div>
             <select placeholder="Delete Type" type="text" className="deletetype" onChange={deleteChangeHandler}>
                 {props.data.map((account) => {
                    return <option>{account.accountnumber}</option>
