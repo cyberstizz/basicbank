@@ -65,3 +65,10 @@ export const transferFromActionCreater = (account) => {
         account: account
     }
 };
+
+export const DeleteFromActionCreater = () => {
+    return {
+        type: '',
+        amount: amount
+    }
+};
