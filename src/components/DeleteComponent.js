@@ -75,7 +75,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
             </select>
           </div>
           <div className='descriptionSection'>description</div>
-          <button onClick={props.depositHandler} className='deleteButton'>Delete</button>
+          <button onClick={depositHandler} className='deleteButton'>Delete</button>
 
           
           
