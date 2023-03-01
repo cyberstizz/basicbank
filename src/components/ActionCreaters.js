@@ -66,9 +66,9 @@ export const transferFromActionCreater = (account) => {
     }
 };
 
-export const DeleteFromActionCreater = () => {
+export const DeleteFromActionCreater = (account) => {
     return {
-        type: '',
-        amount: amount
+        type: 'DELETE_ACCOUNT',
+        delete_account: account
     }
 };
