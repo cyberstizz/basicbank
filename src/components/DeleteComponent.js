@@ -47,7 +47,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
         const account_to_delete = event.target.value;
 
         //make sure that it is working correctly
-
+        console.log(account_to_delete)
 
         //dispatch the account to deleter
 
