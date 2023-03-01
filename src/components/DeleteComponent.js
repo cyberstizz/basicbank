@@ -38,16 +38,21 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
 
     const deleteChangeHandler = (event) => {
-        setDeleteAccount(event.target.value)
 
-        dispatch(DeleteFromActionCreater(deleteAccount))
+        dispatch(DeleteFromActionCreater(event.target.value))
+
+
     };
 
     const deleteHandler = () => {
 
-
+        if(accountToDelete == 0){
+            console.log(props.data[0].accountnumber)
+        }else{
         //make sure that it is working correctly
         console.log(accountToDelete)
+    }
+
 
        
 
