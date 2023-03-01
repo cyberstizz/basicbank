@@ -315,7 +315,7 @@ const startDelete = () => {
     setComponentToShow(<DeleteBasicBankComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
   }else{
 
-  setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteHandler={CompleteDelete} />)
+  setComponentToShow(<DeleteComponent data={data} xoutHandler={xoutHandler} deleteOne={deleteConfirmation} />)
   }
 
 }

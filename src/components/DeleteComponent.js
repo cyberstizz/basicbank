@@ -48,16 +48,20 @@ const [deleteAccount, setDeleteAccount] = useState(null)
 
         if(accountToDelete == 0){
             console.log(props.data[0].accountnumber)
+            dispatch(DeleteFromActionCreater(props.data[0].accountnumber))
+
         }else{
         //make sure that it is working correctly
         console.log(accountToDelete)
     }
 
+    console.log(props.data[0]);
+
 
        
 
         //open the confirmation page
-
+        props.deleteOne()
 
 
         //
