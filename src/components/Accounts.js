@@ -306,6 +306,11 @@ const xoutHandler = () => {
 
 const deleteEverything = async () => {
 
+  if(usersname){
+    console.log(usersname)
+  }else{
+
+
   //make post request to server
   const transferCall = await fetch('http://localhost:8000/deleteEverything', {
     method: "POST",
@@ -316,11 +321,13 @@ const deleteEverything = async () => {
     },
     credentials: 'include',
     body: {
-    user: fromAccount,
+    user: usersname,
    
   }
 })
 
+
+  }
 
 }
 
