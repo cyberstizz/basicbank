@@ -10,9 +10,7 @@ const DeleteBasicBankComponent = (props) => {
 
   const dispatch = useDispatch();  
   
-  const deleteEverything = () => {
 
-  };
 
   return (
             <div className='fullDeletebb'>
