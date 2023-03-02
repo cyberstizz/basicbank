@@ -11,7 +11,9 @@ const DepositComponent = (props) => {
   const addDepositHandler = (event) =>{
     event.preventDefault()
 
-    dispatch(depositAmountActionCreater(event.target.value))
+    console.log(typeof(event))
+
+    // dispatch(depositAmountActionCreater(event.target.value))
   }
 
     return (
