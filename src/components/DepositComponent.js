@@ -8,6 +8,10 @@ const DepositComponent = (props) => {
 
   const dispatch = useDispatch()
 
+  const addDepositHandler = () =>{
+    
+  }
+
     return (
 <div className='fullDepositComponent'>
           
