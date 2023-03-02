@@ -312,7 +312,7 @@ const deleteEverything = async () => {
 
 
   //make post request to server
-  const transferCall = await fetch('http://localhost:8000/deleteEverything', {
+  const DeleteEverythingCall = await fetch('http://localhost:8000/deleteEverything', {
     method: "POST",
     headers: {
     'Accept': 'application/json',
@@ -324,8 +324,10 @@ const deleteEverything = async () => {
     user: usersname,
    
   })
+
 })
 
+if(DeleteEverythingCall.status == 200)
 
   
 
