@@ -8,7 +8,11 @@ import { useDispatch } from 'react-redux';
 const DeleteBasicBankComponent = (props) => {
 
 
-  const dispatch = useDispatch();   
+  const dispatch = useDispatch();  
+  
+  const deleteEverything = () => {
+
+  };
 
   return (
             <div className='fullDeletebb'>
