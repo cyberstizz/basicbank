@@ -116,7 +116,31 @@ console.log(loginCall.status)
         setPassword(searchQuery)
       };
 
+      const logTestAccount = () => {
+        const loginCall = await fetch('http://localhost:8000/login', {
+            method: "POST",
+             headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRFToken': await getCsrfToken()
+              },
+              credentials: 'include',
+              body: JSON.stringify({
+              username: John_Doe,
+              password: $ucce$$5
+              })
+        })
+console.log(loginCall.status)
 
+    if(loginCall.status == 200){
+         navigate('/accounts')
+    }
+    
+}
+
+
+
+      }
 
 
     return(
