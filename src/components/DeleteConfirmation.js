@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router';
 const DeleteConfirmation = (props) => {
 
 
-    const navigate = useNavigate();
     const delete_account = useSelector((state) => state.delete.delete_account)
 
 
