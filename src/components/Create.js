@@ -204,7 +204,7 @@ if(createAccountCall.status === 200){
 
         <div className="depositBlock">
 
-        <input placeholder="Deposit" type="text" className="deposit" onChange={setDepositHandler}></input>
+        <input placeholder="Deposit" type="number" min='1' max='1000000' className="deposit" onChange={setDepositHandler}></input>
         <div className="decorativeLine"></div>
         <p className="emailText">Deposit</p>
         </div>
