@@ -12,7 +12,8 @@ const DeleteBasicBankComponent = (props) => {
 
   return (
             <div className='fullDeletebb'>
-                this is the delete component
+                Are you sure?
+                
 
             </div>
   )
