@@ -11,7 +11,9 @@ const DepositComponent = (props) => {
   const addDepositHandler = (event) =>{
     event.preventDefault()
 
-    console.log(typeof(event))
+    let whatWasTyped = Number(event.target.value)
+
+    console.log(typeof(whatWasTyped))
 
     // dispatch(depositAmountActionCreater(event.target.value))
   }
@@ -27,7 +29,7 @@ const DepositComponent = (props) => {
 
           <div className='depositSection'>
             <div className='depositSectionHeader'>Deposit Amount</div>
-            <input onChange={addDepositHandler} type='text' placeholder='$0.00' className='depositField'></input>
+            <input onChange={addDepositHandler} type='number' placeholder='$0.00' className='depositField'></input>
           </div>
           <div className='descriptionSection'>description</div>
           <button onClick={props.depositHandler} className='depositButton'>Make deposit</button>
