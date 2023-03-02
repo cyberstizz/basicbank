@@ -8,8 +8,8 @@ const DepositComponent = (props) => {
 
   const dispatch = useDispatch()
 
-  const addDepositHandler = () =>{
-    
+  const addDepositHandler = (event) =>{
+    event.preventDefault()
   }
 
     return (
