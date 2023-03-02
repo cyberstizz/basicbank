@@ -320,10 +320,10 @@ const deleteEverything = async () => {
     'X-CSRFToken': await getCsrfToken()
     },
     credentials: 'include',
-    body: {
+    body: JSON.stringify({
     user: usersname,
    
-  }
+  })
 })
 
 
