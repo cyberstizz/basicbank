@@ -308,7 +308,7 @@ const deleteEverything = async () => {
 
   if(usersname){
     console.log(usersname)
-  }else{
+  }
 
 
   //make post request to server
@@ -327,7 +327,7 @@ const deleteEverything = async () => {
 })
 
 
-  }
+  
 
 }
 
