@@ -304,6 +304,10 @@ const xoutHandler = () => {
 
 }
 
+const deleteEverything = () => {
+  
+}
+
 const startDelete = () => {
 
 //open modal by setting the display to the transaction conponent from
