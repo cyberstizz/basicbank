@@ -304,8 +304,24 @@ const xoutHandler = () => {
 
 }
 
-const deleteEverything = () => {
-  
+const deleteEverything = async () => {
+
+  //make post request to server
+  const transferCall = await fetch('http://localhost:8000/deleteEverything', {
+    method: "POST",
+    headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'X-CSRFToken': await getCsrfToken()
+    },
+    credentials: 'include',
+    body: {
+    user: fromAccount,
+   
+  }
+})
+
+
 }
 
 const startDelete = () => {
