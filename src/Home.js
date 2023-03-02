@@ -116,7 +116,7 @@ console.log(loginCall.status)
         setPassword(searchQuery)
       };
 
-      const logTestAccount = () => {
+      const logTestAccount = async () => {
         const loginCall = await fetch('http://localhost:8000/login', {
             method: "POST",
              headers: {
