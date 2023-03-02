@@ -4,4 +4,6 @@
     height: 50vh;
     background-color: rgb(3, 17, 42);
     color: white;
+    align-items: center;
+    font-size: 25px;
 }
