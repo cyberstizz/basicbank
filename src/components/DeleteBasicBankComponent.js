@@ -19,7 +19,8 @@ const DeleteBasicBankComponent = (props) => {
                 this will delete your entire account with us, so you will not be
                 able to log back in
 
-                
+                <br/>
+                <br/>
                 <button>Delete</button>
 
             </div>
