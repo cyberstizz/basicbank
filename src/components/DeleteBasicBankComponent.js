@@ -12,7 +12,7 @@ const DeleteBasicBankComponent = (props) => {
 
   return (
             <div className='fullDeletebb'>
-                Are you sure?
+               <div> Are you sure?</div>
                 <br/>
                 <br/>
                 you only have one account, are sure you want to leave Basic Bank?
