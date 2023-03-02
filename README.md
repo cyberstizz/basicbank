@@ -4,6 +4,8 @@
 
 ![](./public/basicBankHomePage.png)
 
+![](./public/accountsPage.png)
+
 #      **Basic Bank**
 
 ## _this is a react application created to test a Django backend_
