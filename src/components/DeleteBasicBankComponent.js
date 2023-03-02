@@ -17,7 +17,7 @@ const DeleteBasicBankComponent = (props) => {
                <div className='deletebbHeader'> Are you sure?</div>
                 <br/>
                 <br/>
-                <span>you only have one account, are sure you want to leave Basic Bank?
+                <span className='theText'>you only have one account, are sure you want to leave Basic Bank?
                 this will delete your entire account with us, so you will not be
                 able to log back in
                 </span>
