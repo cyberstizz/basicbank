@@ -327,7 +327,9 @@ const deleteEverything = async () => {
 
 })
 
-if(DeleteEverythingCall.status == 200)
+if(DeleteEverythingCall.status == 200){
+  navigate('/')
+}
 
   
 
