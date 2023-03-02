@@ -126,21 +126,23 @@ console.log(loginCall.status)
               },
               credentials: 'include',
               body: JSON.stringify({
-              username: John_Doe,
-              password: $ucce$$5
+              username: 'John_Doe',
+              password: '$ucce$$5'
               })
         })
+
+
 console.log(loginCall.status)
 
     if(loginCall.status == 200){
          navigate('/accounts')
-    }
+    };
     
 }
 
 
 
-      }
+      
 
 
     return(
