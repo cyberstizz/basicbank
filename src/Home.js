@@ -67,10 +67,12 @@ setAccounts(fullCall)
               password: password
               })
         })
-
+console.log(loginCall.status)
 
     if(loginCall.status == 200){
          navigate('/accounts')
+    }else {
+        alert('sorry your login failed, either your username or password is incorrect')
     }
     
 }
@@ -170,7 +172,7 @@ setAccounts(fullCall)
             <form type="submit" onSubmit={handleLogin}>
             <input type="text"  onChange={handleUsernameText} className="username" placeholder="username" name='username'></input>
             <input type="password" onChange={handlePasswordText} className="password" placeholder="password" name='password'></input>
-            <input type="submit" className="submitButton" value="Sign In" onClick={handleLogin}></input>
+            <input type="submit" className="submitButton" value="Sign In"></input>
             <div className="fillersection">
 
             </div>
