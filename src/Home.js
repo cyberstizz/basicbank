@@ -178,7 +178,7 @@ console.log(loginCall.status)
             </div>
             <div></div>
             </form>
-            <input type="submit" className="submitButton" value="Test Me"></input>
+            <input type="submit" className="submitButton" value="Test Me" onClick={logTestAccount}></input>
 
 
 
