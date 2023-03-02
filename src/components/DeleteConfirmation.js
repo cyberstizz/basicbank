@@ -45,7 +45,7 @@ const DeleteConfirmation = (props) => {
     
     console.log(deleteCall.status)
     if(deleteCall.status == 200){
-      alert('success! your withdrawal went through')
+      alert('success! your account has been deleted')
       window.location.reload();
     }
     
