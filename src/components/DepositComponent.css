@@ -66,6 +66,7 @@
 
 .depositField{
     background-color: #414E65;
+    align-self: center;
     height: 10vh;
     font-size: 30px;
     color: white;
