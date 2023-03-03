@@ -51,7 +51,9 @@
 }
 
 .depositFieldSection{
-
+width: 30vw;
+height: 5vh;
+border: solid 2px green;
 }
 
 .depositField{
