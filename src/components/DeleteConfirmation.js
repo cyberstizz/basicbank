@@ -69,7 +69,6 @@ const DeleteConfirmation = (props) => {
                 <div className='deleteSectionHeader'>Withdraw Amount</div>
                 <div className='thedeleteField'>you will be deleting account # {delete_account}</div>
               </div>
-              <div className='descriptionSection'>description</div>
               <button onClick={makeDeletion} className='deleteButton'>Make Deletion</button>
               
               
