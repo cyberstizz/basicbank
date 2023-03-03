@@ -71,7 +71,7 @@
     background-color: #414E65;
     align-self: center;
     height: 10vh;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     font-family: 'Titan One', cursive;
     margin-left: 1vw;
@@ -82,10 +82,10 @@
 .depositField::placeholder{
     background-color: #414E65;
     height: 10vh;
-    font-size: 30px;
+    font-size: 35px;
+    width: 8vw;
     color: white;
     font-family: 'Titan One', cursive;
-    margin-left: 1vw;
     border: solid 1px #414E65;
 }
 
