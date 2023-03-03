@@ -55,7 +55,7 @@
 .thedepositField{
     background-color: #414E65;
     font-size: 21px;
-    color: white;
+    color: rgb(250, 242, 242);
     font-family: 'Titan One', cursive;
     border: solid 1px #414E65;
     height: 14vh;
