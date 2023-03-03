@@ -45,6 +45,8 @@
 }
 
 .depositFieldSection{
+    display: flex;
+    flex-direction: row;
     width: 18vw;
     height: 12vh;
     border: solid 2px green;
