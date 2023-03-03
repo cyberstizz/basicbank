@@ -61,6 +61,7 @@
 
 .dollarSign{
     border: solid 2px green;
+    align-self: center;
 }
 
 .depositField{
