@@ -27,7 +27,7 @@
     letter-spacing: 1px;
     font-size: 40px;
     color: white;
-    margin-left: 1.5vw;
+    margin-left: 4vw;
     margin-bottom: 2vh;
     margin-top: .8vh;
 }
@@ -39,15 +39,31 @@
     height: 20vh;
     width: 20vw;
     align-self: center;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    margin-top: 3vh;
     border-radius: 8px;
+    margin-bottom: 3vh;
+}
+
+.withdrawFieldSection{
+    display: flex;
+    flex-direction: row;
+    width: 18vw;
+    height: 12vh;
 }
 
 .withdrawSectionHeader{
     height: 5vh;
     color: white;
     align-self: center;
+}
+
+.withdrawDollarSign{
+    align-self: center;
+    color: rgb(139, 110, 35);
+    font-size: 50px;
+    margin-left: 3.5vw;
+    font-weight: 800;
+    padding-right: .5vw;
 }
 
 .withdrawField{
@@ -58,7 +74,9 @@
     font-family: 'Titan One', cursive;
     margin-left: 1vw;
     border: solid 1px #414E65;
-    align-content: center;
+    align-self: center;
+    border: solid 2px green;
+
 }
 
 .withdrawField::placeholder{
