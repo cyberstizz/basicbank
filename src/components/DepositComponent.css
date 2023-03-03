@@ -44,16 +44,17 @@
     border-radius: 8px;
 }
 
+.depositFieldSection{
+    width: 18vw;
+    height: 12vh;
+    border: solid 2px green;
+    }
+
+
 .depositSectionHeader{
     height: 5vh;
     color: white;
     align-self: center;
-}
-
-.depositFieldSection{
-width: 18vw;
-height: 12vh;
-border: solid 2px green;
 }
 
 .dollarSign{
