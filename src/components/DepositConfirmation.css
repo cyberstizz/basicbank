@@ -53,13 +53,13 @@
 
 .thedepositField{
     background-color: #414E65;
-    font-size: 20px;
+    font-size: 21px;
     color: white;
     font-family: 'Titan One', cursive;
     border: solid 1px #414E65;
     border: solid 2px green;
     height: 14vh;
-    width: 18vw;
+    width: 19vw;
     align-self: center;
 }
 
