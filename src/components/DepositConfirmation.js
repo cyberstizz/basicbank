@@ -76,7 +76,6 @@ success = 'succeeded'
             <div className='depositSectionHeader'>deposit Amount</div>
             <div className='thedepositField'>you will be depositing ${depositAmount} into account # {depositFrom}</div>
           </div>
-          <div className='descriptionSection'>description</div>
           <button onClick={makeDeposit} className='depositButton'>Make Deposit</button>
           
           
