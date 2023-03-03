@@ -62,6 +62,7 @@
 .dollarSign{
     border: solid 2px green;
     align-self: center;
+    color: rgb(139, 110, 35);
 }
 
 .depositField{
