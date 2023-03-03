@@ -88,7 +88,6 @@ const [deleteAccount, setDeleteAccount] = useState(null)
                 })}
             </select>
           </div>
-          <div className='descriptionSection'>description</div>
           <button onClick={deleteHandler} className='deleteButton'>Delete</button>
 
           
