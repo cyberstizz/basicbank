@@ -58,6 +58,7 @@
     font-family: 'Titan One', cursive;
     margin-left: 1vw;
     border: solid 1px #414E65;
+    align-content: center;
 }
 
 .withdrawField::placeholder{
