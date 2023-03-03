@@ -49,7 +49,6 @@
     flex-direction: row;
     width: 18vw;
     height: 12vh;
-    border: solid 2px green;
     }
 
 
@@ -60,7 +59,6 @@
 }
 
 .dollarSign{
-    border: solid 2px green;
     align-self: center;
     color: rgb(139, 110, 35);
     font-size: 50px;
@@ -74,7 +72,6 @@
     font-size: 40px;
     color: white;
     font-family: 'Titan One', cursive;
-    border: solid 1px green;
     width: 8vw;
 }
 
