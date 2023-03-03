@@ -74,6 +74,7 @@
 .withdrawConfirmationButton{
     background-color: rgb(139, 110, 35);
     width: 20vw;
+    height: 8vh;
     font-size: 18px;
     border-radius: 10px;
     align-self: center;
