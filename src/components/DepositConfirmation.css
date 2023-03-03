@@ -59,6 +59,8 @@
     border: solid 1px #414E65;
     border: solid 2px green;
     height: 14vh;
+    width: 18vw;
+    align-self: center;
 }
 
 .thedepositField::placeholder{
