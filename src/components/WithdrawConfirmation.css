@@ -23,7 +23,7 @@
     font-weight: 600;
 }
 
-.thewithdrawHeader{
+.thewithdrawConfirmationHeader{
     font-family: 'Titan One', cursive;
     letter-spacing: 1px;
     font-size: 32px;
@@ -50,8 +50,7 @@
 .thewithdrawSectionHeader{
     height: 5vh;
     color: white;
-    align-self: center;
-    border: solid 2px green;
+  
 }
 
 .thewithdrawField{
