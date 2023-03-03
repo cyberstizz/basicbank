@@ -49,6 +49,8 @@
 .thewithdrawSectionHeader{
     height: 5vh;
     color: white;
+    align-self: center;
+    border: solid 2px green;
 }
 
 .thewithdrawField{
