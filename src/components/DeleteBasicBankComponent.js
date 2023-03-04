@@ -26,7 +26,6 @@ const DeleteBasicBankComponent = (props) => {
                 this will delete your entire account with us, so you will not be
                 able to log back in
                 </span>
-                <br/>
                 
                 <button onClick={props.deleteEverything} className="deletebbbutton">Delete</button>
 
