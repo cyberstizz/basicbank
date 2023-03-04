@@ -84,7 +84,7 @@ const [deleteAccount, setDeleteAccount] = useState(null)
             <div className='deleteSectionHeader'>Delete which account</div>
             <select placeholder="Delete Type" type="text" className="deletetype" onChange={deleteChangeHandler}>
                 {props.data.map((account, index) => {
-                   return <option key={index}>{account.accountnumber}</option>
+                   return <option key={index} className="deletetype">{account.accountnumber}</option>
                 })}
             </select>
           </div>
