@@ -476,6 +476,10 @@ const handleLogout = async () => {
 
         <div className='state' onClick={startDelete}>Delete</div>
 
+        <div className='divider'></div>
+
+        <div className='open'></div>
+
     </div>
   
 {/*                             
