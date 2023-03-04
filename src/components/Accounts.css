@@ -314,10 +314,10 @@ margin-left: 40vw;
 }
 
 .divider{
-height: 7vh;
+height: 9vh;
 width: .2vw;
 background-color: rgb(209, 152, 7);
-margin-top: 2vh;
+margin-top: .35vh;
 }
 
 .open{
@@ -327,4 +327,5 @@ margin-top: 2vh;
     color:rgb(3, 17, 42);
     margin-top: 2vh;
     margin-left: .5vw;
+    color: green;
 }
