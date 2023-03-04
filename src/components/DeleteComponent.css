@@ -52,14 +52,16 @@
     margin-top: 2vh;
 }
 
-.deleteField{
+.deletetype{
     background-color: #414E65;
+    width: 5vw;
     height: 10vh;
     font-size: 30px;
     color: white;
     font-family: 'Titan One', cursive;
     margin-left: 1vw;
     border: solid 1px #414E65;
+    border: solid 2px green;
 }
 
 .deleteField::placeholder{
