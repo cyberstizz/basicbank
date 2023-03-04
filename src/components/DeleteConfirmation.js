@@ -62,7 +62,7 @@ const DeleteConfirmation = (props) => {
               
               <div className='toprow'>
                 <div className='Xout' onClick={props.xoutHandler}>&#9747;</div>
-                <div className='deleteHeader'>Are you sure?</div>
+                <div className='thedeleteHeader'>Are you sure?</div>
               </div>
     
               <div className='deleteSection'>
