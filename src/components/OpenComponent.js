@@ -6,7 +6,6 @@ const OpenComponent = () => {
 
     
    
-   const Create = () => {
    
    const navigate = useNavigate();
    //name, email, account, deposit
@@ -129,7 +128,8 @@ const OpenComponent = () => {
 
 
     return(
-        <div>
+        
+        <div className='fullOpenComponent'>
         <div className="">
 
         
@@ -203,6 +203,6 @@ const OpenComponent = () => {
         </div>
     )
 };
-}
+
 
 export default OpenComponent;
