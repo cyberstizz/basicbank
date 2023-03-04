@@ -15,7 +15,7 @@ const DeleteBasicBankComponent = (props) => {
   return (
             <div className='fullDeletebb'>
 
-              <div className='toprow'>
+              <div className='deleteBBtoprow'>
 
             <div className='deleteBBXout' onClick={props.xoutHandler}>&#9747;</div>
 

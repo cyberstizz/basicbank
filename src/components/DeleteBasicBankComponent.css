@@ -11,12 +11,16 @@
     flex-direction: column;
 }
 
+.deleteBBtoprow{
+
+}
+
 .deletebbHeader{
     margin-left: 1vw;
 }
 
 .deleteBBXout{
-    
+    border: solid 2px green;
 }
 
 .theText{
