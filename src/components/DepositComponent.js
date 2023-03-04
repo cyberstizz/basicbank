@@ -31,7 +31,7 @@ const DepositComponent = (props) => {
             <div className='depositSectionHeader'>Deposit Amount</div>
             <div className='depositFieldSection'>  <div className='dollarSign'>$</div>   <input onChange={(event) => dispatch(depositAmountActionCreater(event.target.value))} type='number' min="1" max="100000" placeholder='0.00' className='depositField'></input>  </div>
           </div>
-          <button onClick={props.depositHandler} className='depositButton'>Make deposit</button>
+          <button onClick={props.depositHandler} className='depositButton'>deposit</button>
 
           
           
