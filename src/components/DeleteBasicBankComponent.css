@@ -16,6 +16,7 @@ display: flex;
 flex-direction: row;
 width: 28vw;
 margin-top: 2vh;
+border: solid 2px green;
 }
 
 .deletebbHeader{
@@ -31,4 +32,6 @@ margin-top: 2vh;
 
 .theText{
     width: 28vw;
+    border: solid 2px green;
+    margin-top: 0;
 }
