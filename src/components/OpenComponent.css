@@ -1,4 +1,7 @@
 
 .fullOpenComponent{
-    background-color: blue;
+    background-color: orange;
+    border: solid 2px green;
+    height: 40vh;
+    width: 30vw;
 }

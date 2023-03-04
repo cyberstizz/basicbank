@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './OpenComponent.css'
 
 
 const OpenComponent = () => {
@@ -128,7 +129,7 @@ const OpenComponent = () => {
 
 
     return(
-        
+
         <div className='fullOpenComponent'>
         <div className="">
 
