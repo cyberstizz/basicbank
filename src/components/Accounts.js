@@ -367,6 +367,12 @@ const deleteConfirmation = () => {
 }
 
 const startOpen = () => {
+  let transactionSpace = document.getElementById('displayField');
+
+  transactionSpace.style.visibility = 'visible';
+
+
+  setComponentToShow(<OpenComponent data={data} xoutHandler={xoutHandler} deleteOne={deleteConfirmation} />)
   
 }
 
