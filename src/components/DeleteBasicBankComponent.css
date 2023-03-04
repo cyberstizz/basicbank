@@ -16,7 +16,6 @@ display: flex;
 flex-direction: row;
 width: 28vw;
 margin-top: 2vh;
-border: solid 2px green;
 }
 
 .deletebbHeader{
@@ -32,12 +31,10 @@ border: solid 2px green;
 
 .theText{
     width: 28vw;
-    border: solid 2px green;
     margin-top: 0;
 }
 
 .deletebbbutton{
-    border: solid 2px green;
     width: 18vw;
     height: 8vh;
     font-weight: 600;
