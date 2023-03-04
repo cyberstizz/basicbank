@@ -48,9 +48,9 @@ const AccountCard = (props) => {
       <div className='accountBalance'><span className='dollarsign'>$</span>{props.accountBalance}</div>
       <div className='accountButtons'>
       
-      <button className='depositButton' onClick={handleStartDeposit}>Deposit</button>
+      <button className='accountCardDepositButton' onClick={handleStartDeposit}>Deposit</button>
       <br />
-      <button className='withdrawButton' onClick={handleStartWithdrawal}>Withdraw</button>
+      <button className='accountCardWithdrawButton' onClick={handleStartWithdrawal}>Withdraw</button>
       <button className='WithdrawButton' onClick={handleStartTransfer}>Transfer</button>
 
 
