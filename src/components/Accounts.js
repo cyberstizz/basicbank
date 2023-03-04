@@ -366,6 +366,10 @@ const deleteConfirmation = () => {
 
 }
 
+const startOpen = () => {
+  
+}
+
 
 
 
@@ -478,7 +482,7 @@ const handleLogout = async () => {
 
         <div className='divider'></div>
 
-        <div className='open' onClick={startDelete}>Open</div>
+        <div className='open' onClick={startOpen}>Open</div>
 
     </div>
   
