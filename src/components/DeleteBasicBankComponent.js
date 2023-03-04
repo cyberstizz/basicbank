@@ -28,7 +28,7 @@ const DeleteBasicBankComponent = (props) => {
                 </span>
                 <br/>
                 <br/>
-                <button onClick={props.deleteEverything}>Delete</button>
+                <button onClick={props.deleteEverything} className="deletebbbutton">Delete</button>
 
             </div>
   )
