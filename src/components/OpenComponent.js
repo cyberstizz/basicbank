@@ -115,7 +115,7 @@ const OpenComponent = () => {
    console.log(createAccountCall.status)
    if(createAccountCall.status === 200){
      alert('success! your account has been succesfulyy created!')
-     navigate('/')
+     navigate('/accounts')
    }
    
            
@@ -131,35 +131,12 @@ const OpenComponent = () => {
     return(
 
         <div className='fullOpenComponent'>
-        <div className="">
 
         
         
-        <div className="">
-            <div className="">
+        <div className="opencreateNewAccountForm">
+            <div className="opencreateUserSection">
                 
-                
-                <div className="">
-        <input placeholder="Name" type="text" className="" onChange={setNameHandler}></input>
-        <div className=""></div>
-        <p className="">Name</p>
-
-                </div>
-
-
-                <div className="">
-        <input placeholder="Password" type="password" className="" onChange={setPasswordHandler}></input>
-        <div className=""></div>
-        <p className="">Password</p>
-                </div>
-
-
-
-                <div className="">
-        <input placeholder="email" type="text" className="" onChange={setEmailHandler}></input>
-        <div className=""></div>
-        <p className="">Email</p>
-                </div>
        
        
         </div>
@@ -200,7 +177,6 @@ const OpenComponent = () => {
 
 
 
-        </div>
         </div>
     )
 };
