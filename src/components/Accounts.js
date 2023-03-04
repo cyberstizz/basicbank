@@ -14,7 +14,7 @@ import CompleteDelete from './CompleteDelete';
 import DeleteConfirmation from './DeleteConfirmation'
 import DeleteBasicBankComponent from './DeleteBasicBankComponent';
 import { useDispatch, useSelector } from 'react-redux';
-
+import OpenComponent from './OpenComponent'
 
 
 const Accounts = () => {
