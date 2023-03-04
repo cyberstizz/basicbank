@@ -48,6 +48,7 @@
 .deleteSectionHeader{
     height: 5vh;
     color: white;
+    align-self: center;
 }
 
 .deleteField{
