@@ -66,13 +66,14 @@
 
 .deletetype::placeholder{
     background-color: #414E65;
-    width: 5vw;
-    height: 12vh;
+    width: 8vw;
+    height: 8vh;
+    font-size: 30px;
     color: white;
     font-family: 'Titan One', cursive;
-    margin-left: 1vw;
     border: solid 1px #414E65;
-    align-content: center;
+    border: solid 2px black;
+    align-self: center;
 }
 
 .deleteButton{
