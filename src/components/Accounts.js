@@ -478,7 +478,7 @@ const handleLogout = async () => {
 
         <div className='divider'></div>
 
-        <div className='open'>Open</div>
+        <div className='open' onClick={startDelete}>Open</div>
 
     </div>
   
