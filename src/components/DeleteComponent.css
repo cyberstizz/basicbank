@@ -81,5 +81,19 @@
     font-size: 18px;
     border-radius: 10px;
     align-self: center;
+    width: 20vw;
+height: 8vh;
+border: solid 3px rgb(3, 17, 42);
+margin-bottom: 1vh;
+color: rgb(3, 17, 42);
+font-size: 30px;
+font-weight: 600;
+letter-spacing: 1.5px;
+background-color: rgb(139, 110, 35);
+font-size: 18px;
+border-radius: 10px;
+align-self: center;
+margin-top: 3vh;
+
 }
 
