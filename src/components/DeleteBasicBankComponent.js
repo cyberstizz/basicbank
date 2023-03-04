@@ -14,9 +14,13 @@ const DeleteBasicBankComponent = (props) => {
 
   return (
             <div className='fullDeletebb'>
+
+              <div className='toprow'>
+
             <div className='Xout' onClick={props.xoutHandler}>&#9747;</div>
 
                <div className='deletebbHeader'> Are you sure?</div>
+                </div>
                 <br/>
                 <br/>
                 <span className='theText'>you only have one account, are sure you want to leave Basic Bank?
