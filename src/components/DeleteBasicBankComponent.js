@@ -27,7 +27,7 @@ const DeleteBasicBankComponent = (props) => {
                 able to log back in
                 </span>
                 <br/>
-                <br/>
+                
                 <button onClick={props.deleteEverything} className="deletebbbutton">Delete</button>
 
             </div>
