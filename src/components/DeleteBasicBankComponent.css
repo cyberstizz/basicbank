@@ -14,19 +14,19 @@
 .deleteBBtoprow{
 display: flex;
 flex-direction: row;
-border: solid 2px red;
 width: 28vw;
 margin-top: 2vh;
 }
 
 .deletebbHeader{
     margin-left: 1vw;
+    margin-top: 3vh;
 }
 
 .deleteBBXout{
-    border: solid 2px green;
     width: 4vw;
     font-size: 30px;
+    margin-left: 1vw;
 }
 
 .theText{
