@@ -65,7 +65,7 @@ const DeleteConfirmation = (props) => {
                 <div className='thedeleteHeader'>Are you sure?</div>
               </div>
     
-              <div className='deleteSection'>
+              <div className='thedeleteSection'>
                 <div className='deleteSectionHeader'>Deletion Confirmation</div>
                 <div className='thedeleteField'>you will be deleting account # {delete_account}</div>
               </div>
