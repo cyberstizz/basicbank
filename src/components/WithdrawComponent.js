@@ -46,7 +46,7 @@ useEffect(() => {
             <div className='withdrawSectionHeader'>Withdrawal Amount</div>
             <div className='withdrawFieldSection'> <div className='withdrawDollarSign'>$</div>   <input onChange={(event) => dispatch(withdrawAmountActionCreater(event.target.value))} type='number'  min="1" max="100000" placeholder='0.00' className='withdrawField'></input> </div>
           </div>
-          <button onClick={props.handler} className='withdrawComponentButton'>Make Withdrawal</button>
+          <button onClick={props.handler} className='withdrawComponentButton'>Withdraw</button>
 
           
           
