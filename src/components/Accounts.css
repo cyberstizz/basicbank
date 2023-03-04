@@ -320,5 +320,9 @@ margin-top: 2vh;
 }
 
 .open{
-    
+    font-size: 30px;
+    font-weight: 500;
+    width: 6vw;
+    color:rgb(3, 17, 42);
+    margin-top: 2vh;
 }
