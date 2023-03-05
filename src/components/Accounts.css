@@ -93,6 +93,7 @@
     background-image: url("../../public/better\ bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: scroll;
     opacity: 90%;
     border: solid 2px green;
 }
