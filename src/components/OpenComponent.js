@@ -93,7 +93,7 @@ const OpenComponent = (props) => {
    
    
    
-           const createAccountCall = await fetch('http://localhost:8000/create', {
+           const createOpenAccountCall = await fetch('http://localhost:8000/create', {
            method: "POST",
            headers: {
                'Accept': 'application/json',
