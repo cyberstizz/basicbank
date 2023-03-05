@@ -372,7 +372,7 @@ const startOpen = () => {
   transactionSpace.style.visibility = 'visible';
 
 
-  setComponentToShow(<OpenComponent data={data} xoutHandler={xoutHandler} deleteOne={deleteConfirmation} />)
+  setComponentToShow(<OpenComponent data={data} xoutHandler={xoutHandler} user={usersname} />)
   
 }
 
