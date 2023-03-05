@@ -134,17 +134,8 @@ const OpenComponent = () => {
 
         
         
-        <div className="opencreateNewAccountForm">
             <div className="opencreateUserSection">
-                
-       
-       
-        </div>
 
-
-
-
-        <div className="">
 
 
         <div className="openAccountType">
@@ -169,12 +160,6 @@ const OpenComponent = () => {
 
         </div>
         <input type="submit" value="Open Account" className="" onClick={makeAccount}></input>
-
-
-
-        </div>
-
-
 
 
         </div>
