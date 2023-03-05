@@ -147,7 +147,7 @@ const OpenComponent = () => {
         <div className="">
 
 
-        <div className="">
+        <div className="openAccountType">
 
         <select placeholder="Account Type" type="text" className="" onChange={setAccountHandler}>
             <option>Checking</option>
@@ -159,7 +159,7 @@ const OpenComponent = () => {
         </div>
 
 
-        <div className="">
+        <div className="opendepositclass">
 
         <input placeholder="Deposit" type="number" min='1' max='1000000' className="" onChange={setDepositHandler}></input>
         <div className=""></div>
