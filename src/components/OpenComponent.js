@@ -80,8 +80,6 @@ const OpenComponent = (props) => {
            const allMyStuffObject = {
                body: {
                username: props.user,
-               password: password,
-               email: email,
                account: account,
                deposit: deposit
                }
