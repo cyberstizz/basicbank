@@ -79,7 +79,7 @@ const OpenComponent = (props) => {
    
            const allMyStuffObject = {
                body: {
-               username: name,
+               username: props.username,
                password: password,
                email: email,
                account: account,
