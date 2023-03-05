@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './OpenComponent.css'
 
 
-const OpenComponent = () => {
+const OpenComponent = (props) => {
 
     
    
