@@ -7,5 +7,6 @@
 }
 
 .opencreateUserSection{
-    
+    display: flex;
+    flex-direction: row;
 }
