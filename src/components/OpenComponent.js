@@ -102,7 +102,7 @@ const OpenComponent = (props) => {
            },
            credentials: 'include',
            body: JSON.stringify({
-               username: name,
+               username: props.user,
                account: account,
                deposit: deposit
            })
