@@ -108,8 +108,8 @@ const OpenComponent = (props) => {
            })
            })
    
-   console.log(createAccountCall.status)
-   if(createAccountCall.status === 200){
+   console.log(createOpenAccountCall.status)
+   if(createOpenAccountCall.status === 200){
      alert('success! your account has been succesfulyy created!')
      navigate('/accounts')
    }
