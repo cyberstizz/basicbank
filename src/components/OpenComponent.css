@@ -24,12 +24,13 @@
 .openAccountPlaceholder{
     width: 10vw;
     height: 8vh;
-    margin: 2vh;
+    margin: 1vh;
     font-size: 25px;
     background-color: rgb(139, 110, 35);
     color: white;
 }
 
 .openAccountTypeText{
-    
+    border: solid 2px pink;
+    height: 8vh;
 }
