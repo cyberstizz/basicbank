@@ -24,4 +24,5 @@
 .openAccountPlaceholder{
     border: solid 2px red;
     width: 10vw;
+    margin: 2vh;
 }
