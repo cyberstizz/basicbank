@@ -16,5 +16,6 @@
 
 
 .openAccountType{
-    
+    border: solid 2px orange;
+    margin: 2vh;
 }
