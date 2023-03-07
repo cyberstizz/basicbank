@@ -6,9 +6,8 @@ const TransferComponent = (props) => {
         <div className='fullTransferComponent'>TransferComponent
         
         <div className='transferTop'>
-        <div className='Xout' onClick={props.xoutHandler}>x</div>
-        <div className='transferTextheader'>Transfer</div>
-
+            <div className='Xout' onClick={props.xoutHandler}>x</div>
+            <div className='transferTextheader'>Transfer</div>
         </div>
         <div className='transferAmountField'></div>
         <div className='transferFromToField'></div>
