@@ -78,6 +78,7 @@
     border: solid 2px silver;
     margin-left: 8vh;
     width: 22vw;
-    height: 6vh;
+    height: 7vh;
     border-radius: 12px;
+    background-color: green;
 }
