@@ -48,7 +48,18 @@
 .openDepositPlaceholder{
     width: 10vw;
     height: 8vh;
-    margin: 1vh;
+    margin: .5vh;
+    margin-bottom: -2vh;
+    margin-top: 3vh;
+    font-size: 25px;
+    background-color: rgb(139, 110, 35);
+    color: white;
+}
+
+.openDepositPlaceholder::placeholder{
+    width: 10vw;
+    height: 8vh;
+    margin: .5vh;
     margin-bottom: -2vh;
     margin-top: 3vh;
     font-size: 25px;
