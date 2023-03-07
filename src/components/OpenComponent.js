@@ -140,7 +140,7 @@ const OpenComponent = (props) => {
             <option>Checking</option>
             <option>Savings</option>
         </select>
-        <p className="">Account type</p>
+        <p className="openAccountTypeText">Account type</p>
 
         </div>
 
