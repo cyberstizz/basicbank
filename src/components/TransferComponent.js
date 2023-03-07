@@ -3,7 +3,7 @@ import './TransferComponent.css'
 
 const TransferComponent = () => {
     return (
-        <div>TransferComponent</div>
+        <div className='fullTransferComponent'>TransferComponent</div>
       )
 }
 
