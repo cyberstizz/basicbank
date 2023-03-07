@@ -75,5 +75,7 @@
 }
 
 .openMakeAccountButton{
-    
+    border: solid 2px silver;
+    margin-left: 8vh;
+    width: 20vw;
 }
