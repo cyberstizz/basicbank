@@ -11,7 +11,7 @@
     height: 30vh;
     flex-direction: row;
     margin: 2vh;
-    border: solid 2px green;
+    border: solid 2px brown;
 }
 
 
@@ -46,5 +46,6 @@
 }
 
 .openDepositPlaceholder{
-    
+    width: 10vw;
+  
 }
