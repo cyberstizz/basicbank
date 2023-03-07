@@ -16,7 +16,6 @@
 
 
 .openAccountType{
-    border: solid 2px orange;
     margin: 2vh;
     width: 12vw;
 }
@@ -25,7 +24,7 @@
     width: 10vw;
     height: 8vh;
     margin: 1vh;
-    margin-bottom: 0;
+    margin-bottom: -2vh;
     margin-top: 3vh;
     font-size: 25px;
     background-color: rgb(139, 110, 35);
@@ -33,9 +32,9 @@
 }
 
 .openAccountTypeText{
-    border: solid 2px pink;
     height: 8vh;
     color: rgb(139, 110, 35);
     font-size: 30px;
     font-weight: 800;
+
 }
