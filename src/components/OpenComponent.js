@@ -147,7 +147,7 @@ const OpenComponent = (props) => {
 
         <div className="opendepositclass">
 
-        <input placeholder="Deposit" type="number" min='1' max='1000000' className="openDepositPlaceholder" onChange={setDepositHandler}></input>
+        <input placeholder="0.00" type="number" min='1' max='1000000' className="openDepositPlaceholder" onChange={setDepositHandler}></input>
         <p className="openDepositText">Deposit</p>
         </div>
 
