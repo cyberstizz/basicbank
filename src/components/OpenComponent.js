@@ -153,7 +153,7 @@ const OpenComponent = (props) => {
 
 
         </div>
-        <input type="submit" value="Open Account" className="" onClick={makeAccount}></input>
+        <input type="submit" value="Open Account" className="openMakeAccountButton" onClick={makeAccount}></input>
 
 
         </div>
