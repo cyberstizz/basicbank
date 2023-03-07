@@ -9,4 +9,6 @@
 .opencreateUserSection{
     display: flex;
     flex-direction: row;
+    margin: 2vh;
+    border: solid 2px green;
 }
