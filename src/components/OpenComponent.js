@@ -136,7 +136,7 @@ const OpenComponent = (props) => {
 
         <div className="openAccountType">
 
-        <select placeholder="Account Type" type="text" className="" onChange={setAccountHandler}>
+        <select placeholder="Account Type" type="text" className="openAccountPlaceholder" onChange={setAccountHandler}>
             <option>Checking</option>
             <option>Savings</option>
         </select>
