@@ -128,8 +128,10 @@ const OpenComponent = (props) => {
 
         <div className='fullOpenComponent'>
 
+<div className='openTopArea'>
 <div className='Xout' onClick={props.xoutHandler}>x</div>
         <div>Open new account</div>
+        </div>
 
             <div className="opencreateUserSection">
 
