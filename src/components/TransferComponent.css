@@ -2,4 +2,5 @@
     height: 65vh;
     background-color: brown;
     width: 30vw;
+    display: flex;
 }
