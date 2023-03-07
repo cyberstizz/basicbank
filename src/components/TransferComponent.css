@@ -1,6 +1,6 @@
 .fullTransferComponent{
     height: 65vh;
-    background-color: brown;
+    background-color: rgb(3, 17, 42);
     width: 30vw;
     display: flex;
     flex-direction: column;
