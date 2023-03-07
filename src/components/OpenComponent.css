@@ -40,15 +40,14 @@
 }
 
 .opendepositclass{
-    border: solid 2px brown;
-    margin: 2vh;
+    margin: 1.5vh;
     width: 12vw;
 }
 
 .openDepositPlaceholder{
     width: 10vw;
-    height: 8vh;
-    margin: .5vh;
+    height: 8.7vh;
+    margin: 1vh;
     margin-bottom: -2vh;
     margin-top: 3vh;
     font-size: 25px;
@@ -58,8 +57,7 @@
 
 .openDepositPlaceholder::placeholder{
     width: 10vw;
-    height: 8vh;
-    margin: .5vh;
+    height: 9vh;
     margin-bottom: -2vh;
     margin-top: 3vh;
     font-size: 25px;
