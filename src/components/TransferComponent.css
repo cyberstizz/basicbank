@@ -15,5 +15,10 @@
 }
 
 .transferFromToField{
+    border: solid 2px red;
+}
+
+
+.transferButton{
     
 }
