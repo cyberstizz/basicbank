@@ -8,7 +8,7 @@ const TransferComponent = (props) => {
         <div className='transferTop'></div>
         <div></div>
         <div></div>
-        <div></div>
+        <button></button>
 
         
         
