@@ -3,7 +3,18 @@ import './TransferComponent.css'
 
 const TransferComponent = (props) => {
     return (
-        <div className='fullTransferComponent'>TransferComponent</div>
+        <div className='fullTransferComponent'>TransferComponent
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        
+        
+        
+        
+        </div>
       )
 }
 
