@@ -1,7 +1,7 @@
 
 .fullOpenComponent{
     background-color: rgb(3, 17, 42);
-    border: solid 2px brown;
+    border: solid 4px rgb(139, 110, 35);
     height: 55vh;
     width: 30vw;
 }
