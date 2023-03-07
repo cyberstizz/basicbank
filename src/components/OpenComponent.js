@@ -140,7 +140,6 @@ const OpenComponent = (props) => {
             <option>Checking</option>
             <option>Savings</option>
         </select>
-        <div className=""></div>
         <p className="">Account type</p>
 
         </div>
