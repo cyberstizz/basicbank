@@ -21,7 +21,9 @@
 }
 
 .transferAmountField{
-    border: solid 2px green;
+    background-color: #414E65;
+    height: 20vh;
+
 }
 
 .transferFromToField{
