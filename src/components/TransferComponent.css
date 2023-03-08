@@ -13,9 +13,9 @@
 }
 
 .transferTextheader{
-    border: solid 2px green;
     font-size: 45px;
     color: white;
+    margin-left: 6vw;
 }
 
 .transferAmountField{
