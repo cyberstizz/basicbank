@@ -11,7 +11,7 @@ const TransferComponent = (props) => {
         </div>
         <div className='transferAmountField'></div>
         <div className='transferFromToField'></div>
-        <button className='transferButton'></button>
+        <button className='transferButton'>Transfer</button>
 
         
         
