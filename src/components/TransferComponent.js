@@ -3,7 +3,7 @@ import './TransferComponent.css'
 
 const TransferComponent = (props) => {
     return (
-        <div className='fullTransferComponent'>TransferComponent
+        <div className='fullTransferComponent'>
         
         <div className='transferTop'>
             <div className='Xout' onClick={props.xoutHandler}>x</div>
