@@ -20,6 +20,7 @@
 }
 
 .transferAmountField{
+    display: flex;
     background-color: #414E65;
     height: 16vh;
     width: 22vw;
