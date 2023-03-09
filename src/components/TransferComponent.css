@@ -84,8 +84,9 @@
 
 .transferToWord{
     border: solid 2px greenyellow;
-    margin-left: 3vw;
+    margin-left: 2vw;
     color: white;
+    font-size: 30px;
 }
 
 .transferDropDown{
