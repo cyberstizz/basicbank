@@ -21,7 +21,7 @@ const TransferComponent = (props) => {
 
         <div className='transferFromToField'>
             <div className='transferFromToTop'>From account {transferFrom}</div>
-            <div></div>
+            <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'></div>
         </div>
         <button className='transferButton'>Transfer {transferFrom}</button>
