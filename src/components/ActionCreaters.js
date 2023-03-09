@@ -42,7 +42,7 @@ export const depositFromActionCreater = (account) => {
 export const transferAmountActionCreater = (amount) => {
     return {
         type: 'TRANSFER_AMOUNT',
-        amount: amount
+        transfer_amount: amount
     }
 };
 
@@ -52,7 +52,7 @@ export const transferAmountActionCreater = (amount) => {
 export const transferToActionCreater = (account) => {
     return {
         type: 'TRANSFER_TO',
-        accountt: account
+        transfer_to: account
     }
 };
 
@@ -62,7 +62,7 @@ export const transferToActionCreater = (account) => {
 export const transferFromActionCreater = (account) => {
     return {
         type: 'TRANSFER_FROM',
-        account: account
+        transfor_from: account
     }
 };
 

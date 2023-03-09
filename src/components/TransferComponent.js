@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 const TransferComponent = (props) => {
 
-    const transferFrom = useSelector(state => state.transfer)
+    const transferFrom = useSelector(state => state.transfer.transfer_from)
     
     return (
         <div className='fullTransferComponent'>
