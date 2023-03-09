@@ -32,6 +32,11 @@
 
 .transferDollarSign{
     color: white;
+    height: 5vh;
+    width: 5vw;
+    align-self: center;
+    text-align: center;
+    border: solid 2px green;
 }
 
 .transferFromToField{
