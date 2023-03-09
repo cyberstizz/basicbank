@@ -82,6 +82,10 @@
     flex-direction: row;
 }
 
+.transferDropDown{
+    
+}
+
 .transferButton{
     background-color: #414E65;
     height: 7vh;

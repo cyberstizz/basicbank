@@ -24,7 +24,7 @@ const TransferComponent = (props) => {
             <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'>
                 <div className='transferToWord'>To</div>
-                <option></option>
+                <option className='transferDropDown'></option>
 
             </div>
         </div>
