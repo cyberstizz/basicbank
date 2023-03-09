@@ -34,7 +34,7 @@ const AccountCard = (props) => {
     //1)dispatch props.accountNumber to the top level state
     dispatch(transferFromActionCreater(props.accountNumber))
 
-    //2)call the props handler that will open the withdraw component
+    //2)call the props handler that will open the transfer component
     props.transferHandler()
   }       
 
