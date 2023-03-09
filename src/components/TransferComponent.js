@@ -22,7 +22,11 @@ const TransferComponent = (props) => {
         <div className='transferFromToField'>
             <div className='transferFromToTop'>From account {transferFrom}</div>
             <div className='transferDecorativeLine'></div>
-            <div className='transferFromToBottom'></div>
+            <div className='transferFromToBottom'>
+                <div></div>
+                <div></div>
+
+            </div>
         </div>
         <button className='transferButton'>Transfer</button>
 
