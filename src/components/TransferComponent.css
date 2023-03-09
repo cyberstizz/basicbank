@@ -64,6 +64,7 @@
 
 .transferDecorativeLine{
     height: 2vh;
+    background-color: goldenrod;
 }
 
 .transferFromToTop{
