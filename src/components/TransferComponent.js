@@ -23,7 +23,7 @@ const TransferComponent = (props) => {
             <div className='transferFromToTop'>From account {transferFrom}</div>
             <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'>
-                <div className='transferToWord'>To</div>
+                <div className='transferToWord'>To:</div>
                 <option className='transferDropDown'></option>
 
             </div>

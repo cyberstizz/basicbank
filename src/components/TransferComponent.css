@@ -83,15 +83,15 @@
 }
 
 .transferToWord{
-    border: solid 2px greenyellow;
     margin-left: 2vw;
+    font-weight: 700;
     color: white;
     font-size: 30px;
 }
 
 .transferDropDown{
 
-    border: solid 2px orange;
+    border: solid 1px black;
 }
 
 .transferButton{
