@@ -26,8 +26,9 @@ const TransferComponent = (props) => {
                 <div className='transferToWord'>To:</div>
                 <select className='transferDropDown'>
                     {props.data.map((account, index) => {
+                    if(account.accountnumber !== transferFrom){
                     return <option key={index} className="deletetype">{account.accountnumber}</option>
-                    })}
+                            }})}
                 </select>
 
             </div>
