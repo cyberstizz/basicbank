@@ -14,7 +14,7 @@ const TransferComponent = (props) => {
             <div className='transferTextheader'>Transfer</div>
         </div>
         <div className='transferAmountField'>
-        <div></div>
+        <div className='transferDollarSign'></div>
         <div></div>
 
 
