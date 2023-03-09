@@ -68,11 +68,13 @@
 }
 
 .transferFromToTop{
-    height: 8vh;
+    height: 6vh;
     color: white;
     width: 15vw;
     font-size: 25px;
     align-self: center;
+    margin-left: 2vw;
+    margin-top: 2vh;
 }
 
 
