@@ -43,6 +43,7 @@
 .transferInput{
     background-color: #414E65;
     height: 12vh;
+    align-self: center;
 }
 
 .transferFromToField{
