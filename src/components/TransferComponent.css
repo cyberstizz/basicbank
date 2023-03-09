@@ -92,6 +92,7 @@
 .transferDropDown{
     border: solid 1px black;
     width: 12vw;
+    margin-left: .5vw;
 }
 
 .transferButton{
