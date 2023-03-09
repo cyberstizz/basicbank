@@ -4,6 +4,10 @@ import { useSelector } from 'react-redux'
 
 const TransferComponent = (props) => {
 
+    const handleClickedTransfer = () => {
+        
+    }
+
     const transferFrom = useSelector(state => state.transfer.transfer_from)
     
     return (
