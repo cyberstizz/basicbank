@@ -12,7 +12,7 @@ const TransferComponent = (props) => {
         <div className='transferTop'>
             <div className='Xout' onClick={props.xoutHandler}>x</div>
             <div className='transferTextheader'>Transfer</div>
-        </div>
+        </div> {transferFrom}
         <div className='transferAmountField'></div>
         <div className='transferFromToField'></div>
         <button className='transferButton'>Transfer</button>
