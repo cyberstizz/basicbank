@@ -6,6 +6,11 @@ const TransferComponent = (props) => {
 
     const handleClickedTransfer = () => {
 
+        //set transfer amount with action creater
+
+        //set transfer to with action creater
+
+        //log both transfer amount and tranfer to to the console
     }
 
     const transferFrom = useSelector(state => state.transfer.transfer_from)
