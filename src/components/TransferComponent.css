@@ -80,11 +80,11 @@
 .transferFromToBottom{
     display: flex;
     flex-direction: row;
-    margin-left: 3vw;
 }
 
 .transferToWord{
-    
+    border: solid 2px greenyellow;
+    margin-left: 3vw;
 }
 
 .transferDropDown{
