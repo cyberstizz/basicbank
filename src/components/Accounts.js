@@ -263,7 +263,7 @@ console.log(transferCall.status())
     transactionSpace = selectedComponent;
 
 
-    setComponentToShow(<TransferComponent xoutHandler={xoutHandler} transferHandler={completeTransfer} />)
+    setComponentToShow(<TransferComponent xoutHandler={xoutHandler} transferHandler={completeTransfer} data={data} />)
 
   }
 
