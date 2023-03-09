@@ -23,6 +23,9 @@ const AccountCard = (props) => {
   const handleStartDeposit = () => {
     //steps
     //1)dispatch props.accountNumber to the top level state
+
+    console.log(props.transferFrom)
+
     dispatch(depositFromActionCreater(props.accountNumber))
 
     //2)call the props handler that will open the withdraw component

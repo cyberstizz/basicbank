@@ -515,7 +515,7 @@ const handleLogout = async () => {
          {data.map((acc, index) => {
 
           if(acc.accounttype){
-      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} transferHandler={StartTransfer} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} />
+      return <AccountCard key={index} depositHandler={startDeposit} withDrawHandler={startWithdrawal} transferHandler={StartTransfer} accountType={acc.accounttype} accountNumber={acc.accountnumber} accountBalance={acc.accountbalance} transferFrom={} />
         }     
                             })} 
           
