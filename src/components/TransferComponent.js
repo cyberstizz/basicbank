@@ -24,7 +24,10 @@ const TransferComponent = (props) => {
             <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'>
                 <div className='transferToWord'>To:</div>
-                <option className='transferDropDown'></option>
+                <select className='transferDropDown'>
+
+
+                </select>
 
             </div>
         </div>
