@@ -62,6 +62,10 @@
     border-radius: 12px;
 }
 
+.transferDecorativeLine{
+    
+}
+
 .transferFromToTop{
     height: 8vh;
     border-bottom: solid 2px gold;
