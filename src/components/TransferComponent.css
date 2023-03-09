@@ -78,7 +78,7 @@
 }
 
 .transferFromToBottom{
-    color: white;
+    display: flex;
 }
 
 .transferButton{
