@@ -1,7 +1,10 @@
 import {Link} from 'react-router-dom'
 import './TransferComponent.css'
+import { useSelector } from 'react-redux'
 
 const TransferComponent = (props) => {
+
+    
     return (
         <div className='fullTransferComponent'>
         
