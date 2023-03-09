@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const TransferComponent = (props) => {
 
     const handleClickedTransfer = () => {
-        
+
     }
 
     const transferFrom = useSelector(state => state.transfer.transfer_from)
@@ -37,7 +37,7 @@ const TransferComponent = (props) => {
 
             </div>
         </div>
-        <button className='transferButton'>Transfer</button>
+        <button className='transferButton' onClick={handleClickedTransfer}>Transfer</button>
 
         
         
