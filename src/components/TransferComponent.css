@@ -79,6 +79,7 @@
 
 .transferFromToBottom{
     display: flex;
+    flex-direction: row;
 }
 
 .transferButton{
