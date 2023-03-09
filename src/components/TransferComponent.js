@@ -15,7 +15,7 @@ const TransferComponent = (props) => {
         </div>
             <div className='transferAmountField'>
             <div className='transferDollarSign'>$</div>
-            <input className='transferInput'></input>
+            <input className='transferInput' type='number'></input>
         </div>
 
 
