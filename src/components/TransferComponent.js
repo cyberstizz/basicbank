@@ -11,6 +11,8 @@ const TransferComponent = (props) => {
         //set transfer to with action creater
 
         //log both transfer amount and tranfer to to the console
+
+        //call function from props to change display field to transferComplete
     }
 
     const transferFrom = useSelector(state => state.transfer.transfer_from)
