@@ -35,7 +35,9 @@ const AccountCard = (props) => {
   const handleStartTransfer = () => {
     //steps
     //1)dispatch props.accountNumber to the top level state
-    dispatch(transferFromActionCreater(props.accountNumber))
+    console.log(props.accountNumber)
+    dispatch(transferFromActionCreater(Number(props.accountNumber)))
+    console.log(props.transferFrom)
 
     //2)call the props handler that will open the transfer component
     props.transferHandler()

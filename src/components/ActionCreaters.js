@@ -62,7 +62,7 @@ export const transferToActionCreater = (account) => {
 export const transferFromActionCreater = (account) => {
     return {
         type: 'TRANSFER_FROM',
-        transfor_from: account
+        transfer_from: account
     }
 };
 
