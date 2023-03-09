@@ -2,7 +2,7 @@ import './Home.css';
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-    let mytest = ''
+let mytest = ''
 
 
 const Home = () => {
