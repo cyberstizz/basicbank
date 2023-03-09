@@ -65,6 +65,8 @@
 .transferFromToTop{
     height: 8vh;
     border-bottom: solid 2px gold;
+    border: solid 2px green;
+    color: white;
 }
 
 
