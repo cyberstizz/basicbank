@@ -7,13 +7,23 @@ const TransferConfirmation = () => {
           <div className='transferConfirmationTopDiv'>
               <div></div>
               <div></div>
-
           </div>
 
 
 
 
-          <div className='transferConfirmationMiddleSection'></div>
+          <div className='transferConfirmationMiddleSection'>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>            
+          </div>
+          
+          
+          
+          
           <button className='transferConfirmationButton'></button>
 
         </div>
