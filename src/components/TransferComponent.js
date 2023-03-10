@@ -2,8 +2,7 @@ import {Link} from 'react-router-dom'
 import './TransferComponent.css'
 import { useSelector } from 'react-redux'
 import { transferAmountActionCreater, transferToActionCreater} from './ActionCreaters'
-import { Dispatch } from 'react'
-
+import { useDispatch } from 'react-redux'
 const TransferComponent = (props) => {
 
     const handleClickedTransfer = () => {
