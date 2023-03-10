@@ -4,7 +4,15 @@ import './TransferConfirmation.css'
 const TransferConfirmation = () => {
     return (
         <div className='fullCompleteTransferComponent'>
-          <div className='transferConfirmationTopDiv'></div>
+          <div className='transferConfirmationTopDiv'>
+              <div></div>
+              <div></div>
+
+          </div>
+
+
+
+
           <div className='transferConfirmationMiddleSection'></div>
           <button className='transferConfirmationButton'></button>
 
