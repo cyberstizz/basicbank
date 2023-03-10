@@ -24,7 +24,7 @@ const TransferConfirmation = () => {
           
           
           
-          <button className='transferConfirmationButton'></button>
+          <button className='transferConfirmationButton'> Make Transfer</button>
 
         </div>
       )
