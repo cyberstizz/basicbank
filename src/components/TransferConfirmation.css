@@ -17,6 +17,7 @@
 
 .transferConfirmationMiddleSection{
     display: flex;
+    flex-direction: column;
 }
 
 .transferConfirmationButton{
