@@ -5,8 +5,8 @@ const TransferConfirmation = () => {
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
-              <div></div>
-              <div></div>
+          <div className='Xout' onClick={props.xoutHandler}>x</div>
+            <div className='depositHeader'>Are you sure?</div>
           </div>
 
 
