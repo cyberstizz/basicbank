@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux'
 
 const TransferConfirmation = (props) => {
 
+  const transferConfirmationAmount = useSelector((state) => state.transfer.transfer_Amount)
+
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
