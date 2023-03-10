@@ -10,7 +10,7 @@ const TransferComponent = (props) => {
     const dispatch = useDispatch();
 
 
-    const transferChangeHandler = (e) => {
+    const transferToChangeHandler = (e) => {
 
         dispatch()
     }
@@ -46,7 +46,7 @@ const TransferComponent = (props) => {
             <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'>
                 <div className='transferToWord'>To:</div>
-                <select className='transferDropDown' onChange={transferChangeHandler}>
+                <select className='transferDropDown' onChange={transferToChangeHandler}>
                     {props.data.map((account, index) => {
                     if(account.accountnumber !== transferFrom){
                     return <option key={index} className="deletetype">{account.accountnumber}</option>
