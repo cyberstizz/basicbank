@@ -5,7 +5,7 @@ const TransferConfirmation = () => {
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'></div>
-          <div></div>
+          <div className='transferConfirmationMiddleSection'></div>
           <button></button>
 
         </div>
