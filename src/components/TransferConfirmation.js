@@ -3,7 +3,12 @@ import './TransferConfirmation.css'
 
 const TransferConfirmation = () => {
     return (
-        <div className='fullCompleteTransferComponent'>TransferConfirmation</div>
+        <div className='fullCompleteTransferComponent'>
+          <div></div>
+          <div></div>
+          <button></button>
+
+        </div>
       )
 }
 
