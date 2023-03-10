@@ -3,6 +3,10 @@ import './TransferComponent.css'
 import { useSelector } from 'react-redux'
 import { transferAmountActionCreater, transferToActionCreater} from './ActionCreaters'
 import { useDispatch } from 'react-redux'
+
+
+
+
 const TransferComponent = (props) => {
 
     let transferAmount = useSelector((state) => state.transfer.transfer_Amount)
