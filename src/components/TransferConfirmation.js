@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import './TransferConfirmation.css'
+import { useSelector } from 'react-redux'
 
 const TransferConfirmation = (props) => {
 
@@ -12,14 +13,13 @@ const TransferConfirmation = (props) => {
 
 
 
-
           <div className='transferConfirmationMiddleSection'>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div>&#8595;</div>
-              <div></div>
-              <div></div>            
+              <div className='transferConfirmationTransferAmountText'>Transfer Amount</div>
+              <div className='transferConfirmation'></div>
+              <div className='transferConfirmation'></div>
+              <div className='transferConfirmation'>&#8595;</div>
+              <div className='transferConfirmation'></div>
+              <div className='transferConfirmation'></div>            
           </div>
           
           
