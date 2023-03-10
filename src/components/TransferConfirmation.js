@@ -2,11 +2,12 @@ import {Link} from 'react-router-dom'
 import './TransferConfirmation.css'
 
 const TransferConfirmation = (props) => {
+
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
           <div className='Xout' onClick={props.xoutHandler}>x</div>
-            <div className='depositHeader'>Are you sure?</div>
+            <div className='transferConfirmationHeader'>Are you sure?</div>
           </div>
 
 
