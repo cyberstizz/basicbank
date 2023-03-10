@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux'
 const TransferComponent = (props) => {
 
     let transferAmount = useSelector((state) => state.transfer.transfer_Amount)
+    let transferTo = useSelector((state) => state.transfer.transferTo)
 
     const dispatch = useDispatch();
 
