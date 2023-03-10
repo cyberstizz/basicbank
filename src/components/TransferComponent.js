@@ -5,6 +5,8 @@ import { transferAmountActionCreater, transferToActionCreater} from './ActionCre
 import { useDispatch } from 'react-redux'
 const TransferComponent = (props) => {
 
+    const dispatch = useDispatch();
+
     const handleClickedTransfer = () => {
 
 
