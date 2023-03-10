@@ -10,7 +10,7 @@ const TransferComponent = (props) => {
 
 
         //set transfer to with action creater
-        transferToActionCreater
+        Dispatch(transferToActionCreater)
         //log both transfer amount and tranfer to to the console
 
         //call function from props to change display field to transferComplete
