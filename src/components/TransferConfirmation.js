@@ -16,7 +16,7 @@ const TransferConfirmation = () => {
               <div></div>
               <div></div>
               <div></div>
-              <div></div>
+              <div>&#8595;</div>
               <div></div>
               <div></div>            
           </div>
