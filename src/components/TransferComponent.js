@@ -12,7 +12,7 @@ const TransferComponent = (props) => {
 
     const transferChangeHandler = (e) => {
 
-        
+        dispatch()
     }
 
     const handleClickedTransfer = () => {
