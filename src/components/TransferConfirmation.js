@@ -22,7 +22,7 @@ const TransferConfirmation = (props) => {
 
           <div className='transferConfirmationMiddleSection'>
               <div className='transferConfirmationTransferAmountText'>Transfer Amount</div>
-              <div className='transferConfirmationAmountValue'>{transferConfirmationAmount}</div>
+              <div className='transferConfirmationAmountValue'>${transferConfirmationAmount}</div>
               <div className='transferConfirmationFromAccountText'>From Account # {transferConfirmationFromAccount}</div>
               <div className='transferConfirmationArrow'>&#8595;</div>
               <div className='transferConfirmationToText'>to Account # {transferConfirmationToAccount}</div>
