@@ -8,6 +8,9 @@ const TransferConfirmation = (props) => {
 
   const transferConfirmationFromAccount = useSelector((state) => state.transfer.transfer_from)
 
+  const transferConfirmationToAccount = useSelector((state) => state.transfer.transfer_to)
+
+
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
@@ -22,7 +25,7 @@ const TransferConfirmation = (props) => {
               <div className='transferConfirmationAmountValue'>{transferConfirmationAmount}</div>
               <div className='transferConfirmationFromAccountText'>From Account # {transferConfirmationFromAccount}</div>
               <div className='transferConfirmationArrow'>&#8595;</div>
-              <div className='transferConfirmation'></div>
+              <div className='transferConfirmationToText'>to Account # {transferConfirmationToAccount}</div>
               <div className='transferConfirmation'></div>            
           </div>
           
