@@ -12,7 +12,7 @@ const TransferComponent = (props) => {
 
     const transferToChangeHandler = (e) => {
 
-        dispatch()
+        dispatch(transferToActionCreater(e.target.value))
     }
 
     const handleClickedTransfer = () => {
