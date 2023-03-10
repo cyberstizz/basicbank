@@ -5,13 +5,15 @@ import { transferAmountActionCreater, transferToActionCreater} from './ActionCre
 import { useDispatch } from 'react-redux'
 const TransferComponent = (props) => {
 
+    let transferAmount = useSelector((state) => state.transfer.transferAmount)
+
     const dispatch = useDispatch();
 
     const handleClickedTransfer = () => {
 
 
         //set transfer to with action creater
-        dispatch(transferToActionCreater)
+        dispatch(transferToActionCreater())
         //log both transfer amount and tranfer to to the console
 
         //call function from props to change display field to transferComplete
