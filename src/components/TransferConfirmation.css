@@ -38,19 +38,33 @@
     margin-left: 6vw;
     margin-top: 0;
 }
+.transferConfirmationArrow{
+    color: white;
+    margin-left: 12vw;
+}
 
 .transferConfirmationFromAccountText{
-    border: solid 2px green;
-    font-size: 16px;
     color: white;
+    margin-left: 8vw;
+}
+
+.transferConfirmationToText{
+    color: white;
+    margin-left: 8vw;
 }
 
 .transferConfirmationDecorativeLine{
-    
+    color: white;
+    height: 1vh;
+    width: 15vw;
 }
 
 .transferConfirmationButton{
+    background-color: coral;
     height: 6vh;
     width: 12vw;
-    border: solid 2px green;
+    margin-left: 8vw;
+    margin-top: 2vh;
+    color: rgb(24, 24, 96);
+    font-weight: 700;
 }
