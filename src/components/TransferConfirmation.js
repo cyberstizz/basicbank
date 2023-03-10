@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import './TransferConfirmation.css'
 
-const TransferConfirmation = () => {
+const TransferConfirmation = (props) => {
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
