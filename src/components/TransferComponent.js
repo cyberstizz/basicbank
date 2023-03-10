@@ -7,7 +7,6 @@ const TransferComponent = (props) => {
 
     const handleClickedTransfer = () => {
 
-        //set transfer amount with action creater
 
         //set transfer to with action creater
 
@@ -27,7 +26,7 @@ const TransferComponent = (props) => {
         </div>
             <div className='transferAmountField'>
             <div className='transferDollarSign'>$</div>
-            <input className='transferInput' type='number'></input>
+            <input className='transferInput' type='number' onChange={(event) => dispatch(transferAmountActionCreater(event.target.value))}></input>
         </div>
 
 
