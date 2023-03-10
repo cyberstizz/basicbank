@@ -26,13 +26,14 @@ const TransferConfirmation = (props) => {
               <div className='transferConfirmationFromAccountText'>From Account # {transferConfirmationFromAccount}</div>
               <div className='transferConfirmationArrow'>&#8595;</div>
               <div className='transferConfirmationToText'>to Account # {transferConfirmationToAccount}</div>
-              <div className='transferConfirmationDecorativeLine'></div>            
+              <div className='transferConfirmationDecorativeLine'></div> 
+              <button className='transferConfirmationButton'> Make Transfer</button>
+           
           </div>
           
           
           
           
-          <button className='transferConfirmationButton'> Make Transfer</button>
 
         </div>
       )

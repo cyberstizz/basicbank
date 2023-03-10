@@ -40,10 +40,17 @@
 }
 
 .transferConfirmationFromAccountText{
+    border: solid 2px green;
+    font-size: 16px;
+    color: white;
+}
+
+.transferConfirmationDecorativeLine{
     
 }
 
 .transferConfirmationButton{
     height: 6vh;
     width: 12vw;
+    border: solid 2px green;
 }
