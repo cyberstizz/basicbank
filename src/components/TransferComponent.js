@@ -9,29 +9,45 @@ import { useDispatch } from 'react-redux'
 
 const TransferComponent = (props) => {
 
+    const transferFrom = useSelector(state => state.transfer.transfer_from)
+
     let transferAmount = useSelector((state) => state.transfer.transfer_Amount)
-    let transferTo = useSelector((state) => state.transfer.transferTo)
+    let transferTo = useSelector((state) => state.transfer.transfer_to)
 
     const dispatch = useDispatch();
 
 
-    const transferToChangeHandler = (e) => {
+const transferInputchangeHandler = (event) => {
 
-        dispatch(transferToActionCreater(e.target.value))
+        console.log(event.target.value)
+
+        dispatch(transferAmountActionCreater(Number(event.target.value)))
+}
+
+
+    const transferToChangeHandler = (event) => {
+        //attempt to store the account if the dropdown was used
+            let whereToTransfer = event.target.value
+            console.log(event.target.value)
+            if(whereToTransfer == null){
+        dispatch(transferToActionCreater(props.data[0].accountnumber))
+            }
     }
 
     const handleClickedTransfer = () => {
 
-
+        if(transferTo == null){
+            dispatch(transferToActionCreater(props.data[0].accountnumber))
+                } else{
         //set transfer to with action creater
-        dispatch(transferToActionCreater())
+        dispatch(transferToActionCreater(transferTo))
+                }
         //log both transfer amount and tranfer to to the console
         console.log(transferTo)
         console.log(transferAmount)
         //call function from props to change display field to transferComplete
     }
 
-    const transferFrom = useSelector(state => state.transfer.transfer_from)
     
     return (
         <div className='fullTransferComponent'>
@@ -42,7 +58,7 @@ const TransferComponent = (props) => {
         </div>
             <div className='transferAmountField'>
             <div className='transferDollarSign'>$</div>
-            <input className='transferInput' type='number' onChange={(event) => dispatch(transferAmountActionCreater(event.target.value))}></input>
+            <input className='transferInput' type='number' onChange={transferInputchangeHandler}></input>
         </div>
 
 
