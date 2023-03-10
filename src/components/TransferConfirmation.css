@@ -18,6 +18,8 @@
 .transferConfirmationMiddleSection{
     display: flex;
     flex-direction: column;
+    height: 20vh;
+    width: 20vw;
 }
 
 .transferConfirmationButton{
