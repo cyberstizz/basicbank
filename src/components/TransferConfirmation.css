@@ -16,7 +16,7 @@
 }
 
 .transferConfirmationMiddleSection{
-
+    display: flex;
 }
 
 .transferConfirmationButton{
