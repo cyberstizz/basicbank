@@ -43,9 +43,10 @@ const transferInputchangeHandler = (event) => {
         dispatch(transferToActionCreater(transferTo))
                 }
         //log both transfer amount and tranfer to to the console
-        console.log(transferTo)
-        console.log(transferAmount)
+      
         //call function from props to change display field to transferComplete
+
+        props.transferHandler()
     }
 
     

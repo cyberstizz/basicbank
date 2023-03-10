@@ -288,10 +288,8 @@ const completeTransfer = () => {
   
   let transactionSpace = document.getElementById('displayField');
 
-  let selectedComponent = displayArray[5];
 
-  transactionSpace.innerHTML = selectedComponent;
-
+    setComponentToShow(<TransferConfirmation />)
 
 }
 
