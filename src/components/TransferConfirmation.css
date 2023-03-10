@@ -12,7 +12,7 @@
 }
 
 .transferConfirmationHeader{
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-left: 7vw;
     font-size: 25px;
     color: white;
@@ -28,12 +28,19 @@
 .transferConfirmationTransferAmountText{
     color: white;
     margin-top: 2vh;
-    margin-left: 8vw;
+    margin-left: 4vw;
 }
 
 .transferConfirmationAmountValue{
     color: white;
+    height: 12vh;
     font-size: 65px;
+    margin-left: 6vw;
+    margin-top: 0;
+}
+
+.transferConfirmationFromAccountText{
+    
 }
 
 .transferConfirmationButton{
