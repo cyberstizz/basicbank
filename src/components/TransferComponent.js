@@ -68,13 +68,13 @@ const transferInputchangeHandler = (event) => {
             <div className='transferDecorativeLine'></div>
             <div className='transferFromToBottom'>
                 <div className='transferToWord'>To:</div>
-                <select className='transferDropDown' onChange={transferToChangeHandler}>
-                    {props.data.map((account, index) => {
-                    if(account.accountnumber !== transferFrom){
-                    return <option key={index} className="deletetype">{account.accountnumber}</option>
+                    <select className='transferDropDown' onChange={transferToChangeHandler}>
+                            <option className="deletetype"></option>
+                            {props.data.map((account, index) => {
+                                    if(account.accountnumber !== transferFrom){
+                                    return <option key={index} className="deletetype">{account.accountnumber}</option>
                             }})}
-                </select>
-
+                    </select>
             </div>
         </div>
         <button className='transferButton' onClick={handleClickedTransfer}>Transfer</button>
