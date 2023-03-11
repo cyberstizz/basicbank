@@ -78,7 +78,7 @@ if(transferCall.status == 200){
               <div className='transferConfirmationArrow'>&#8595;</div>
               <div className='transferConfirmationToText'>to Account # {transferConfirmationToAccount}</div>
               <div className='transferConfirmationDecorativeLine'></div> 
-              <button className='transferConfirmationButton'> Make Transfer</button>
+              <button className='transferConfirmationButton' onClick={makeTransfer}> Make Transfer</button>
            
           </div>
           
