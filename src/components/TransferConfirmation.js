@@ -14,7 +14,7 @@ const TransferConfirmation = (props) => {
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
-          <div className='Xout' onClick={props.xoutHandler}>x</div>
+          <div className='transferXout' onClick={props.xoutHandler}>x</div>
             <div className='transferConfirmationHeader'>Are you sure?</div>
           </div>
 

@@ -258,10 +258,6 @@ console.log(transferCall.status())
     transactionSpace.style.visibility = 'visible';
 
 
-    let selectedComponent = displayArray[4];
-
-    transactionSpace = selectedComponent;
-
 
     setComponentToShow(<TransferComponent xoutHandler={xoutHandler} transferHandler={completeTransfer} data={data} />)
 
@@ -289,7 +285,7 @@ const completeTransfer = () => {
   let transactionSpace = document.getElementById('displayField');
 
 
-    setComponentToShow(<TransferConfirmation />)
+    setComponentToShow(<TransferConfirmation xoutHandler={xoutHandler} />)
 
 }
 

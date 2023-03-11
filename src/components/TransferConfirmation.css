@@ -9,6 +9,17 @@
 .transferConfirmationTopDiv{
     display: flex;
     flex-direction: row;
+    border: solid 2px orange;
+}
+
+.transferXout{
+    border: solid 2px green;
+    margin-left: 2vw;
+    color: white;
+    height: 5vh;
+    width: 5vw;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .transferConfirmationHeader{
