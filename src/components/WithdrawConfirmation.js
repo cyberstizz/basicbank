@@ -30,7 +30,7 @@ const API_HOST = 'http://localhost:8000';
 
 
 
-const makeWithdrawal = async () => {
+const makeTransfer = async () => {
   console.log('i am the makewithdrawal function and I have been called')
 
 //make post request to server

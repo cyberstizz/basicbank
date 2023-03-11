@@ -26,6 +26,8 @@ const TransferConfirmation = (props) => {
     return _csrfToken;
   }
 
+  
+
 
 
 
