@@ -28,10 +28,10 @@ const transferInputchangeHandler = (event) => {
     const transferToChangeHandler = (event) => {
         //attempt to store the account if the dropdown was used
             let whereToTransfer = event.target.value
-            console.log(event.target.value)
-            if(whereToTransfer == null){
-        dispatch(transferToActionCreater(props.data[0].accountnumber))
-            }
+            console.log(whereToTransfer)
+
+            dispatch(transferToActionCreater(whereToTransfer))
+            
     }
 
     const handleClickedTransfer = () => {
