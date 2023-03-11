@@ -11,6 +11,26 @@ const TransferConfirmation = (props) => {
   const transferConfirmationToAccount = useSelector((state) => state.transfer.transfer_to)
 
 
+  const API_HOST = 'http://localhost:8000';
+
+  let _csrfToken = null;
+
+  const getCsrfToken = async () => {
+    if (_csrfToken === null) {
+      const response = await fetch(`${API_HOST}/csrf/`, {
+        credentials: 'include',
+      });
+      const data = await response.json();
+      _csrfToken = data.csrfToken;
+    }
+    return _csrfToken;
+  }
+
+
+
+
+
+
     return (
         <div className='fullCompleteTransferComponent'>
           <div className='transferConfirmationTopDiv'>
