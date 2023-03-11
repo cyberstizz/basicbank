@@ -54,7 +54,6 @@ if(transferCall.status == 200){
   window.location.reload();
 }
 
-success = 'succeeded'
 
 //if request is succesful alert success
 // if(withdrawCall.status() == 201){
