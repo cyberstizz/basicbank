@@ -9,11 +9,9 @@
 .transferConfirmationTopDiv{
     display: flex;
     flex-direction: row;
-    border: solid 2px orange;
 }
 
 .transferXout{
-    border: solid 2px green;
     margin-left: 2vw;
     color: white;
     height: 5vh;
@@ -24,7 +22,7 @@
 
 .transferConfirmationHeader{
     margin-top: 2vh;
-    margin-left: 7vw;
+    margin-left: 3vw;
     font-size: 25px;
     color: white;
 }
@@ -32,38 +30,38 @@
 .transferConfirmationMiddleSection{
     display: flex;
     flex-direction: column;
-    height: 42vh;
-    width: 20vw;
+    height: 44vh;
+    width: 22.5vw;
     border: solid 2px gray;
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 
 .transferConfirmationTransferAmountText{
     color: white;
     margin-top: 2vh;
-    margin-left: 4vw;
+    margin-left: 6vw;
 }
 
 .transferConfirmationAmountValue{
     color: rgb(139, 110, 35);
     height: 12vh;
     font-size: 65px;
-    margin-left: 4vw;
+    margin-left: 6vw;
     margin-top: 0;
 }
 .transferConfirmationArrow{
     color: rgb(255, 209, 93);
-    margin-left: 8vw;
+    margin-left: 11vw;
 }
 
 .transferConfirmationFromAccountText{
     color: white;
-    margin-left: 3.3vw;
+    margin-left: 6vw;
 }
 
 .transferConfirmationToText{
     color: white;
-    margin-left: 5vw;
+    margin-left: 6vw;
 }
 
 .transferConfirmationDecorativeLine{
@@ -73,11 +71,12 @@
 }
 
 .transferConfirmationButton{
-    background-color: coral;
+    background-color: rgb(139, 110, 35);
     height: 7vh;
-    width: 12vw;
+    width: 15vw;
     margin-left: 4vw;
     margin-top: 2vh;
     color: rgb(24, 24, 96);
     font-weight: 700;
+    border-radius: 12px;
 }
