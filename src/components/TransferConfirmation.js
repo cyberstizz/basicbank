@@ -29,7 +29,7 @@ const TransferConfirmation = (props) => {
   
 
 
-const makeWithdrawal = async () => {
+const makeTransfer = async () => {
   console.log('i am the makewithdrawal function and I have been called')
 
 //make post request to server
