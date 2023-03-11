@@ -29,6 +29,39 @@ const TransferConfirmation = (props) => {
   
 
 
+const makeWithdrawal = async () => {
+  console.log('i am the makewithdrawal function and I have been called')
+
+//make post request to server
+const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+method: "POST",
+headers: {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json',
+  'X-CSRFToken': await getCsrfToken()
+},
+credentials: 'include',
+body: JSON.stringify({
+  account_number: withdrawFrom,
+  withdrawal_amount: Number(withdrawAmount) 
+})
+})
+
+console.log(withdrawCall.status)
+if(withdrawCall.status == 200){
+  alert('success! your withdrawal went through')
+  window.location.reload();
+}
+
+success = 'succeeded'
+
+//if request is succesful alert success
+// if(withdrawCall.status() == 201){
+//   alert(`you have sucessfully withdrawn $${amouunt} from account# ${accountNumber}`)
+// }
+}
+
+
 
 
 
