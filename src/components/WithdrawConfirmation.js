@@ -34,7 +34,7 @@ const makeTransfer = async () => {
   console.log('i am the makewithdrawal function and I have been called')
 
 //make post request to server
-const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+const transferCall = await fetch('http://localhost:8000/withdraw', {
 method: "POST",
 headers: {
   'Accept': 'application/json',
@@ -48,9 +48,9 @@ body: JSON.stringify({
 })
 })
 
-console.log(withdrawCall.status)
-if(withdrawCall.status == 200){
-  alert('success! your withdrawal went through')
+console.log(transferCall.status)
+if(transferCall.status == 200){
+  alert('success! your tranfer went through')
   window.location.reload();
 }
 
