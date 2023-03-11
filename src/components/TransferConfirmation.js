@@ -49,7 +49,7 @@ body: JSON.stringify({
 })
 
 console.log(transferCall.status)
-if(transferCall.status == 200){
+if(transferCall.status == 204){
   alert('success! your transfer went through')
   window.location.reload();
 }
