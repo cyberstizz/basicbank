@@ -139,27 +139,20 @@ console.log(loginCall.status)
     };
     
 }
-
-
-
-      
-
-
     return(
         <div id="fullpage">
-        <div className="top_section">
-        <br/>
-       <span className="logo"> Basic Bank</span>
-        <ul className="navlist">
-            <li>About</li>
-            <li>Help</li>
-            <li>Locations</li>
+                    <div className="top_section">
+                    <p className="logo"> Basic Bank</p>
+                        <ul className="navlist">
+                            <li>About</li>
+                            <li>Help</li>
+                            <li>Locations</li>
 
 
-        </ul>
-       <Link to={"/create"}><button id="signin">Sign up</button></Link>
-
+                        </ul>
+                    <Link to={"/create"}><button id="signin">Sign up</button></Link>
         </div>
+
         <div className="moreOptions">
         <ul className="navListTwo">
        <span className="hoverStart"> <li>Personal</li></span> 
