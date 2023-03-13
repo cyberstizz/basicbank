@@ -100,9 +100,9 @@ align-self: center;
     }
     
     .accountType{
-        margin-left: 12vw;
+        margin: 0 auto;
         margin-top: 4vh;
-        font-size: 20px;
+        font-size: 3rem;
     }
     
     .accountNumber{
