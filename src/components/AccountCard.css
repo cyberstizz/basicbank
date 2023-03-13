@@ -131,6 +131,7 @@ align-self: center;
     
     .accountButtons{
         margin: 0 auto;
+        display: flex;
     }
     
     .accountCardDepositButton{
