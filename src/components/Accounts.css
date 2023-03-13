@@ -407,11 +407,14 @@ margin-top: .35vh;
 
 
 .divider{
+    width: 5px;
 }
 
 
 .open{
-    border: solid 2px silver;
+    font-size: 20px;
+    width: 10%;
+    margin-left: 2vw;
 }
 
 .bottomsection{
