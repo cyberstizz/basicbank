@@ -405,11 +405,11 @@ margin-left: 1vw;
     }
     
     .siginInSection{
-        height: 64vh;
-        width: 27vw;
+        height: 35rem;
+        width: 20rem;
         background-color: rgb(3, 17, 42);
-        margin-top: 2vh;
-        margin-left: 2vh;
+        margin-top: 8vh;
+        margin-left: 4vh;
         display: flex;
         flex-direction: column;
     }
@@ -495,7 +495,7 @@ margin-left: 1vw;
     
     
     .fillerSection{
-        display: flex;
+        display: none;
         flex-direction: column;
         height: 68vh;
         width: 46vw;

@@ -237,7 +237,7 @@ console.log(loginCall.status)
             Keep it simple
             <br />
             keep it <span className='basic'>Basic</span>
-            </div>
+                 </div>
 
             <div className='secondFillerSection'>
                
