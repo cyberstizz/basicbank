@@ -119,7 +119,7 @@ align-self: center;
     }
     
     .accountBalance{
-     margin-left: 4vw;
+     margin-left: 7vw;
      font-family: 'Dosis', sans-serif;
      font-size: 85px;
     }
@@ -130,8 +130,7 @@ align-self: center;
     }
     
     .accountButtons{
-        margin-top: 4vh;
-        margin-left: 5vw;
+        margin: 0 auto;
     }
     
     .accountCardDepositButton{
