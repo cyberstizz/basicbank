@@ -108,6 +108,7 @@ align-self: center;
     .accountNumber{
         margin: 0 auto;
         margin-top: 1vh;
+        font-size: 2.5rem;
     }
     
     .goldLine{
