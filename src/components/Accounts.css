@@ -378,21 +378,22 @@ margin-top: .35vh;
 }
 
 .name{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     width: 30vw;
     color:rgb(3, 17, 42);
     margin-top: 2vh;
-    margin-left: 5vw;
+    margin-left: 3vw;
 }
 
 .accountnumber{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
-    width: 40vw;
+    width: 28vw;
     color:rgb(3, 17, 42);
-    margin-left: 10vw;
+    margin-left: 7vw;
     margin-top: 2vh;
+    border: solid 2px green;
 }
 
 .delete{
