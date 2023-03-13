@@ -292,7 +292,7 @@ margin-left: 1vw;
         height: 15vh;
         width: 45vw;
         color: rgb(139, 110, 35);
-        font-size: 35px;
+        font-size: 30px;
         display: inline-flex;
     }
 
@@ -305,14 +305,15 @@ margin-left: 1vw;
         margin-top: 4vh;
         margin-left: 30vw;
         color: cornsilk;
-        font-size: large;
+        font-size: medium;
     }
     
     #signin{
-        height: 20px;
+        height: 3.5rem;
         margin-top: 5vh;
         border-radius: 20px;
         width: 100px;
+        margin-right: 5rem;
         color: rgb(3, 17, 42);
         font-weight: 900;
         letter-spacing: 1px;
@@ -387,6 +388,7 @@ margin-left: 1vw;
     
     .bodysection{
         height: 84vh;
+        width: 100vw;
         background-image: url("../public/basicbankfamily3.jpg");
         background-repeat: no-repeat;
         background-position-x: right;
@@ -399,6 +401,8 @@ margin-left: 1vw;
         border-top: solid 1px orange;
         display: flex;
         flex-direction: row;
+        border: solid 2px green;
+
     }
     
     .siginInSection{
