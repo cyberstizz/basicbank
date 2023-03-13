@@ -134,7 +134,7 @@ align-self: center;
     }
     
     .accountCardDepositButton{
-    width: 20vw;
+    width: 10rem;
     height: 8vh;
     background-color: white;
     border: solid 3px rgb(3, 17, 42);
@@ -150,7 +150,7 @@ align-self: center;
     }
     
     .accountCardWithdrawButton{
-        width: 20vw;
+        width: 10rem;
         height: 8vh;
         background-color: white;
         border: solid 3px rgb(3, 17, 42);
