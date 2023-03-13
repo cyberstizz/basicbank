@@ -1,4 +1,338 @@
 
+.topHeader{
+    height: 12vh;
+    width: 100vw;
+    background-color: rgb(3, 17, 42);
+    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-color: brown;
+    border-bottom-width: 4px;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    width: 30vw;
+    color:rgb(139, 110, 35);
+    margin-left: 3.5vw;
+}
+
+.logout{
+    font-size: 50px;
+    font-weight: bold;
+    width: 30vw;
+    color:rgb(139, 110, 35);
+    margin-left: 52vw;
+}
+
+.infoSection{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    font-size: 20px;
+    height: 10vh;
+    background-color: rgb(236, 228, 228);
+    border-bottom: solid rgb(3, 17, 42) 2px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    width: 30vw;
+    color:rgb(3, 17, 42);
+    margin-top: 2vh;
+    margin-left: 5vw;
+}
+
+.accountnumber{
+    font-size: 30px;
+    font-weight: 500;
+    width: 40vw;
+    color:rgb(3, 17, 42);
+    margin-left: 10vw;
+    margin-top: 2vh;
+}
+
+.delete{
+    font-size: 30px;
+    font-weight: 500;
+    width: 6vw;
+    color:rgb(3, 17, 42);
+    margin-top: 2vh;
+    color: black;
+}
+
+.bottomsection{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 20px;
+    height: 78vh;
+    background-color: rgb(3, 17, 42);
+}
+
+#displayField{
+    visibility: hidden;
+    position: absolute;
+    height: 61vh;
+    width: 26vw;
+    /* background-color: gold; */
+    align-self: center;
+    margin-left: 35vw;
+    z-index: 10;
+}
+
+.coverimage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 78vh;
+    background-image: url("../../public/better\ bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    opacity: 90%;
+}
+
+.accountscontainer{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    margin-left: .5vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.createbottomsection{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 20px;
+    height: 78vh;
+    background-image: url('../../public/handshake.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 3px silver;
+}
+
+.createPageFormArea{
+    width: 85vw;
+    height: 60vh;
+    border: solid 3px green;
+    margin-left: 8vw;
+    margin-top: 9.5vh;
+}
+
+
+.createNewAccountHeader{
+font-size: 30px;
+font-weight: 500;
+width: 25vw;
+color:rgb(3, 17, 42);
+align-self: center;
+margin-left: 40vw;
+}
+
+
+.createNewAccountForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.createUserSection{
+    margin-top: 2vh;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.createAccountSection{
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.openAccountButton{
+    height: 12vh;
+    width: 20vw;
+    font-size: 45px;
+    font-weight: 900;
+    color:rgb(139, 110, 35);
+    background-color: rgba(255, 255, 255, 0.702);
+    margin-top: -4vh;
+    margin-left: 38.5vw;
+    border: solid 1.5px rgb(139, 110, 35);
+}
+
+.openAccountButton:hover{
+    height: 12vh;
+    width: 20vw;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(139, 110, 35);
+    margin-top: -4vh;
+    margin-left: 38.5vw;
+    border: solid 1.5px white;
+}
+
+.firstNameBlock{
+    width:30vw;
+}
+
+.firstname{
+    height: 10vh;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger;
+}
+
+.lastname{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger;
+
+}
+
+
+.email{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 5vw;
+}
+
+
+
+.decorativeLine{
+    width: 20vw;
+    background-color: rgb(139, 110, 35);
+    height: 1.5vh;
+    margin: auto;
+    margin-top: 2.5vh;
+}
+
+.nameText{
+    margin: auto; 
+    width: 15vw;
+    height: 10vh;
+    color: rgb(209, 152, 7);
+    font-size: 45px;
+    font-weight: 900;
+    margin-left: 5vw;
+}
+
+.lastNameText{
+    margin: auto; 
+    margin-right: 5vw;
+    width: 15vw;
+    height: 10vh;
+    color:rgb(3, 17, 42);
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.emailText{
+    margin: auto; 
+    width: 15vw;
+    height: 10vh;
+    color: rgb(100, 100, 100);
+    font-size: 45px;
+    font-weight: 900;
+    margin-left: 5vw;
+}
+
+.lastNameBlock{
+    height: 10vh;
+    width: 20vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger;
+}
+
+.emailBlock{
+    width:30vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+
+}
+
+.accountTypeText{
+    margin: auto; 
+    width: 20vw;
+    height: 10vh;
+    color: rgb(100, 100, 100);
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.accountTypeBlock{
+    height: 25vh;
+    width: 30vw;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    margin-left: 17vw;
+}
+
+
+
+.accounttype{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 4.5vw;
+}
+
+.depositBlock{
+    height: 25vh;
+    width: 30vw;
+    font-size: larger;
+}
+
+.deposit{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    font-size: larger; 
+    margin-left: 5vw;
+}
+
+.divider{
+height: 9vh;
+width: .2vw;
+background-color: rgb(209, 152, 7);
+margin-top: .35vh;
+}
+
+.open{
+    font-size: 30px;
+    font-weight: 500;
+    width: 6vw;
+    color:rgb(3, 17, 42);
+    margin-top: 2vh;
+    margin-left: .5vw;
+    color: green;
+}
+
+@media screen and (max-width: 576px)
+{
 .fullAccountsPage{
     width: 28rem;
     height: 100vh;
@@ -75,7 +409,7 @@
     flex-direction: column;
     width: 28rem;
     font-size: 20px;
-    height: 85vh;
+    height: 88vh;
     background-color: rgb(3, 17, 42);
     overflow-y: scroll;
 
@@ -338,4 +672,6 @@ margin-top: .35vh;
     margin-top: 2vh;
     margin-left: .5vw;
     color: green;
+}
+
 }
