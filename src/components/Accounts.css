@@ -396,19 +396,17 @@ margin-top: .35vh;
 }
 
 .delete{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
-    width: 6vw;
+    width: 5rem;
     color:rgb(3, 17, 42);
     margin-top: 2vh;
     color: black;
-    border: solid 2px green;
 }
 
 
 
 .divider{
-    border: solid 2px red;
 }
 
 
