@@ -78,3 +78,92 @@ align-self: center;
     border-radius: 10px;
     align-self: center;
 }
+
+
+@media screen and (max-width: 576px)
+{
+
+
+
+
+    .cardbackground{
+        background-color: white;
+        height: 60vh;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        z-index: -5;
+        margin-top: 8vh;
+        margin-left: 10vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: solid 2px green;
+    }
+    
+    .accountType{
+        margin-left: 12vw;
+        margin-top: 4vh;
+        font-size: 20px;
+    }
+    
+    .accountNumber{
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .goldLine{
+    border-bottom: solid 8px rgb(139, 110, 35);
+    width: 14vw;
+    margin-left: 8vw;
+    margin-top: 1.5vh;
+    }
+    
+    .accountBalance{
+     margin-left: 4vw;
+     font-family: 'Dosis', sans-serif;
+     font-size: 85px;
+    }
+    
+    .dollarsign{
+    color: rgb(139, 110, 35);
+    margin-right: 1.5vw;
+    }
+    
+    .accountButtons{
+        margin-top: 4vh;
+        margin-left: 5vw;
+    }
+    
+    .accountCardDepositButton{
+    width: 20vw;
+    height: 8vh;
+    background-color: white;
+    border: solid 3px rgb(3, 17, 42);
+    margin-bottom: 1vh;
+    color: rgb(3, 17, 42);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: rgb(139, 110, 35);
+    font-size: 18px;
+    border-radius: 10px;
+    align-self: center;
+    }
+    
+    .accountCardWithdrawButton{
+        width: 20vw;
+        height: 8vh;
+        background-color: white;
+        border: solid 3px rgb(3, 17, 42);
+        margin-top: 1vh;
+        color: rgb(3, 17, 42);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        background-color: rgb(139, 110, 35);
+        font-size: 18px;
+        border-radius: 10px;
+        align-self: center;
+    }
+    
+
+}
