@@ -402,6 +402,18 @@ margin-top: .35vh;
     color:rgb(3, 17, 42);
     margin-top: 2vh;
     color: black;
+    border: solid 2px green;
+}
+
+
+
+.divider{
+    border: solid 2px red;
+}
+
+
+.open{
+    border: solid 2px silver;
 }
 
 .bottomsection{
