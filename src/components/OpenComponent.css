@@ -172,7 +172,8 @@
 
 .opendepositclass{
     margin: 1.5vh;
-    width: 12vw;
+    width: 10rem;
+    border: solid 2px green;
 }
 
 .openDepositPlaceholder{
