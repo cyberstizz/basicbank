@@ -443,9 +443,8 @@ margin-top: .35vh;
     width: 26vw;
     /* background-color: gold; */
     align-self: center;
-    margin-left: 15vw;
+    margin-left: 13vw;
     z-index: 10;
-    border: solid 2px gold;
 }
 
 .coverimage{
