@@ -165,8 +165,9 @@
         align-self: center;
         color: white;
         font-size: 50px;
-        width: 14vw;
+        width: 11rem;
         align-content: center;
+        border: solid 2px green;
     }
     
     .transferFromToField{
