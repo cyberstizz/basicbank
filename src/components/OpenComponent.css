@@ -152,7 +152,7 @@
 }
 
 .openAccountPlaceholder{
-    width: 10vw;
+    width: 8.2rem;
     height: 8vh;
     margin: 1vh;
     margin-bottom: -2vh;
@@ -160,6 +160,7 @@
     font-size: 25px;
     background-color: rgb(139, 110, 35);
     color: white;
+    border: solid 2px green;
 }
 
 .openAccountTypeText{
