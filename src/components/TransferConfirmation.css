@@ -166,14 +166,14 @@
     .transferConfirmationButton{
         background-color: rgb(139, 110, 35);
         height: 7vh;
-        width: 15vw;
+        width: 15rem;
         margin-left: 4vw;
         margin-top: 2vh;
         color: rgb(3, 17, 42);
         font-weight: 700;
         font-size: 20px;
         border-radius: 12px;
-        border: solid 2px rgb(3, 17, 42)
+        border: solid 2px rgb(3, 17, 42);
     }
      
 
