@@ -145,14 +145,12 @@
         margin-left: 7.4vh;
         margin-top: 3vh;
         border-radius: 12px;
-        border: solid 2px gold;
-
     }
     
     .transferDollarSign{
         color: rgb(139, 110, 35);
         height: 12vh;
-        width: 3vw;
+        width: 3rem;
         font-size: 50px;
         align-self: center;
         text-align: center;
