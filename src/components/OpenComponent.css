@@ -109,3 +109,121 @@
     font-weight: 700;
     color: rgb(16, 61, 137);
 }
+
+@media screen and (max-width: 576px)
+{
+  
+.fullOpenComponent{
+    background-color: rgb(3, 17, 42);
+    border: solid 4px rgb(139, 110, 35);
+    height: 30rem;
+    width: 20rem;
+    margin-right: 5rem;
+    overflow: hidden;
+    border: solid 2px green;
+}
+
+.openTopArea{
+    display: flex;
+    flex-direction: row;
+}
+
+.opennewaccounttextheader{
+    color: white;
+    margin-left: 4vw;
+    margin-top: 3vh;
+    font-size: 30px;
+}
+
+.opencreateUserSection{
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    margin: 2vh;
+    border: solid 2px brown;
+}
+
+
+.openAccountType{
+    margin: 2vh;
+    width: 12vw;
+}
+
+.openAccountPlaceholder{
+    width: 10vw;
+    height: 8vh;
+    margin: 1vh;
+    margin-bottom: -2vh;
+    margin-top: 3vh;
+    font-size: 25px;
+    background-color: rgb(139, 110, 35);
+    color: white;
+}
+
+.openAccountTypeText{
+    height: 8vh;
+    color: rgb(139, 110, 35);
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+.opendepositclass{
+    margin: 1.5vh;
+    width: 12vw;
+}
+
+.openDepositPlaceholder{
+    width: 10vw;
+    height: 8.7vh;
+    margin: 1vh;
+    margin-bottom: -2vh;
+    margin-top: 3vh;
+    font-size: 25px;
+    background-color: rgb(139, 110, 35);
+    color: white;
+}
+
+.openDepositPlaceholder::placeholder{
+    width: 10vw;
+    height: 9vh;
+    margin-bottom: -2vh;
+    margin-top: 3vh;
+    font-size: 25px;
+    background-color: rgb(139, 110, 35);
+    color: white;
+}
+
+.openDepositText{
+    height: 8vh;
+    color: rgb(139, 110, 35);
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+
+.openMakeAccountButton{
+    border: solid 2px rgb(3, 17, 42);
+    margin-left: 8vh;
+    width: 22vw;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: rgb(139, 110, 35);
+    font-size: 30px;;
+    font-weight: 700;
+    color: rgb(3, 17, 42);
+}
+
+.openMakeAccountButton:hover{
+    border: solid 2px rgb(3, 17, 42);
+    margin-left: 8vh;
+    width: 22vw;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: rgb(237, 188, 64);
+    font-size: 30px;;
+    font-weight: 700;
+    color: rgb(16, 61, 137);
+}  
+}
