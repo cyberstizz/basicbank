@@ -136,9 +136,10 @@
         letter-spacing: 1px;
         font-size: 40px;
         color: white;
-        margin-left: 2vw;
+        margin-left: 15vw;
         margin-bottom: 2vh;
-        margin-top: .8vh;
+        margin-top: 4vh;
+        border: solid 2px green;
     }
     
     .withdrawSection{
