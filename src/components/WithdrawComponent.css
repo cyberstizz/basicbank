@@ -171,7 +171,7 @@
         align-self: center;
         color: rgb(139, 110, 35);
         font-size: 50px;
-        margin-left: 3.5vw;
+        margin-left: 5vw;
         font-weight: 800;
         padding-right: .5vw;
     }
@@ -183,9 +183,10 @@
         font-size: 40px;
         color: white;
         font-family: 'Titan One', cursive;
-        width: 8vw;
+        width: 12rem;
         padding-left: .5vw;
         margin-top: 1vh;
+        border: solid 2px green;
     }
     
     .withdrawField::placeholder{
