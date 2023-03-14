@@ -438,14 +438,14 @@ margin-top: .35vh;
 }
 
 #displayField{
-    visibility: hidden;
     position: absolute;
     height: 61vh;
     width: 26vw;
     /* background-color: gold; */
     align-self: center;
-    margin-left: 35vw;
+    margin-left: 15vw;
     z-index: 10;
+    border: solid 2px gold;
 }
 
 .coverimage{

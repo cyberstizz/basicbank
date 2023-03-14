@@ -118,7 +118,7 @@
     border: solid 4px rgb(139, 110, 35);
     height: 30rem;
     width: 20rem;
-    margin-right: 5rem;
+    margin: 0 auto;
     overflow: hidden;
     border: solid 2px green;
 }
