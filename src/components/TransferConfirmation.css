@@ -144,12 +144,12 @@
     }
     .transferConfirmationArrow{
         color: rgb(255, 209, 93);
-        margin-left: 11vw;
+        margin-left: 20vw;
     }
     
     .transferConfirmationFromAccountText{
         color: white;
-        margin-left: 6vw;
+        margin-left: 17vw;
     }
     
     .transferConfirmationToText{
