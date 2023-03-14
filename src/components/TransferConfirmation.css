@@ -123,12 +123,15 @@
         width: 20rem;
         border: solid 2px gray;
         margin-left: 2.5rem;
+        margin-top: 1vh;
     }
     
     .transferConfirmationTransferAmountText{
         color: white;
         margin-top: 2vh;
-        margin-left: 6vw;
+        margin-left: 20vw;
+        width: 10rem;
+
     }
     
     .transferConfirmationAmountValue{
