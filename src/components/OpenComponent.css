@@ -126,7 +126,6 @@
 .openTopArea{
     display: flex;
     flex-direction: row;
-    border: solid 2px green;
     margin-left: 2vw;
 }
 
@@ -148,7 +147,9 @@
 
 .openAccountType{
     margin: 2vh;
-    width: 12vw;
+    width: 8rem;
+    border: solid 2px brown;
+
 }
 
 .openAccountPlaceholder{

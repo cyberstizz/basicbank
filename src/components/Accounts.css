@@ -440,11 +440,12 @@ margin-top: .35vh;
 #displayField{
     position: absolute;
     height: 61vh;
-    width: 26vw;
+    width: 25rem;
     /* background-color: gold; */
     align-self: center;
-    margin-left: 13vw;
+    margin-left: 6vw;
     z-index: 10;
+    border: solid 2px gold;
 }
 
 .coverimage{
