@@ -130,7 +130,7 @@
 
 .opennewaccounttextheader{
     color: white;
-    margin-left: 4vw;
+    margin-left: 14vw;
     margin-top: 3vh;
     font-size: 30px;
 }
@@ -160,7 +160,6 @@
     font-size: 25px;
     background-color: rgb(139, 110, 35);
     color: white;
-    border: solid 2px green;
 }
 
 .openAccountTypeText{
