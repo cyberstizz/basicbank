@@ -140,6 +140,8 @@
         font-size: 65px;
         margin-left: 6vw;
         margin-top: 0;
+        border: solid 2px gold;
+        width: 10rem;
     }
     .transferConfirmationArrow{
         color: rgb(255, 209, 93);
