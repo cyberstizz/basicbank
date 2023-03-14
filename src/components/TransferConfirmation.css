@@ -114,15 +114,13 @@
         margin-left: 7rem;
         font-size: 25px;
         color: white;
-        border: solid 2px green;
-
     }
     
     .transferConfirmationMiddleSection{
         display: flex;
         flex-direction: column;
         height: 44vh;
-        width: 22.5vw;
+        width: 20rem;
         border: solid 2px gray;
         margin-left: 4vw;
     }
