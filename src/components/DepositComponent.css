@@ -139,9 +139,10 @@ margin-top: 3vh;
         letter-spacing: 1px;
         font-size: 40px;
         color: white;
-        margin-left: 4vw;
+        margin-left: 20vw;
         margin-bottom: 2vh;
         margin-top: .8vh;
+        border: solid 2px green;
     }
     
     .depositSection{
