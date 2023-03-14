@@ -134,7 +134,6 @@
         font-size: 45px;
         color: white;
         margin-left: 25vw;
-        border: solid 2px gold;
     }
     
     .transferAmountField{
@@ -142,10 +141,12 @@
         flex-direction: row;
         background-color: #414E65;
         height: 16vh;
-        width: 22vw;
-        margin-left: 9vh;
+        width: 17rem;
+        margin-left: 7.4vh;
         margin-top: 3vh;
         border-radius: 12px;
+        border: solid 2px gold;
+
     }
     
     .transferDollarSign{
