@@ -184,8 +184,6 @@
     font-size: 25px;
     background-color: rgb(139, 110, 35);
     color: white;
-    border: solid 2px green;
-
 }
 
 .openDepositPlaceholder::placeholder{
@@ -203,8 +201,8 @@
     color: rgb(139, 110, 35);
     font-size: 30px;
     font-weight: 800;
-    margin-left: 2vw;
-    margin-top: 5vh;
+    margin-left: 7vw;
+    margin-top: 3.3vh;
 }
 
 .openMakeAccountButton{
