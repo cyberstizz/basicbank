@@ -174,10 +174,11 @@
         flex-direction: column;
         background-color: #414E65;
         height: 16vh;
-        width: 22vw;
+        width: 17rem;
         margin-left: 9vh;
         margin-top: 3vh;
         border-radius: 12px;
+        border: solid 2px gold;
     }
     
     .transferDecorativeLine{
