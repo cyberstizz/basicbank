@@ -63,6 +63,7 @@
     color: black;
 }
 
+
 .bottomsection{
     display: flex;
     flex-direction: column;
@@ -333,6 +334,8 @@ margin-top: .35vh;
 
 @media screen and (max-width: 576px)
 {
+
+
 .fullAccountsPage{
     width: 28rem;
     height: 100vh;
@@ -396,10 +399,12 @@ margin-top: .35vh;
 }
 
 .delete{
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 500;
-    width: 5rem;
+    margin-top: 2vh;
+    width: 3rem;
     color:rgb(3, 17, 42);
+    margin-left: 7vh;
     margin-top: 2vh;
     color: black;
 }
@@ -408,14 +413,19 @@ margin-top: .35vh;
 
 .divider{
     width: 5px;
+    margin-left: 1vh;
+
 }
 
 
-.open{
-    font-size: 20px;
-    width: 10%;
-    margin-left: 2vw;
-}
+ .open{  
+    font-size: 1em;  
+    font-weight: 500;
+    height: 7.4vh;
+    color:rgb(3, 17, 42);
+    overflow: hidden
+    ;
+} 
 
 .bottomsection{
     display: flex;
@@ -456,7 +466,6 @@ margin-top: .35vh;
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    overflow: auto;
     margin-left: .5vw;
     margin-right: 1vw;
     margin-top: 2vh;
@@ -578,12 +587,10 @@ margin-left: 40vw;
     width: 20vw;
     background-color: rgb(139, 110, 35);
     height: 1.5vh;
-    margin: auto;
     margin-top: 2.5vh;
 }
 
 .nameText{
-    margin: auto; 
     width: 15vw;
     height: 10vh;
     color: rgb(209, 152, 7);
@@ -593,7 +600,6 @@ margin-left: 40vw;
 }
 
 .lastNameText{
-    margin: auto; 
     margin-right: 5vw;
     width: 15vw;
     height: 10vh;
@@ -603,7 +609,6 @@ margin-left: 40vw;
 }
 
 .emailText{
-    margin: auto; 
     width: 15vw;
     height: 10vh;
     color: rgb(100, 100, 100);
@@ -629,7 +634,6 @@ margin-left: 40vw;
 }
 
 .accountTypeText{
-    margin: auto; 
     width: 20vw;
     height: 10vh;
     color: rgb(100, 100, 100);
@@ -678,12 +682,13 @@ margin-top: .35vh;
 }
 
 .open{
-    font-size: 30px;
+    font-size: 17px;
     font-weight: 500;
-    width: 6vw;
+    height: 7vh;
+    width: 15vw;
     color:rgb(3, 17, 42);
     margin-top: 2vh;
-    margin-left: .5vw;
+    margin-left: 2vw;
     color: green;
 }
 
