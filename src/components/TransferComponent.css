@@ -181,7 +181,7 @@
     }
     
     .transferDecorativeLine{
-        height: 1vh;
+        height: .3rem;
         background-color: goldenrod;
     }
     
