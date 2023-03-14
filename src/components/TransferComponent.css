@@ -121,7 +121,6 @@
         width: 25rem;
         display: flex;
         flex-direction: column;
-        border: solid 2px green;
     }
     
     .transferTop{
@@ -134,7 +133,8 @@
         font-weight: 700;
         font-size: 45px;
         color: white;
-        margin-left: 7vw;
+        margin-left: 25vw;
+        border: solid 2px gold;
     }
     
     .transferAmountField{
