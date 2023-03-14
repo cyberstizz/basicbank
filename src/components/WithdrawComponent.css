@@ -151,14 +151,12 @@
         margin-top: 3vh;
         border-radius: 8px;
         margin-bottom: 3vh;
-        border: solid 2px green;
-
     }
     
     .withdrawFieldSection{
         display: flex;
         flex-direction: row;
-        width: 18vw;
+        width: 15rem;
         height: 12vh;
     }
     
