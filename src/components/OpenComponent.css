@@ -126,6 +126,8 @@
 .openTopArea{
     display: flex;
     flex-direction: row;
+    border: solid 2px green;
+    margin-left: 2vw;
 }
 
 .opennewaccounttextheader{
