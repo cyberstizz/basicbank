@@ -155,7 +155,7 @@
     
     .deletetype{
         background-color: #414E65;
-        width: 8vw;
+        width: 6rem;
         height: 8vh;
         font-size: 30px;
         color: white;
@@ -167,7 +167,7 @@
     
     .deletetype::placeholder{
         background-color: #414E65;
-        width: 8vw;
+        width: 6rem;
         height: 8vh;
         font-size: 30px;
         color: white;
