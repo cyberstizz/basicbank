@@ -142,7 +142,6 @@ margin-top: 3vh;
         margin-left: 20vw;
         margin-bottom: 2vh;
         margin-top: .8vh;
-        border: solid 2px green;
     }
     
     .depositSection{
@@ -150,11 +149,13 @@ margin-top: 3vh;
         flex-direction: column;
         background-color: #414E65;
         height: 20vh;
-        width: 20vw;
+        width: 18rem;
         align-self: center;
         margin-top: 3vh;
         border-radius: 8px;
         margin-bottom: 3vh;
+        border: solid 2px green;
+
     }
     
     .depositFieldSection{
