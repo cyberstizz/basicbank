@@ -154,14 +154,12 @@ margin-top: 3vh;
         margin-top: 3vh;
         border-radius: 8px;
         margin-bottom: 3vh;
-        border: solid 2px green;
-
     }
     
     .depositFieldSection{
         display: flex;
         flex-direction: row;
-        width: 18vw;
+        width: 17rem;
         height: 12vh;
         }
     
