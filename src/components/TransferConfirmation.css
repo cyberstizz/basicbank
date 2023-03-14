@@ -82,3 +82,96 @@
     border-radius: 12px;
     border: solid 2px rgb(3, 17, 42)
 }
+
+
+@media screen and (max-width: 576px)
+{
+  
+    .fullCompleteTransferComponent{
+        height: 55vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(#03112A 50%, rgb(28, 28, 88));
+    }
+    
+    .transferConfirmationTopDiv{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .transferXout{
+        margin-left: 2vw;
+        color: white;
+        height: 5vh;
+        width: 5vw;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .transferConfirmationHeader{
+        margin-top: 2vh;
+        margin-left: 3vw;
+        font-size: 25px;
+        color: white;
+    }
+    
+    .transferConfirmationMiddleSection{
+        display: flex;
+        flex-direction: column;
+        height: 44vh;
+        width: 22.5vw;
+        border: solid 2px gray;
+        margin-left: 4vw;
+    }
+    
+    .transferConfirmationTransferAmountText{
+        color: white;
+        margin-top: 2vh;
+        margin-left: 6vw;
+    }
+    
+    .transferConfirmationAmountValue{
+        color: rgb(139, 110, 35);
+        height: 12vh;
+        font-size: 65px;
+        margin-left: 6vw;
+        margin-top: 0;
+    }
+    .transferConfirmationArrow{
+        color: rgb(255, 209, 93);
+        margin-left: 11vw;
+    }
+    
+    .transferConfirmationFromAccountText{
+        color: white;
+        margin-left: 6vw;
+    }
+    
+    .transferConfirmationToText{
+        color: white;
+        margin-left: 6vw;
+    }
+    
+    .transferConfirmationDecorativeLine{
+        color: white;
+        height: 1vh;
+        width: 15vw;
+    }
+    
+    .transferConfirmationButton{
+        background-color: rgb(139, 110, 35);
+        height: 7vh;
+        width: 15vw;
+        margin-left: 4vw;
+        margin-top: 2vh;
+        color: rgb(3, 17, 42);
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 12px;
+        border: solid 2px rgb(3, 17, 42)
+    }
+     
+
+
+}
