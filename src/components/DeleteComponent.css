@@ -127,12 +127,10 @@
         letter-spacing: 1px;
         font-size: 40px;
         color: white;
-        margin-left: 28vw;
+        margin-left: 26vw;
         margin-bottom: 2vh;
         margin-top: 5vh;
         align-self: center;
-        border: solid 2px green;
-
     }
     
     .deleteSection{
@@ -140,11 +138,12 @@
         flex-direction: column;
         background-color: #414E65;
         height: 20vh;
-        width: 20vw;
+        width: 17rem;
         align-self: center;
         margin-top: 2vh;
-        margin-left: 2vh;
+        margin-left: 1vh;
         border-radius: 8px;
+
     }
     
     .deleteSectionHeader{
