@@ -207,14 +207,15 @@
 
 .openMakeAccountButton{
     border: solid 2px rgb(3, 17, 42);
-    margin-left: 8vh;
-    width: 22vw;
+    margin-left: 10vh;
+    width: 13rem;
     height: 7vh;
     border-radius: 12px;
     background-color: rgb(139, 110, 35);
     font-size: 30px;;
     font-weight: 700;
     color: rgb(3, 17, 42);
+
 }
 
 .openMakeAccountButton:hover{
