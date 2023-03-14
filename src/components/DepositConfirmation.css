@@ -145,8 +145,10 @@
     font-family: 'Titan One', cursive;
     border: solid 1px #414E65;
     height: 14vh;
-    width: 19vw;
+    width: 17rem;
     align-self: center;
+    border: solid 2px green;
+
 }
 
 .thedepositField::placeholder{
