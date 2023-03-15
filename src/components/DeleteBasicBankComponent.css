@@ -67,14 +67,15 @@ margin-top: 2vh;
 .deleteBBtoprow{
 display: flex;
 flex-direction: row;
-width: 17rem;
+width: 22rem;
 margin-top: 1vh;
 
 }
 
 .deletebbHeader{
-    margin-left: 5vw;
-    margin-top: 3vh;
+    margin-left: 17vw;
+    margin-top: 8vh;
+
 }
 
 .deleteBBXout{
@@ -84,8 +85,10 @@ margin-top: 1vh;
 }
 
 .theText{
-    width: 28vw;
+    width: 18rem;
     margin-top: 2vh;
+    border: solid 2px green;
+    height: 12rem;
 }
 
 .deletebbbutton{
