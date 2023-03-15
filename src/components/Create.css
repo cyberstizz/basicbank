@@ -7,6 +7,8 @@
 
 .fullAccountsPage{
 border: solid 2px green;
+overflow: hidden;
+height: 62rem;
 }
 
 .topHeader{
