@@ -6,11 +6,13 @@
 
 
 .fullAccountsPage{
-overflow: hidden;
-height: 62rem;
+    overflow: hidden;
+    height: 100rem;
 }
 
 .topHeader{
+
+
 }
 
 .infoSection{
@@ -29,21 +31,61 @@ height: 62rem;
 
 .createNewAccountForm{
     border: solid 2px green;
+    position: relative;
     display: flex;
-    flex-direction: row;
     flex-flow: row wrap;
-    width: 70%;
-    margin-left: 3.5rem;
+    overflow: auto;
+    height: 75%;
+    width: 100%;
     overflow: hidden;
 }
 
 .createUserSection{
-
+    border: solid 2px gold;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
 }
 
 
 .firstNameBlock{
+display: flex;
+flex-direction: column;
+border: solid 2px green;
+height: 12em;
+width: 100%;
+}
+
+.firstname{
+    width: 20rem;
 
 }
+
+.decorativeLine{
+    width: 15rem;
+}
+
+
+.lastNameText{
+
+}
+
+.emailBlock{
+
+}
+
+
+.email{
+
+}
+
+
+.emailText{
+
+}
+
+
+
+
 
 }
