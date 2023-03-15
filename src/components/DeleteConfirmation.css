@@ -119,7 +119,6 @@
         margin-bottom: 2vh;
         margin-top: 4.5vh;
         width: 52vw;
-        border: solid 2px green;
 
     }
     
@@ -128,12 +127,13 @@
         flex-direction: column;
         background-color: #414E65;
         height: 20vh;
-        width: 20vw;
+        width: 18rem;
         align-self: center;
         margin-top: 5vh;
-        margin-left: 2vh;
+        margin-left: .5vh;
         border-radius: 8px;
-        
+        border: solid 2px green;
+
     }
     
     .thedeleteSectionHeader{
