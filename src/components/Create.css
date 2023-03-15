@@ -71,7 +71,7 @@ width: 100%;
 .lastNameBlock{
     display: flex;
     flex-direction: column;
-    height: 12em;
+    height: 8em;
     width: 95%;
     background-color: transparent;
 
@@ -94,7 +94,8 @@ width: 100%;
 
 
 .emailBlock{
-
+    border: solid 2px green;
+    margin-top: 1vh;
 }
 
 
