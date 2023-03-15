@@ -28,7 +28,13 @@ height: 62rem;
 }
 
 .createNewAccountForm{
-
+    border: solid 2px green;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 70%;
+    margin-left: 3.5rem;
+    overflow: hidden;
 }
 
 .createUserSection{
