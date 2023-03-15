@@ -4,9 +4,16 @@
 
 
 
-    
-.fullAccountsPage{
 
+.fullAccountsPage{
+border: solid 2px green;
 }
+
+.topHeader{
+    border: solid 2px green;
+}
+
+
+
 
 }
