@@ -45,7 +45,7 @@
     flex-direction: column;
     height: 60%;
     margin: 0 auto;
-    border: solid 2px green;
+    border: solid 2px gold;
 
 }
 
@@ -129,10 +129,13 @@ width: 100%;
     border: solid 2px green;
     margin: 0 auto;
     width: 90%;
+    margin-top: 2vh;
 }
 
 .accounttype{
-
+    border: solid 2px green;
+    width: 20rem;
+    margin: 0 auto;
 }
 
 .accountTypeText{
