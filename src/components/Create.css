@@ -34,7 +34,7 @@
     display: flex;
     flex-flow: row wrap;
     overflow: auto;
-    height: 62rem;
+    height: 70rem;
     width: 100%;
     overflow: hidden;
     border: solid 2px green;
@@ -43,8 +43,10 @@
 .createUserSection{
     display: flex;
     flex-direction: column;
-    height: 75%;
+    height: 60%;
     margin: 0 auto;
+    border: solid 2px green;
+
 }
 
 
