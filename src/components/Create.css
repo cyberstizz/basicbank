@@ -95,7 +95,6 @@ width: 100%;
 
 
 .emailBlock{
-    border: solid 2px green;
     margin-top: 1vh;
     width: 22rem;
     margin-left: .5vw;
@@ -103,15 +102,16 @@ width: 100%;
 
 
 .email{
-    border: solid 2px pink;
     width: 20rem;
-
+    height: 4.8rem;
 
 }
 
 
 .emailText{
-
+    margin-left: 7rem;
+    width: 8rem;
+    margin-top: 1vh;
 }
 
 
