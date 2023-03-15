@@ -7,7 +7,7 @@
 
 .fullAccountsPage{
     overflow: hidden;
-    height: 100rem;
+    height: 102rem;
 }
 
 .topHeader{
@@ -37,7 +37,6 @@
     height: 90rem;
     width: 100%;
     overflow: hidden;
-    border: solid 2px orange;
 }
 
 .createUserSection{
@@ -45,7 +44,6 @@
     flex-direction: column;
     height: 55%;
     margin: 0 auto;
-    border: solid 2px gold;
 
 }
 
@@ -161,7 +159,9 @@ width: 100%;
 
 
 .openAccountButton{
-    border: solid 2px green;
+    border: solid 4px brown;
+    width: 18rem;
+    margin: 0 auto;
 }
 
 
