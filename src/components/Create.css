@@ -139,7 +139,8 @@ width: 100%;
 }
 
 .accountTypeText{
-
+    border: solid 2px green;
+    width: 16rem;
 }
 
 .depositBlock{
