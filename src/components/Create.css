@@ -21,7 +21,7 @@
 
 .createNewAccountHeader{
     width: 18rem;
-    margin: 0 auto;
+    margin-left: 7rem;
 }
 
 .createbottomsection{
@@ -30,7 +30,6 @@
 }
 
 .createNewAccountForm{
-    border: solid 2px green;
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -41,34 +40,58 @@
 }
 
 .createUserSection{
-    border: solid 2px gold;
     display: flex;
     flex-direction: column;
     height: 75%;
+    margin: 0 auto;
 }
 
 
 .firstNameBlock{
 display: flex;
 flex-direction: column;
-border: solid 2px green;
 height: 12em;
 width: 100%;
 }
 
 .firstname{
     width: 20rem;
-
 }
 
 .decorativeLine{
     width: 15rem;
 }
 
+.nameText{
+    margin-left: 8rem;
+}
 
-.lastNameText{
+
+
+.lastNameBlock{
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    width: 95%;
+    background-color: transparent;
 
 }
+
+
+.lastname{
+    width: 20rem;
+    margin-left: 2.5vw;
+    margin-top: 1vh;
+}
+
+
+.lastNameText{
+    width: 12rem;
+    margin-top: .2rem;
+    margin-left: 4.8rem;
+}
+
+
 
 .emailBlock{
 
