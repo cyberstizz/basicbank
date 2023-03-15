@@ -119,6 +119,8 @@
         margin-bottom: 2vh;
         margin-top: 2.5vh;
         width: 15vw;
+        border: solid 2px green;
+
     }
     
     .thedeleteSection{
@@ -131,11 +133,13 @@
         margin-top: 5vh;
         margin-left: 2vh;
         border-radius: 8px;
+        
     }
     
     .thedeleteSectionHeader{
         height: 5vh;
         color: white;
+        
     }
     
     .thedeleteField{
