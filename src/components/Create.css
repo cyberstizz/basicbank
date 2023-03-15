@@ -34,16 +34,16 @@
     display: flex;
     flex-flow: row wrap;
     overflow: auto;
-    height: 70rem;
+    height: 80rem;
     width: 100%;
     overflow: hidden;
-    border: solid 2px green;
+    border: solid 2px orange;
 }
 
 .createUserSection{
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 50%;
     margin: 0 auto;
     border: solid 2px gold;
 
@@ -123,31 +123,36 @@ width: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 .accountTypeBlock{
-    border: solid 2px green;
     margin: 0 auto;
     width: 90%;
     margin-top: 2vh;
 }
 
 .accounttype{
-    border: solid 2px green;
     width: 20rem;
     margin: 0 auto;
 }
 
 .accountTypeText{
-    border: solid 2px green;
     width: 16rem;
 }
 
 .depositBlock{
+    border: solid 2px green;
+    width: 95%;
+    margin-left: 1vw;
 
 }
 
 .deposit{
+    border: solid 2px blue;
+    width: 20rem;
+    margin: 0 auto;
+    margin-left: 3rem;
 
 }
 
