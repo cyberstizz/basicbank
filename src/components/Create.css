@@ -6,16 +6,36 @@
 
 
 .fullAccountsPage{
-border: solid 2px green;
 overflow: hidden;
 height: 62rem;
 }
 
 .topHeader{
-    border: solid 2px green;
+}
+
+.infoSection{
+
+}
+
+.createNewAccountHeader{
+
+}
+
+.createbottomsection{
+
+}
+
+.createNewAccountForm{
+
+}
+
+.createUserSection{
+
 }
 
 
-
+.firstNameBlock{
+    
+}
 
 }
