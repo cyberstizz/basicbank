@@ -19,7 +19,7 @@ const DeleteBasicBankComponent = (props) => {
 
             <div className='deleteBBXout' onClick={props.xoutHandler}>&#9747;</div>
 
-               <div className='deletebbHeader'> Are you sure?</div>
+               <h2 className='deletebbHeader'> Are you sure?</h2>
                 </div>
                 <span className='theText'>you only have one account, are sure you want to leave Basic Bank?
                 this will delete your entire account with us, so you will not be

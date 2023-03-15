@@ -62,14 +62,14 @@ margin-top: 2vh;
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    border: solid 2px green;
 }
 
 .deleteBBtoprow{
 display: flex;
 flex-direction: row;
-width: 28vw;
-margin-top: 2vh;
+width: 17rem;
+margin-top: 1vh;
+
 }
 
 .deletebbHeader{
