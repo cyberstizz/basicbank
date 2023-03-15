@@ -87,8 +87,8 @@ margin-top: 1vh;
 .theText{
     width: 18rem;
     margin-top: 2vh;
-    border: solid 2px green;
-    height: 12rem;
+    height: 14rem;
+    font-size: larger;
 }
 
 .deletebbbutton{
