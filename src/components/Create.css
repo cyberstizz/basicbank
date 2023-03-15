@@ -18,7 +18,9 @@ height: 62rem;
 }
 
 .createNewAccountHeader{
-
+    border: solid 2px green;
+    width: 18rem;
+    margin: 0 auto;
 }
 
 .createbottomsection{
@@ -35,7 +37,7 @@ height: 62rem;
 
 
 .firstNameBlock{
-    
+
 }
 
 }
