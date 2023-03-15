@@ -49,5 +49,57 @@ margin-top: 2vh;
 
 @media screen and (max-width: 576px)
 {
+  
+  
     
+
+.fullDeletebb{
+    height: 60vh;
+    width: 25rem;
+    background-color: rgb(3, 17, 42);
+    color: white;
+    align-items: center;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px green;
+}
+
+.deleteBBtoprow{
+display: flex;
+flex-direction: row;
+width: 28vw;
+margin-top: 2vh;
+}
+
+.deletebbHeader{
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+
+.deleteBBXout{
+    width: 4vw;
+    font-size: 30px;
+    margin-left: 1vw;
+}
+
+.theText{
+    width: 28vw;
+    margin-top: 2vh;
+}
+
+.deletebbbutton{
+    width: 18vw;
+    height: 8vh;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: rgb(139, 110, 35);
+    font-size: 18px;
+    border-radius: 10px;
+    color: rgb(3, 17, 42);
+    margin-top: 4vh;
+}
+
+
+
 }
