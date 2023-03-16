@@ -8,3 +8,6 @@ COPY package*.json ./
 
 # now installing the dependencies
 RUN npm install
+
+#copying all of the files to my images root
+COPY . .
