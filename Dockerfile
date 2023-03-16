@@ -11,3 +11,7 @@ RUN npm install
 
 #copying all of the files to my images root
 COPY . .
+
+
+#now run the build command to build the full application and create the build folder
+RUN npm run build
