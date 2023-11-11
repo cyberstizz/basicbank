@@ -19,7 +19,7 @@ const [account, setAccount] = useState('checking');
 const [deposit, setDeposit] = useState(0);
 
 const API_HOST = process.env.NODE_ENV === 'production'
-? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com' : 'http://localhost:8000';
 
 
 const setNameHandler = (e) => {

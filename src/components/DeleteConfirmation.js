@@ -9,7 +9,7 @@ const DeleteConfirmation = (props) => {
 
 
     const API_HOST = process.env.NODE_ENV === 'production'
-    ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+    ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com' : 'http://localhost:8000';
         
       let _csrfToken = null;
     
