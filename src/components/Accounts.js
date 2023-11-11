@@ -39,6 +39,10 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
 // console.log(`these are all the variables for transfer all baked in ${tranferStore}`)
 
 
+const API_HOST = process.env.NODE_ENV === 'production'
+? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+
+
   const handleWithdrawText = (e) => {
     e.preventDefault()
 
@@ -72,7 +76,7 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
   const makeDeposit = async (accountNumber, amount) => {
 
     //make post request to server
-    const depositCall = await fetch('http://localhost:8000/deposit', {
+    const depositCall = await fetch(`${API_HOST}/deposit`, {
       method: "POST",
       headers: {
         'Accept': 'application/json',
@@ -99,7 +103,7 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
 
 
 //make post request to server
-  const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+  const withdrawCall = await fetch(`${API_HOST}/withdraw`, {
   method: "POST",
   headers: {
     'Accept': 'application/json',
@@ -126,7 +130,7 @@ console.log(withdrawCall.status())
 const makeTranser = async (fromAccount, toAccount, type, amount) => {
 
   //make post request to server
-  const transferCall = await fetch('http://localhost:8000/transfer', {
+  const transferCall = await fetch(`${API_HOST}/transfer`, {
     method: "POST",
     headers: {
     'Accept': 'application/json',

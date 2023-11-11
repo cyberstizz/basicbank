@@ -12,12 +12,14 @@ const Home = () => {
         const [password, setPassword] = useState('')
         const [data, setData] = useState('')
 
+        const API_HOST = process.env.NODE_ENV === 'production'
+        ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
 
 
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch('http://localhost:8000');
+const testCall = await fetch(API_HOST);
                                                 // login/<str:username>/<str:password>
 
         let fullCall = await testCall.text()
@@ -33,8 +35,6 @@ setAccounts(fullCall)
 
 
     const navigate = useNavigate()
-
-    const API_HOST = 'http://localhost:8000';
 
     let _csrfToken = null;
   
@@ -54,7 +54,7 @@ setAccounts(fullCall)
 
     const handleLogin = async (event) => {
         event.preventDefault()
-        const loginCall = await fetch('http://localhost:8000/login', {
+        const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',
