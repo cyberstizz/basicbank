@@ -310,7 +310,7 @@ const deleteEverything = async () => {
 
 
   //make post request to server
-  const DeleteEverythingCall = await fetch('http://localhost:8000/deleteEverything', {
+  const DeleteEverythingCall = await fetch(`${API_HOST}/deleteEverything`, {
     method: "POST",
     headers: {
     'Accept': 'application/json',
@@ -377,7 +377,6 @@ const startOpen = () => {
 
 
 
-  const API_HOST = 'http://localhost:8000';
 
   let _csrfToken = null;
 
@@ -412,7 +411,7 @@ useEffect(() => {
   
 const databaseCall = async () => {
 
-  const getAccountObject = await fetch(`http://localhost:8000/accounts`, {
+  const getAccountObject = await fetch(`${API_HOST}/accounts`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
@@ -441,7 +440,7 @@ let navigate = useNavigate()
 
 
 const handleLogout = async () => {
-  const logout = await fetch('http://localhost:8000/logout', {
+  const logout = await fetch(`${API_HOST}/logout`, {
     method: "POST",
   headers: {
     'Accept': 'application/json',

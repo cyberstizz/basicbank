@@ -11,8 +11,9 @@ const DeleteComponent = (props) => {
     const accountToDelete = useSelector((state) => state.delete.delete_account)
 
 
-    const API_HOST = 'http://localhost:8000';
-
+    const API_HOST = process.env.NODE_ENV === 'production'
+    ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+    
     let _csrfToken = null;
   
     const getCsrfToken = async () => {

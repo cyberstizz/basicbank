@@ -13,7 +13,8 @@ const withdrawAmount = useSelector((state) => state.withdraw.withdraw_amount)
 const withdrawFrom = useSelector((state) => state.withdraw.withdraw_from)
 
 
-const API_HOST = 'http://localhost:8000';
+const API_HOST = process.env.NODE_ENV === 'production'
+? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
 
   let _csrfToken = null;
 
@@ -34,7 +35,7 @@ const makeWithdrawal = async () => {
   console.log('i am the makewithdrawal function and I have been called')
 
 //make post request to server
-const withdrawCall = await fetch('http://localhost:8000/withdraw', {
+const withdrawCall = await fetch(`${API_HOST}/withdraw`, {
 method: "POST",
 headers: {
   'Accept': 'application/json',

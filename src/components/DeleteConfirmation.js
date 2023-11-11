@@ -8,8 +8,9 @@ const DeleteConfirmation = (props) => {
     const delete_account = useSelector((state) => state.delete.delete_account)
 
 
-    const API_HOST = 'http://localhost:8000';
-    
+    const API_HOST = process.env.NODE_ENV === 'production'
+    ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+        
       let _csrfToken = null;
     
       const getCsrfToken = async () => {
@@ -29,7 +30,7 @@ const DeleteConfirmation = (props) => {
       console.log('i am the makewithdrawal function and I have been called')
     
     //make post request to server
-    const deleteCall = await fetch('http://localhost:8000/delete', {
+    const deleteCall = await fetch(`${API_HOST}/delete`, {
     method: "POST",
     headers: {
       'Accept': 'application/json',

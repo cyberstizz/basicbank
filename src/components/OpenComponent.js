@@ -21,7 +21,9 @@ const OpenComponent = (props) => {
    
    const [deposit, setDeposit] = useState(0);
    
-   
+   const API_HOST = process.env.NODE_ENV === 'production'
+   ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
+
    
    const setNameHandler = (e) => {
    
@@ -57,8 +59,7 @@ const OpenComponent = (props) => {
        
        };
    
-       const API_HOST = 'http://localhost:8000';
-   
+      
        let _csrfToken = null;
      
        const getCsrfToken = async () => {
@@ -93,7 +94,7 @@ const OpenComponent = (props) => {
    
    
    
-           const createOpenAccountCall = await fetch('http://localhost:8000/open_create', {
+           const createOpenAccountCall = await fetch(`${API_HOST}/open_create`, {
            method: "POST",
            headers: {
                'Accept': 'application/json',

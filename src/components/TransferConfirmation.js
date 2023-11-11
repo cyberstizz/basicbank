@@ -11,7 +11,8 @@ const TransferConfirmation = (props) => {
   const transferConfirmationToAccount = useSelector((state) => state.transfer.transfer_to)
 
 
-  const API_HOST = 'http://localhost:8000';
+  const API_HOST = process.env.NODE_ENV === 'production'
+  ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com/' : 'http://localhost:8000';
 
   let _csrfToken = null;
 
@@ -33,7 +34,7 @@ const makeTransfer = async () => {
   console.log('i am the makeTransfer function and I have been called')
 
 //make post request to server
-const transferCall = await fetch('http://localhost:8000/transfer', {
+const transferCall = await fetch(`${API_HOST}/transfer`, {
 method: "POST",
 headers: {
   'Accept': 'application/json',
