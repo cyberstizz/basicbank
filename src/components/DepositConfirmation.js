@@ -13,8 +13,7 @@ const depositAmount = useSelector((state) => state.deposit.deposit_amount)
 const depositFrom = useSelector((state) => state.deposit.deposit_from)
 
 
-const API_HOST = process.env.NODE_ENV === 'production'
-? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com' : 'http://localhost:8000';
+const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
 
   let _csrfToken = null;
 

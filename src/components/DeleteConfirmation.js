@@ -8,8 +8,7 @@ const DeleteConfirmation = (props) => {
     const delete_account = useSelector((state) => state.delete.delete_account)
 
 
-    const API_HOST = process.env.NODE_ENV === 'production'
-    ? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com' : 'http://localhost:8000';
+    const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
         
       let _csrfToken = null;
     
