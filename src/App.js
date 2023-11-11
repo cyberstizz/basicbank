@@ -14,7 +14,6 @@ function App() {
          <Route path="/accounts" element={<Accounts />} />
          <Route path="/create" element={<Create />} />
          <Route path="/signup/:username/:password/:account_number/:account_balance/:account_type" element={<Home/>} />
-         <Route path="/testRoute" element={<TestRoute />} />
 
       </Routes>
 
