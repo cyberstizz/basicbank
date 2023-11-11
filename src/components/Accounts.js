@@ -39,8 +39,7 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
 // console.log(`these are all the variables for transfer all baked in ${tranferStore}`)
 
 
-const API_HOST = process.env.NODE_ENV === 'production'
-? 'https://thebasic-bank-server-540feefa2a06.herokuapp.com' : 'http://localhost:8000';
+const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
 
 
   const handleWithdrawText = (e) => {
