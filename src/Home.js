@@ -18,7 +18,7 @@ const Home = () => {
 
     useEffect(() => {
         const mountCall = async () => {
-const testCall = await fetch(API_HOST);
+    const testCall = await fetch(API_HOST);
                                                 // login/<str:username>/<str:password>
 
         let fullCall = await testCall.text()
@@ -87,7 +87,7 @@ console.log(loginCall.status)
 
     const handleLogout = async (event) => {
         event.preventDefault()
-        const logoutCall = await fetch('http://localhost:8000/logout', {
+        const logoutCall = await fetch(`${API_HOST}/logout`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',
@@ -116,7 +116,7 @@ console.log(loginCall.status)
       };
 
       const logTestAccount = async () => {
-        const loginCall = await fetch('http://localhost:8000/login', {
+        const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',

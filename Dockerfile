@@ -15,6 +15,8 @@ COPY . .
 #now run the build command to build the full application and create the build folder
 RUN npm run build
 
+ENV REACT_APP_API_HOST=https://thebasic-bank-server-540feefa2a06.herokuapp.com
+
 #now opening the apps port 3000
 EXPOSE 3000
 
