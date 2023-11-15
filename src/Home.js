@@ -46,10 +46,10 @@ setAccounts(fullCall)
           credentials: 'include',
         });
         const data = await response.json();
-        setCsrfToken(data._csrfToken)
       }
 
-      console.log('CSRF Token:', data._csrfToken);
+      console.log('CSRF Token:', data.csrfToken);
+      setCsrfToken(data.csrfToken)
 
       return csrfToken;
     }
