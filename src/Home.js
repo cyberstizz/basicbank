@@ -43,8 +43,11 @@ setAccounts(fullCall)
           credentials: 'include',
         });
         const data = await response.json();
-        _csrfToken = data.csrfToken;
+        _csrfToken = data._csrfToken;
       }
+
+      console.log('CSRF Token:', _csrfToken);
+
       return _csrfToken;
     }
 
@@ -53,12 +56,14 @@ setAccounts(fullCall)
 
     const handleLogin = async (event) => {
         event.preventDefault()
+        const csrfToken = await getCsrfToken()
+        console.log('Sending CSRF Token:', csrfToken); 
         const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': await getCsrfToken()
+                'X-CSRFToken': csrfToken
               },
               credentials: 'include',
               body: JSON.stringify({
@@ -87,12 +92,14 @@ console.log(loginCall.status)
 
     const handleLogout = async (event) => {
         event.preventDefault()
+        const csrfToken = await getCsrfToken()
+
         const logoutCall = await fetch(`${API_HOST}/logout`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': await getCsrfToken()
+                'X-CSRFToken': csrfToken
               },
               credentials: 'include',
         })
@@ -116,12 +123,13 @@ console.log(loginCall.status)
       };
 
       const logTestAccount = async () => {
+        const csrfToken = await getCsrfToken()
         const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': await getCsrfToken()
+                'X-CSRFToken': csrfToken
               },
               credentials: 'include',
               body: JSON.stringify({
