@@ -11,6 +11,8 @@ const Home = () => {
         const [userName, setName] = useState('')
         const [password, setPassword] = useState('')
         const [data, setData] = useState('')
+        const [csrfToken, setCsrfToken] = useState(null)
+
 
         const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
 
@@ -22,6 +24,8 @@ const Home = () => {
                                                 // login/<str:username>/<str:password>
 
         let fullCall = await testCall.text()
+
+        setCsrfToken(getCsrfToken())
 
 
  console.log(fullCall)
@@ -35,20 +39,19 @@ setAccounts(fullCall)
 
     const navigate = useNavigate()
 
-    let _csrfToken = null;
   
     const getCsrfToken = async () => {
-      if (_csrfToken === null) {
+      if (csrfToken === null) {
         const response = await fetch(`${API_HOST}/csrf/`, {
           credentials: 'include',
         });
         const data = await response.json();
-        _csrfToken = data._csrfToken;
+        setCsrfToken(data._csrfToken)
       }
 
-      console.log('CSRF Token:', _csrfToken);
+      console.log('CSRF Token:', data._csrfToken);
 
-      return _csrfToken;
+      return csrfToken;
     }
 
 
@@ -56,7 +59,6 @@ setAccounts(fullCall)
 
     const handleLogin = async (event) => {
         event.preventDefault()
-        const csrfToken = await getCsrfToken()
         console.log('Sending CSRF Token:', csrfToken); 
         const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
@@ -92,7 +94,6 @@ console.log(loginCall.status)
 
     const handleLogout = async (event) => {
         event.preventDefault()
-        const csrfToken = await getCsrfToken()
 
         const logoutCall = await fetch(`${API_HOST}/logout`, {
             method: "POST",
@@ -122,8 +123,9 @@ console.log(loginCall.status)
         setPassword(searchQuery)
       };
 
+      
+
       const logTestAccount = async () => {
-        const csrfToken = await getCsrfToken()
         const loginCall = await fetch(`${API_HOST}/login`, {
             method: "POST",
              headers: {
