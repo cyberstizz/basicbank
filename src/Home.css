@@ -243,7 +243,8 @@ margin-left: 1vw;
 .firstFillerSection{
     height: 18vh;
     width: 18vw;
-    margin-top: 1vh;
+    margin-top: 17vh;
+    margin-left: 3vw;
     color: rgb(3, 17, 42);
     font-size: 30px;
     font-family: 'Mynerve', cursive;
@@ -259,7 +260,7 @@ margin-left: 1vw;
     border-top: solid 3px white;
     border-bottom: solid 3px white;
     margin-left: 18vw;
-    margin-top: 20vh;
+    margin-top: 12vh;
     color: white;
     font-size: 30px;
     padding-top: 1.5vh;

@@ -39,8 +39,8 @@ const transferAmount = useSelector((state) => state.withdraw.withdraw_from)
 // console.log(`these are all the variables for transfer all baked in ${tranferStore}`)
 
 
-const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
-
+// const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
+const API_HOST = 'http://localhost:8000';
 
   const handleWithdrawText = (e) => {
     e.preventDefault()

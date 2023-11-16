@@ -14,22 +14,38 @@ const Home = () => {
         const [csrfToken, setCsrfToken] = useState(null)
 
 
-        const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
+        // const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
+        const API_HOST = 'http://localhost:8000';
 
+
+
+        const getCsrfToken = async () => {
+            if (csrfToken === null) {
+              const response = await fetch(`${API_HOST}/csrf/`, {
+                credentials: 'include',
+              });
+              const data = await response.json();
+              console.log(`this is the data ${data.csrfToken}`)
+              setCsrfToken(data.csrfToken)
+              console.log(`now this is the csrf token useState variable${csrfToken}`)
+              return data.csrfToken;
+            }
+            console.log('CSRF Token:', csrfToken);
+            console.log(csrfToken)
+      
+            return csrfToken;
+          }
 
 
     useEffect(() => {
         const mountCall = async () => {
-    const testCall = await fetch(API_HOST);
-                                                // login/<str:username>/<str:password>
+        const testCall = await fetch(API_HOST);
 
-        let fullCall = await testCall.text()
-
-        setCsrfToken(getCsrfToken())
+        const fullCall = await testCall.text()
 
 
- console.log(fullCall)
-setAccounts(fullCall)
+        console.log(fullCall)
+        setAccounts(fullCall)
         }
 
     mountCall()
@@ -40,19 +56,19 @@ setAccounts(fullCall)
     const navigate = useNavigate()
 
   
-    const getCsrfToken = async () => {
-      if (csrfToken === null) {
-        const response = await fetch(`${API_HOST}/csrf/`, {
-          credentials: 'include',
-        });
-        const data = await response.json();
-      }
+    // const getCsrfToken = async () => {
+    //   if (csrfToken === null) {
+    //     const response = await fetch(`${API_HOST}/csrf/`, {
+    //       credentials: 'include',
+    //     });
+    //     const data = await response.json();
+    //   }
 
-      console.log('CSRF Token:', data.csrfToken);
-      setCsrfToken(data.csrfToken)
+    //   console.log('CSRF Token:', data.csrfToken);
+    //   setCsrfToken(data.csrfToken)
 
-      return csrfToken;
-    }
+    //   return csrfToken;
+    // }
 
 
 
@@ -65,7 +81,7 @@ setAccounts(fullCall)
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': csrfToken
+                'X-CSRFToken': await getCsrfToken()
               },
               credentials: 'include',
               body: JSON.stringify({
@@ -100,7 +116,7 @@ console.log(loginCall.status)
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': csrfToken
+                'X-CSRFToken': await getCsrfToken()
               },
               credentials: 'include',
         })
@@ -131,7 +147,7 @@ console.log(loginCall.status)
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': csrfToken
+                'X-CSRFToken': await getCsrfToken()
               },
               credentials: 'include',
               body: JSON.stringify({
