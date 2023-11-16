@@ -21,8 +21,7 @@ const OpenComponent = (props) => {
    
    const [deposit, setDeposit] = useState(0);
    
-// const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
-const API_HOST = 'http://localhost:8000';
+ const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
    
    const setNameHandler = (e) => {
    

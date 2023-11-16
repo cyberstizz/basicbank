@@ -13,8 +13,7 @@ const depositAmount = useSelector((state) => state.deposit.deposit_amount)
 const depositFrom = useSelector((state) => state.deposit.deposit_from)
 
 
-// const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
-const API_HOST = 'http://localhost:8000';
+ const API_HOST = process.env.REACT_APP_API_HOST || 'http://localhost:8000';
 
   let _csrfToken = null;
 
