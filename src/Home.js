@@ -25,13 +25,11 @@ const Home = () => {
               });
               const data = await response.json();
               console.log(`this is the data ${data.csrfToken}`)
-              setCsrfToken(data.csrfToken)
-              console.log(`now this is the csrf token useState variable${csrfToken}`)
+              console.log(`now this is the csrf token useState variable${data.csrfToken}`)
               return data.csrfToken;
             }
             console.log('CSRF Token:', csrfToken);
-            console.log(csrfToken)
-      
+            setCsrfToken(csrfToken)
             return csrfToken;
           }
 
