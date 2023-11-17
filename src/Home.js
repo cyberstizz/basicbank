@@ -20,7 +20,7 @@ const Home = () => {
 
         const getCsrfToken = async () => {
             if (csrfToken === null) {
-              const response = await fetch(`${API_HOST}/csrf/`, {
+              const response = await fetch(`${API_HOST}/csrf`, {
                 credentials: 'include',
               });
               const data = await response.json();
