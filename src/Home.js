@@ -24,12 +24,11 @@ const Home = () => {
                 credentials: 'include',
               });
               const data = await response.json();
-              console.log(`this is the data ${data.csrfToken}`)
-              console.log(`now this is the csrf token useState variable${data.csrfToken}`)
+              console.log(`this is the data inside the if statement ${data.csrfToken}`)
+              setCsrfToken(csrfToken)
               return data.csrfToken;
             }
-            console.log('CSRF Token:', csrfToken);
-            setCsrfToken(csrfToken)
+            console.log(`this is the token outside of the if statement ${csrfToken}`)
             return csrfToken;
           }
 
@@ -37,15 +36,17 @@ const Home = () => {
     useEffect(() => {
         const mountCall = async () => {
         const testCall = await fetch(API_HOST);
-
         const fullCall = await testCall.text()
-
-
         console.log(fullCall)
         setAccounts(fullCall)
         }
 
+        csrfCall = async () => {
+            if(!csrfToken) await getCsrfToken();
+        }
+
     mountCall()
+    csrfCall();
 
     }, [])
 
@@ -78,7 +79,7 @@ const Home = () => {
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': await getCsrfToken()
+                'X-CSRFToken': csrfToken ? csrfToken : await getCsrfToken()
               },
               credentials: 'include',
               body: JSON.stringify({
@@ -144,7 +145,7 @@ console.log(loginCall.status)
              headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': await getCsrfToken()
+                'X-CSRFToken': csrfToken ? csrfToken : await getCsrfToken()
               },
               credentials: 'include',
               body: JSON.stringify({
