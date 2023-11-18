@@ -41,7 +41,7 @@ const Home = () => {
         setAccounts(fullCall)
         }
 
-        csrfCall = async () => {
+        const csrfCall = async () => {
             if(!csrfToken) await getCsrfToken();
         }
 
