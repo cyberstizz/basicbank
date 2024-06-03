@@ -23,13 +23,6 @@
 bored I felt it completely appropriate to orchestrate an impulse marriage between our dearly beloved React and Django.
 
 
-but uh... except.. this project only includes React
-
-yeah. Sorry about that
-
-React is part 1
-
-Part 2 is coming tomorrow
 
 
 ### Code Review
